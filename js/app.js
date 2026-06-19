@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', () => {
      ============================================================ */
   const subtitleEl = document.getElementById('heroSubtitle');
   if (subtitleEl) {
-    const text = 'U Win Floortech manufactures and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks — directly from the factory. No middlemen. No IndiaMART markups.';
+    const text = 'From idea to complete execution. From bare land to a ready-to-play court. U Win Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks. No middlemen. No reseller markups.';
+    subtitleEl.textContent = ''; // clear static fallback
     let i = 0;
     const cursor = document.createElement('span');
     cursor.className = 'typewriter-cursor';
@@ -86,36 +87,77 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ============================================================
-     4. HERO — 3D Court Switcher
+     4. HERO — Full-bleed image background switcher
      ============================================================ */
-  const courts = document.querySelectorAll('.court-svg');
-  const dots   = document.querySelectorAll('.court-dot');
-  const courtLabels = ['PP Interlocking Tiles', 'Acrylic Court System', 'EPDM Running Track'];
-  const productLabel = document.getElementById('courtProductLabel');
-  let currentCourt = 0;
-  let courtTimer;
+  const heroBgs  = document.querySelectorAll('.hero-bg');
+  const heroDots = document.querySelectorAll('.hero-dot');
+  const chipLabel = document.getElementById('heroChipLabel');
+  const heroLabels = [
+    'PP Interlocking Modular Tiles',
+    'Acrylic Court Coating System',
+    'EPDM Rubberised Athletic Track'
+  ];
+  let currentHero = 0;
+  let heroTimer;
 
-  function switchCourt(idx) {
-    courts.forEach((c, i) => c.classList.toggle('active', i === idx));
-    dots.forEach((d, i) => d.classList.toggle('active', i === idx));
-    if (productLabel) productLabel.textContent = courtLabels[idx];
-    currentCourt = idx;
+  function switchHero(idx, isFirst) {
+    heroBgs.forEach((bg, i) => {
+      bg.classList.toggle('active', i === idx);
+      // re-trigger zoom animation
+      if (i === idx) {
+        bg.style.animation = 'none';
+        bg.offsetHeight; // reflow
+        bg.style.animation = 'hero-zoom 9s ease-out forwards';
+      }
+    });
+    heroDots.forEach((d, i) => d.classList.toggle('active', i === idx));
+    currentHero = idx;
+
+    // Guided-line annotation: fade-out → swap → replay
+    const annotation = document.getElementById('heroProductChip');
+    if (!annotation) return;
+
+    const replayAnnotation = () => {
+      // Update label text while invisible
+      if (chipLabel) chipLabel.textContent = heroLabels[idx];
+      // Reset child animations (dot, line, box)
+      const dot  = annotation.querySelector('.annotation-dot');
+      const line = annotation.querySelector('.annotation-line');
+      const box  = annotation.querySelector('.annotation-box');
+      [dot, line, box].forEach(el => {
+        if (!el) return;
+        el.style.animation = 'none';
+        el.offsetHeight; // force reflow
+        el.style.animation = '';
+      });
+      // Fade back in (remove hiding class — CSS transition handles it)
+      annotation.classList.remove('is-hiding');
+    };
+
+    if (isFirst) {
+      // First load — no fade-out, just play straight in
+      replayAnnotation();
+    } else {
+      // Fade out, then replay
+      annotation.classList.add('is-hiding');
+      setTimeout(replayAnnotation, 210); // matches CSS transition duration (200ms) + 10ms buffer
+    }
   }
 
-  function startCourtCycle() {
-    courtTimer = setInterval(() => {
-      switchCourt((currentCourt + 1) % courts.length);
-    }, 4500);
+  function startHeroCycle() {
+    heroTimer = setInterval(() => {
+      switchHero((currentHero + 1) % heroBgs.length);
+    }, 6000);
   }
 
-  if (courts.length) {
-    switchCourt(0);
-    startCourtCycle();
-    dots.forEach((dot, i) => {
+  if (heroBgs.length) {
+    switchHero(0, true);   // first load — no fade-out
+    startHeroCycle();
+    heroDots.forEach((dot, i) => {
       dot.addEventListener('click', () => {
-        clearInterval(courtTimer);
-        switchCourt(i);
-        startCourtCycle();
+        clearInterval(heroTimer);
+        switchHero(i);
+        startHeroCycle();
       });
     });
   }
@@ -253,28 +295,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
   /* ============================================================
-     11. GALLERY — Parallax on Scroll
+     11. GALLERY — Lightbox click handler
      ============================================================ */
-  const galleryItems = document.querySelectorAll('.gallery-item');
-  const parallaxFactors = [0.06, 0.04, 0.05, 0.03, 0.04, 0.05];
+  const galleryItems = document.querySelectorAll('.gallery-item[data-lightbox]');
+  const lightbox      = document.getElementById('galleryLightbox');
+  const lbImg         = document.getElementById('lightboxImg');
+  const lbTitle       = document.getElementById('lightboxTitle');
+  const lbDesc        = document.getElementById('lightboxDesc');
+  const lbClose       = document.getElementById('lightboxClose');
+  const lbBackdrop    = document.getElementById('lightboxBackdrop');
 
-  function onScroll() {
-    const scrollY = window.scrollY;
-    galleryItems.forEach((item, i) => {
-      const rect = item.getBoundingClientRect();
-      const viewCenter = window.innerHeight / 2;
-      const itemCenter = rect.top + rect.height / 2;
-      const distFromCenter = itemCenter - viewCenter;
-      const factor = parallaxFactors[i] || 0.04;
-      const shift = distFromCenter * factor;
-      const img = item.querySelector('img');
-      if (img) {
-        img.style.transform = `scale(1) translateY(${shift}px)`;
-      }
+  function openLightbox(src, title, desc, alt) {
+    lbImg.src = 'images/' + src;
+    lbImg.alt = alt || title;
+    lbTitle.textContent = title;
+    lbDesc.textContent  = desc;
+    lightbox.classList.add('open');
+    lightbox.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    lightbox.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(() => { lbImg.src = ''; }, 350);
+  }
+
+  if (lightbox) {
+    galleryItems.forEach(item => {
+      item.addEventListener('click', () => {
+        openLightbox(
+          item.dataset.lightbox,
+          item.dataset.title,
+          item.dataset.desc,
+          item.querySelector('img') ? item.querySelector('img').alt : ''
+        );
+      });
+    });
+
+    if (lbClose)    lbClose.addEventListener('click', closeLightbox);
+    if (lbBackdrop) lbBackdrop.addEventListener('click', closeLightbox);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && lightbox.classList.contains('open')) closeLightbox();
     });
   }
 
-  window.addEventListener('scroll', onScroll, { passive: true });
+
 
 
   /* ============================================================
@@ -322,19 +390,6 @@ document.addEventListener('DOMContentLoaded', () => {
     certTrack.innerHTML += certTrack.innerHTML;
   }
 
-
-  /* ============================================================
-     15. SCROLL INDICATOR — Hide after first scroll
-     ============================================================ */
-  const scrollIndicator = document.querySelector('.scroll-indicator');
-  if (scrollIndicator) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 100) {
-        scrollIndicator.style.opacity = '0';
-        scrollIndicator.style.transition = 'opacity 0.4s ease';
-      }
-    }, { once: true, passive: true });
-  }
 
 
   /* ============================================================
