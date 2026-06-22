@@ -1,0 +1,11 @@
+{
+  "name": "uwin-floortech-static",
+  "version": "1.0.0",
+  "description": "Static site for uwin-floortech",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"No build step required for static site\" && exit 0"
+  },
+  "author": "",
+  "license": "ISC"
+}
