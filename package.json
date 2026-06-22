@@ -4,7 +4,7 @@
   "description": "Static site for uwin-floortech",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"No build step required for static site\" && exit 0"
+    "build": "mkdir dist && cp -r css images js index.html dist/ || true"
   },
   "author": "",
   "license": "ISC"

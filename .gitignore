@@ -3,3 +3,6 @@
 
 # Ignore temporary screenshots
 screenshot_*.png
+
+# Ignore build output
+dist/
