@@ -1,0 +1,1007 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout>
+  <!-- ============================================================
+       NAVIGATION
+       ============================================================ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="U Win Floortech Home">
+        <img src="images/uwin-logo.png" alt="U Win Floortech Logo" width="160" height="44" />
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li class="nav-item-dropdown">
+          <a href="#products" class="nav-link" data-section="products">
+            Products
+            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="nav-dropdown" role="menu">
+            <a href="/products/pp-interlocking-tiles" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              PP Interlocking Tiles
+            </a>
+            <a href="/products/epdm-tracks-surfaces" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              EPDM Tracks &amp; Surfaces
+            </a>
+            <a href="/products/acrylic-court-systems" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              Acrylic Court Systems
+            </a>
+          </div>
+        </li>
+        <li><a href="/industries" class="nav-link" data-section="who-we-build">Industries</a></li>
+        <li><a href="/why-u-win" class="nav-link">Why U Win</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="tel:+919311818112" class="nav-phone" aria-label="Call us">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 011 2.18 2 2 0 012.96 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"></path></svg>
+          +91 93118 18112
+        </a>
+        <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="nav-whatsapp-btn" id="navWhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="/products/pp-interlocking-tiles" class="mobile-nav-link">PP Interlocking Tiles</a>
+    <a href="/products/epdm-tracks-surfaces" class="mobile-nav-link">EPDM Tracks &amp; Surfaces</a>
+    <a href="/products/acrylic-court-systems" class="mobile-nav-link">Acrylic Court Systems</a>
+    <a href="/industries" class="mobile-nav-link">Industries</a>
+    <a href="/why-u-win" class="mobile-nav-link">Why U Win</a>
+    <a href="/about" class="mobile-nav-link">About</a>
+    <div class="mobile-menu-footer">
+      <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp Us Now
+      </a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       HERO SECTION — Full-bleed photorealistic background
+       ============================================================ -->
+  <section id="hero" aria-label="Hero">
+
+    <!-- Full-bleed background images (cycle via JS) -->
+    <div class="hero-bg active" id="heroBg0" style="background-image: url('images/hero-pp-tiles.png');"></div>
+    <div class="hero-bg" id="heroBg1" style="background-image: url('images/hero-acrylic.png');"></div>
+    <div class="hero-bg" id="heroBg2" style="background-image: url('images/hero-epdm.png');"></div>
+
+    <!-- Dark gradient overlay for text readability -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <!-- Floating particles -->
+    <div id="heroParticles" class="hero-particles" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero-inner">
+      <div class="hero-left">
+        <div class="hero-eyebrow">
+          <span class="hero-eyebrow-dot"></span>
+          <span>Turnkey Solutions &nbsp;&middot;&nbsp; ITF Certified &nbsp;&middot;&nbsp; Pan-India</span>
+        </div>
+
+        <h1 class="hero-title" id="heroTitle">Turnkey Sports Flooring Solutions for Schools, Developers &amp; Sports Clubs</h1>
+
+        <p class="hero-subtitle" id="heroSubtitle">From idea to complete execution. From bare land to a ready-to-play court.</p>
+
+        <div class="hero-ctas">
+          <a href="/contact" class="btn btn-primary btn-lg" id="heroQuoteBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            Get a Free Quote
+          </a>
+          <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg" id="heroWhatsAppBtn">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Us Now
+          </a>
+        </div>
+
+        <div class="hero-badges" aria-label="Trust signals">
+          <span class="trust-badge" style="animation-delay:600ms">
+            <span class="trust-badge-check" aria-hidden="true">
+              <svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            ITF Certified Materials
+          </span>
+          <span class="trust-badge" style="animation-delay:720ms">
+            <span class="trust-badge-check" aria-hidden="true">
+              <svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Competitive Direct Pricing
+          </span>
+          <span class="trust-badge" style="animation-delay:840ms">
+            <span class="trust-badge-check" aria-hidden="true">
+              <svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            End-to-End Project Execution
+          </span>
+          <span class="trust-badge" style="animation-delay:960ms">
+            <span class="trust-badge-check" aria-hidden="true">
+              <svg width="9" height="9" viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            Pan-India Projects
+          </span>
+        </div>
+      </div>
+
+      <!-- Guided-line product annotation — positioned absolutely within container -->
+      <div class="hero-annotation" id="heroProductChip" aria-live="polite">
+        <div class="annotation-track">
+          <span class="annotation-dot" aria-hidden="true">
+            <span class="annotation-dot-ring"></span>
+          </span>
+          <span class="annotation-line" aria-hidden="true"></span>
+        </div>
+        <div class="annotation-box">
+          <span class="annotation-eyebrow">Now Viewing</span>
+          <span class="annotation-name" id="heroChipLabel">PP Interlocking Modular Tiles</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Dot navigation — bottom centre -->
+    <div class="hero-dot-nav" aria-label="Select product surface">
+      <button class="hero-dot active" id="heroDot0" aria-label="PP Interlocking Tiles"></button>
+      <button class="hero-dot" id="heroDot1" aria-label="Acrylic Court System"></button>
+      <button class="hero-dot" id="heroDot2" aria-label="EPDM Athletic Track"></button>
+    </div>
+
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.3 — PRODUCT LINES OVERVIEW
+       ============================================================ -->
+  <section id="products" class="section section--surface">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="h2">From Bare Land to Ready-to-Play. Across India.</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">
+          Three ITF-grade surface systems sourced from certified producers. One team handles everything: site assessment, material supply, installation, and line marking. From idea to complete execution.
+        </p>
+      </div>
+
+      <!-- Product Accordion -->
+      <div class="product-accordion" role="list">
+
+        <!-- ── Panel 1: PP Tiles ── -->
+        <div class="pac-panel reveal reveal-delay-1" role="listitem">
+          <input type="checkbox" id="pac1" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="pac1" role="button" aria-expanded="true" aria-controls="pac1-body">
+            <span class="pac-icon pac-icon--green" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="15" height="15" rx="2" fill="#5BBE0F" opacity="0.15" stroke="#5BBE0F" stroke-width="1.4"/>
+                <rect x="22" y="3" width="15" height="15" rx="2" fill="#5BBE0F" opacity="0.15" stroke="#5BBE0F" stroke-width="1.4"/>
+                <rect x="3" y="22" width="15" height="15" rx="2" fill="#5BBE0F" opacity="0.15" stroke="#5BBE0F" stroke-width="1.4"/>
+                <rect x="22" y="22" width="15" height="15" rx="2" fill="#5BBE0F" opacity="0.15" stroke="#5BBE0F" stroke-width="1.4"/>
+                <rect x="18" y="8" width="4" height="4" rx="1" fill="#5BBE0F" opacity="0.7"/>
+                <rect x="18" y="28" width="4" height="4" rx="1" fill="#5BBE0F" opacity="0.7"/>
+                <rect x="8" y="18" width="4" height="4" rx="1" fill="#5BBE0F" opacity="0.7"/>
+                <rect x="28" y="18" width="4" height="4" rx="1" fill="#5BBE0F" opacity="0.7"/>
+                <circle cx="20" cy="20" r="2" fill="#5BBE0F"/>
+              </svg>
+            </span>
+            <span class="pac-title-wrap">
+              <span class="pac-eyebrow">Surface System 01</span>
+              <span class="pac-title">PP Interlocking Modular Tiles</span>
+            </span>
+            <span class="pac-chevron" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </label>
+          <div class="pac-body" id="pac1-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">UV-stabilised polypropylene copolymer tiles, 304.8 × 304.8 mm. Click-lock installation on any flat concrete or asphalt base. Thermal tolerance from −20°C to +60°C. Self-draining grid design suitable for outdoor basketball, volleyball, roller skating, and multi-sport courts.</p>
+              <div class="pac-tags">
+                <span class="pac-tag">Click-lock assembly</span>
+                <span class="pac-tag">Self-draining</span>
+                <span class="pac-tag">No adhesive needed</span>
+                <span class="pac-tag">UV-stabilised</span>
+              </div>
+              <a href="/products/pp-interlocking-tiles" class="pac-link">
+                View Product <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Panel 2: EPDM ── -->
+        <div class="pac-panel reveal reveal-delay-2" role="listitem">
+          <input type="checkbox" id="pac2" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="pac2" role="button" aria-expanded="false" aria-controls="pac2-body">
+            <span class="pac-icon pac-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <ellipse cx="20" cy="20" rx="17" ry="11" fill="#2077B4" opacity="0.12" stroke="#2077B4" stroke-width="1.5"/>
+                <ellipse cx="20" cy="20" rx="11" ry="6" fill="none" stroke="#2077B4" stroke-width="1" stroke-dasharray="2 1.5" opacity="0.5"/>
+                <ellipse cx="20" cy="20" rx="14" ry="8.8" fill="none" stroke="#2077B4" stroke-width="0.8" opacity="0.4"/>
+                <line x1="20" y1="9" x2="20" y2="31" stroke="#2077B4" stroke-width="1.2" opacity="0.6"/>
+                <circle cx="8" cy="20" r="1" fill="#2077B4" opacity="0.5"/>
+                <circle cx="32" cy="20" r="1" fill="#2077B4" opacity="0.5"/>
+                <circle cx="20" cy="32" r="1" fill="#2077B4" opacity="0.5"/>
+                <circle cx="20" cy="8" r="1.2" fill="#2077B4" opacity="0.8"/>
+                <circle cx="12" cy="13" r="0.8" fill="#2077B4" opacity="0.4"/>
+                <circle cx="28" cy="13" r="0.8" fill="#2077B4" opacity="0.4"/>
+                <circle cx="12" cy="27" r="0.8" fill="#2077B4" opacity="0.4"/>
+                <circle cx="28" cy="27" r="0.8" fill="#2077B4" opacity="0.4"/>
+              </svg>
+            </span>
+            <span class="pac-title-wrap">
+              <span class="pac-eyebrow">Surface System 02</span>
+              <span class="pac-title">EPDM Rubberised Tracks &amp; Surfaces</span>
+            </span>
+            <span class="pac-chevron" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </label>
+          <div class="pac-body" id="pac2-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">Virgin EPDM granules bonded with polyurethane MDI binder. Available in three system configurations: Full-Pour (8–13 mm), Sandwich, and Spray-Coat. Colour-retentive outdoors for 8–10 years under Indian UV conditions. Applied to athletic running tracks, school playgrounds, and recreational zones.</p>
+              <div class="pac-tags">
+                <span class="pac-tag">Full-pour / Sandwich / Spray</span>
+                <span class="pac-tag">Virgin EPDM, not recycled</span>
+                <span class="pac-tag">8–10 yr UV durability</span>
+                <span class="pac-tag">IAAF-compatible spec</span>
+              </div>
+              <a href="/products/epdm-tracks-surfaces" class="pac-link">
+                View Product <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Panel 3: Acrylic ── -->
+        <div class="pac-panel reveal reveal-delay-3" role="listitem">
+          <input type="checkbox" id="pac3" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="pac3" role="button" aria-expanded="false" aria-controls="pac3-body">
+            <span class="pac-icon pac-icon--green" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="6" width="32" height="28" rx="1.5" fill="#5BBE0F" opacity="0.12" stroke="#5BBE0F" stroke-width="1.5"/>
+                <line x1="4" y1="20" x2="36" y2="20" stroke="#5BBE0F" stroke-width="1.8"/>
+                <line x1="20" y1="6" x2="20" y2="34" stroke="#5BBE0F" stroke-width="1" opacity="0.6"/>
+                <line x1="8" y1="14" x2="32" y2="14" stroke="#5BBE0F" stroke-width="0.9" opacity="0.55"/>
+                <line x1="8" y1="26" x2="32" y2="26" stroke="#5BBE0F" stroke-width="0.9" opacity="0.55"/>
+                <line x1="8" y1="6" x2="8" y2="34" stroke="#5BBE0F" stroke-width="0.9" opacity="0.4"/>
+                <line x1="32" y1="6" x2="32" y2="34" stroke="#5BBE0F" stroke-width="0.9" opacity="0.4"/>
+                <circle cx="4" cy="20" r="1.5" fill="#5BBE0F" opacity="0.9"/>
+                <circle cx="36" cy="20" r="1.5" fill="#5BBE0F" opacity="0.9"/>
+              </svg>
+            </span>
+            <span class="pac-title-wrap">
+              <span class="pac-eyebrow">Surface System 03</span>
+              <span class="pac-title">Acrylic Court Coating Systems</span>
+            </span>
+            <span class="pac-chevron" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+            </span>
+          </label>
+          <div class="pac-body" id="pac3-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">Water-based polymer coating system in 5-layer (non-cushion) and 8-layer (premium cushion) configurations. ITF pace-classified for tennis. Applied over existing or new concrete and asphalt courts. Ready for play in 24–48 hours. Suitable for tennis, basketball, badminton, and multi-sport markings.</p>
+              <div class="pac-tags">
+                <span class="pac-tag">ITF pace-classified</span>
+                <span class="pac-tag">5-layer or 8-layer</span>
+                <span class="pac-tag">Over concrete or asphalt</span>
+                <span class="pac-tag">24–48 hr cure</span>
+              </div>
+              <a href="/products/acrylic-court-systems" class="pac-link">
+                View Product <span class="arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /product-accordion -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION — IDEAL APPLICATIONS
+       ============================================================ -->
+  <section id="applications" class="section section--white" aria-label="Ideal applications">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="h2">Built for Every Court, Track &amp; Play Zone</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="section-snapshot">From school playgrounds to residential society courts. U Win surfaces are specified for every outdoor and indoor application where durability and performance matter.</p>
+      </div>
+
+      <div class="applications-grid">
+
+        <!-- 1: Basketball -->
+        <div class="app-card reveal">
+          <img src="images/app-basketball-court.png" alt="Outdoor blue PP interlocking tile basketball court at Indian campus with white markings" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M4.9 4.9a14 14 0 0 1 14.2 0M4.9 19.1a14 14 0 0 0 14.2 0M2 12h20M12 2a14 14 0 0 1 0 20M12 2a14 14 0 0 0 0 20"/></svg>
+            </span>
+            Outdoor Basketball Courts
+          </div>
+        </div>
+
+        <!-- 2: Volleyball -->
+        <div class="app-card reveal reveal-delay-1">
+          <img src="images/app-volleyball-court.png" alt="Outdoor blue PP tile volleyball court with net in Indian residential society" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2v20M2 12h20"/></svg>
+            </span>
+            Outdoor Volleyball Courts
+          </div>
+        </div>
+
+        <!-- 3: Tennis & Badminton -->
+        <div class="app-card reveal reveal-delay-2">
+          <img src="images/app-tennis-badminton.png" alt="Outdoor acrylic tennis and badminton courts in green and red at Indian sports club" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="12" y1="3" x2="12" y2="21"/></svg>
+            </span>
+            Tennis &amp; Badminton Courts
+          </div>
+        </div>
+
+        <!-- 4: Roller Skating -->
+        <div class="app-card reveal reveal-delay-1">
+          <img src="images/app-roller-skating.png" alt="Outdoor roller skating rink with PP interlocking tiles and LED-lit safety barriers at Indian park" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="12" rx="10" ry="6"/></svg>
+            </span>
+            Roller Skating Rinks
+          </div>
+        </div>
+
+        <!-- 5: School Playground -->
+        <div class="app-card app-card--featured reveal reveal-delay-2">
+          <img src="images/app-school-playground.png" alt="Aerial view of vibrant EPDM coloured school playground and multi-sport zone with running track and basketball court" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </span>
+            School Playgrounds &amp; Multi-Sport Zones
+          </div>
+        </div>
+
+        <!-- 6: Residential Society -->
+        <div class="app-card reveal reveal-delay-3">
+          <img src="images/app-residential.png" alt="Premium residential society with blue PP tile multi-sport court and colourful EPDM children's play area surrounded by high-rises" loading="lazy" />
+          <div class="app-card-label">
+            <span class="app-card-icon" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="15" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </span>
+            Residential Society Recreation Areas
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.4 — WHO WE BUILD FOR (ICP)
+       ============================================================ -->
+  <section id="who-we-build" class="section" style="background:var(--color-white);">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="h2">We Build For Institutions That Cannot Afford Surface Failures</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">
+          U Win Floortech serves four primary B2B buyer types: school and university infrastructure administrators, residential developers and township builders, sports clubs and private academies, and government contractors executing CPWD and Khelo India projects. Every product is engineered for institutional-grade durability.
+        </p>
+      </div>
+
+      <div class="pac-accordion icp-responsive-grid" style="max-width:var(--max-width); margin:0 auto;">
+        
+        <!-- Schools -->
+        <div class="pac-panel reveal reveal-delay-1">
+          <input type="checkbox" id="icp1" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="icp1" role="button" aria-expanded="false" aria-controls="icp1-body">
+            <div class="pac-icon pac-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#0D5C93" stroke-width="1.8" stroke-linecap="round">
+                <rect x="4" y="12" width="24" height="18" rx="2"/>
+                <path d="M2 12L16 2l14 10"/>
+                <rect x="12" y="20" width="8" height="10"/>
+                <line x1="8" y1="17" x2="8" y2="17"/>
+                <line x1="24" y1="17" x2="24" y2="17"/>
+              </svg>
+            </div>
+            <div class="pac-title-wrap">
+              <h3 class="pac-title" style="font-size:17px;">Schools &amp; Universities</h3>
+            </div>
+            <svg class="pac-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+          <div class="pac-body" id="icp1-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">School trustees, principals, facility managers &amp; university works departments. ₹5L – ₹50L per project.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Developers -->
+        <div class="pac-panel reveal reveal-delay-2" style="margin-top:12px;">
+          <input type="checkbox" id="icp2" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="icp2" role="button" aria-expanded="false" aria-controls="icp2-body">
+            <div class="pac-icon pac-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#0D5C93" stroke-width="1.8" stroke-linecap="round">
+                <rect x="3" y="6" width="26" height="22" rx="1"/>
+                <line x1="3" y1="12" x2="29" y2="12"/>
+                <line x1="16" y1="6" x2="16" y2="28"/>
+                <line x1="8" y1="18" x2="12" y2="18"/>
+                <line x1="8" y1="22" x2="12" y2="22"/>
+                <line x1="20" y1="18" x2="24" y2="18"/>
+                <line x1="20" y1="22" x2="24" y2="22"/>
+              </svg>
+            </div>
+            <div class="pac-title-wrap">
+              <h3 class="pac-title" style="font-size:17px;">Residential Developers</h3>
+            </div>
+            <svg class="pac-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+          <div class="pac-body" id="icp2-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">Project managers, MEP heads, procurement officers at residential &amp; commercial developers. ₹10L – ₹1Cr+.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sports Clubs -->
+        <div class="pac-panel reveal reveal-delay-3" style="margin-top:12px;">
+          <input type="checkbox" id="icp3" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="icp3" role="button" aria-expanded="false" aria-controls="icp3-body">
+            <div class="pac-icon pac-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#0D5C93" stroke-width="1.8" stroke-linecap="round">
+                <path d="M16 3l3.09 6.26 6.91 1-5 4.87 1.18 6.87L16 18.77l-6.18 3.23L11 15.13 6 10.26l6.91-1L16 3z"/>
+              </svg>
+            </div>
+            <div class="pac-title-wrap">
+              <h3 class="pac-title" style="font-size:17px;">Sports Clubs &amp; Academies</h3>
+            </div>
+            <svg class="pac-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+          <div class="pac-body" id="icp3-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">Tennis club owners, basketball academies, private sports directors, fitness park developers. ₹3L – ₹30L per court.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Government -->
+        <div class="pac-panel reveal reveal-delay-4" style="margin-top:12px;">
+          <input type="checkbox" id="icp4" class="pac-toggle" aria-hidden="true" />
+          <label class="pac-header" for="icp4" role="button" aria-expanded="false" aria-controls="icp4-body">
+            <div class="pac-icon pac-icon--blue" aria-hidden="true">
+              <svg viewBox="0 0 32 32" fill="none" stroke="#0D5C93" stroke-width="1.8" stroke-linecap="round">
+                <rect x="2" y="18" width="28" height="12" rx="1"/>
+                <path d="M6 18V14M10 18V10M16 18V6M22 18V10M26 18V14"/>
+                <path d="M16 6L4 14h24L16 6z"/>
+                <circle cx="16" cy="6" r="2"/>
+              </svg>
+            </div>
+            <div class="pac-title-wrap">
+              <h3 class="pac-title" style="font-size:17px;">Government &amp; CPWD Contractors</h3>
+            </div>
+            <svg class="pac-chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </label>
+          <div class="pac-body" id="icp4-body">
+            <div class="pac-body-inner">
+              <p class="pac-specs">Civil contractors &amp; PMC firms executing government tenders for public parks, stadiums &amp; Khelo India projects. ₹25L – ₹10Cr.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="icp-cta-wrap reveal" style="margin-top:32px; text-align:center;">
+        <a href="/industries" class="icp-cta-link" id="industriesLink">
+          Which Surface Is Right for Your Project? <span>→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.5 — TURNKEY ADVANTAGE STATS
+       ============================================================ -->
+  <section id="stats" aria-label="Turnkey supply advantages">
+    <div class="stats-inner">
+      <div class="stats-header reveal">
+        <h2 class="h2 text-white">Why a Single Turnkey Partner Changes Your Project Economics</h2>
+        <p class="snapshot" style="color:rgba(255,255,255,0.72); max-width:680px; margin:20px auto 0;">
+          When buyers piece together sports flooring through separate traders, contractors, and installers, they pay more, lose certification traceability, and have no single point of accountability. U Win handles everything from idea to finished court: sourcing certified materials, managing installation with trained crews, and delivering a ready-to-play surface with full material traceability.
+        </p>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <div class="stat-number reveal" data-target="35" data-prefix="" data-suffix="%" id="statSaving">
+            <span class="prefix"></span>35<span class="suffix">%</span>
+          </div>
+          <div class="stat-label reveal reveal-delay-1">Cost saved vs. trader / reseller pricing</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number reveal" data-target="3" data-prefix="" data-suffix="" id="statLines">
+            <span class="prefix"></span>3<span class="suffix"></span>
+          </div>
+          <div class="stat-label reveal reveal-delay-1">Product lines: PP Tiles, EPDM, Acrylic</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number reveal" data-target="4" data-prefix="" data-suffix="hrs" id="statResponse">
+            <span class="prefix"></span>4<span class="suffix">hrs</span>
+          </div>
+          <div class="stat-label reveal reveal-delay-1">Response time on all project inquiries</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.6 — PRODUCT APPLICATION GALLERY
+       ============================================================ -->
+  <section id="gallery" class="section section--white" aria-label="Product surfaces gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="h2">Three Products. Every Surface Covered.</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="section-snapshot">See each product installed on a real project. Click to inspect the surface material up close.</p>
+      </div>
+
+      <div class="gallery-grid gallery-grid--3col">
+
+        <!-- Card 1: PP Interlocking Modular Sports Tiles -->
+        <div class="gallery-item reveal"
+             data-lightbox="gallery-pp-tile-closeup.png"
+             data-title="PP Interlocking Tile: Surface Detail"
+             data-desc="UV-stabilised polypropylene click-lock tile. Ribbed anti-slip surface with self-draining grid under every tile. 3 mm deflection under foot for player comfort. No adhesive or base anchors needed. Fully removable and recyclable.">
+          <img src="images/app-pp-tiles.png" alt="Blue PP interlocking modular sports tile multi-sport court at a school campus, showing basketball and badminton markings" width="800" height="600" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-view-cta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Inspect the surface
+            </span>
+            <p class="gallery-product">PP Interlocking Modular Tiles</p>
+            <p class="gallery-label">Multi-Sport Court Installation</p>
+          </div>
+        </div>
+
+        <!-- Card 2: EPDM Rubberised Tracks & Play Area Surfaces -->
+        <div class="gallery-item reveal reveal-delay-1"
+             data-lightbox="gallery-epdm-track-closeup.png"
+             data-title="EPDM Rubber Surface: Material Detail"
+             data-desc="Virgin EPDM granules bound in a polyurethane matrix. Seamless, jointless pour-in-place finish applied over asphalt or concrete. Used for athletic running tracks and children's play area safety surfaces. IAAF-specification thickness available.">
+          <img src="images/hero-epdm.png" alt="Orange EPDM rubberised athletic running track at Indian university stadium showing lane markings" width="800" height="600" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-view-cta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Inspect the surface
+            </span>
+            <p class="gallery-product">EPDM Rubberised Tracks &amp; Play Areas</p>
+            <p class="gallery-label">Athletic Track Installation</p>
+          </div>
+        </div>
+
+        <!-- Card 3: Acrylic Court Coating Systems -->
+        <div class="gallery-item reveal reveal-delay-2"
+             data-lightbox="gallery-acrylic-closeup.png?v=2"
+             data-title="Acrylic Court Coating: Surface Detail"
+             data-desc="Multi-layer acrylic system applied over a prepared concrete or asphalt base: base coat, cushion coat, silica texture coat and white line marking. ITF-certified surface friction calibrated for consistent ball speed and player safety.">
+          <img src="images/hero-acrylic.png" alt="Red acrylic ITF-certified tennis court with white markings and net posts at an Indian sports club" width="800" height="600" loading="lazy" />
+          <div class="gallery-overlay">
+            <span class="gallery-view-cta">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+              Inspect the surface
+            </span>
+            <p class="gallery-product">Acrylic Court Coating Systems</p>
+            <p class="gallery-label">ITF Tennis Court Installation</p>
+          </div>
+        </div>
+
+      </div>
+
+      <p class="gallery-hint reveal">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4m0 4h.01"/></svg>
+        Click any card to see the surface material close up
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       LIGHTBOX MODAL
+       ============================================================ -->
+  <div id="galleryLightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Product image viewer" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+      <div class="lightbox-caption">
+        <h3 class="lightbox-title" id="lightboxTitle"></h3>
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SECTION 1.7 — CERTIFICATIONS STRIP
+       ============================================================ -->
+  <section id="certifications" class="section" style="background:var(--color-white);">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:40px;">
+        <h2 class="h2">Products Built to International Specification</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+      </div>
+    </div>
+
+    <div class="cert-track-outer">
+      <div class="cert-track" id="certTrack">
+
+        <!-- ITF — Confirmed -->
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="12" fill="#0D5C93" opacity="0.1" stroke="#0D5C93" stroke-width="1.5"/>
+              <text x="16" y="20" text-anchor="middle" fill="#0D5C93" font-size="9" font-weight="700" font-family="Outfit,sans-serif">ITF</text>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">ITF: International Tennis Federation</span>
+            <span class="cert-scope">Acrylic Court Coating Systems</span>
+          </div>
+        </div>
+
+        <!-- IAAF — Pending -->
+        <div class="cert-badge cert-badge--pending">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="12" fill="#6B7280" opacity="0.1" stroke="#6B7280" stroke-width="1.5"/>
+              <path d="M10 16c0-3.3 2.7-6 6-6s6 2.7 6 6-2.7 6-6 6" stroke="#6B7280" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">IAAF / World Athletics</span>
+            <span class="cert-scope">EPDM Athletic Tracks</span>
+            <span class="cert-pending-tag">Confirmation Pending</span>
+          </div>
+        </div>
+
+        <!-- ISO — Pending -->
+        <div class="cert-badge cert-badge--pending">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <rect x="4" y="4" width="24" height="24" rx="3" fill="#6B7280" opacity="0.1" stroke="#6B7280" stroke-width="1.5"/>
+              <text x="16" y="20" text-anchor="middle" fill="#6B7280" font-size="7" font-weight="700" font-family="Outfit,sans-serif">ISO</text>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">ISO 9001:2015</span>
+            <span class="cert-scope">Quality Management System</span>
+            <span class="cert-pending-tag">Confirmation Pending</span>
+          </div>
+        </div>
+
+        <!-- BIS — Pending -->
+        <div class="cert-badge cert-badge--pending">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <path d="M16 4l10 6v12l-10 6L6 22V10l10-6z" fill="#6B7280" opacity="0.1" stroke="#6B7280" stroke-width="1.5"/>
+              <text x="16" y="20" text-anchor="middle" fill="#6B7280" font-size="7" font-weight="700" font-family="Outfit,sans-serif">BIS</text>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">BIS Standards</span>
+            <span class="cert-scope">Government Tender Compliance</span>
+            <span class="cert-pending-tag">Confirmation Pending</span>
+          </div>
+        </div>
+
+        <!-- Direct Supply -->
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <path d="M4 28V16l6-6 6 6V8h6v20" stroke="#4EB100" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="12" y="20" width="8" height="8" fill="#4EB100" opacity="0.2" stroke="#4EB100" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name" style="color:var(--color-accent-dark)">Direct Supply</span>
+            <span class="cert-scope">Verified Supplier-to-Site Supply Chain</span>
+          </div>
+        </div>
+
+        <!-- Turnkey Installation -->
+        <div class="cert-badge">
+          <div class="cert-icon">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="10" fill="#0D5C93" opacity="0.08" stroke="#0D5C93" stroke-width="1.5"/>
+              <path d="M10 16l4 4 8-8" stroke="#0D5C93" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="cert-info">
+            <span class="cert-name">Turnkey Installation</span>
+            <span class="cert-scope">Trained Installation Crew, Pan-India</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.8 — WHATSAPP CTA BANNER
+       ============================================================ -->
+  <section id="whatsapp-cta" aria-label="WhatsApp contact CTA">
+    <div class="whatsapp-cta-inner">
+      <div class="wa-icon-wrap" aria-hidden="true">
+        <div class="wa-pulse-ring"></div>
+        <div class="wa-pulse-ring"></div>
+        <div class="wa-pulse-ring"></div>
+        <div class="wa-icon">
+          <svg width="38" height="38" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </div>
+      </div>
+      <div class="wa-content">
+        <h2 class="wa-headline">Ready to Spec Your Project? Talk to Our Team.</h2>
+        <p class="wa-subtext">Send us your project dimensions, sport type, and location. We respond within 4 working hours.</p>
+      </div>
+      <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="wa-btn" id="waCTABtn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Start a WhatsApp Conversation
+      </a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.9 — FAQ
+       ============================================================ -->
+  <section id="faq" class="section section--surface" aria-label="Frequently asked questions">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2 class="h2">Common Questions from School and Developer Procurement Teams</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Specification-precise answers to the most common institutional procurement questions, the same queries being asked of AI engines like ChatGPT and Gemini.</p>
+      </div>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item reveal">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" id="faq-q1">
+            <span class="faq-q-text">What sub-base is required for PP interlocking sports tiles?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </div>
+          <div class="faq-answer" role="region" aria-labelledby="faq-q1">
+            <div class="faq-answer-inner">
+              PP interlocking modular tiles require a level, flat concrete slab (minimum M20 grade, minimum 100mm thickness) or compacted asphalt base. The sub-base must slope at 1% to allow self-drainage through the tile grid. Soft, uneven, or grass sub-bases are not suitable. These cause premature tile displacement and voiding of material specifications.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-1">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" id="faq-q2">
+            <span class="faq-q-text">What is the difference between a 5-layer and 8-layer acrylic tennis court?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </div>
+          <div class="faq-answer" role="region" aria-labelledby="faq-q2">
+            <div class="faq-answer-inner">
+              A 5-layer non-cushion acrylic system includes concrete primer, acrylic resurfacer, two colour wear coats, and professional line marking, suited for school and recreational courts where budget efficiency matters more than player biomechanics. An 8-layer premium cushion system adds three milled SBR rubber cushion coats between the resurfacer and colour coats, providing tournament-grade shock absorption, joint stress reduction, and ITF pace classification compliance for club and competitive courts.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-2">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" id="faq-q3">
+            <span class="faq-q-text">Can acrylic court coating be applied over an existing concrete surface?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </div>
+          <div class="faq-answer" role="region" aria-labelledby="faq-q3">
+            <div class="faq-answer-inner">
+              Yes. Existing concrete courts can be resurfaced using the U Win acrylic coating system, provided the concrete base is structurally sound, clean, and level. Cosmetic cracks and minor surface irregularities are filled with acrylic crack filler before the primer coat is applied. However, structural cracks (cracks that pass through the concrete depth) require base repair and patching prior to coating. Applying acrylic coating over structural cracks causes delamination within 12–18 months and voids the application warranty.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-3">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" id="faq-q4">
+            <span class="faq-q-text">What is EPDM rubber and why is it used for running tracks?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </div>
+          <div class="faq-answer" role="region" aria-labelledby="faq-q4">
+            <div class="faq-answer-inner">
+              EPDM (Ethylene Propylene Diene Monomer) is a virgin synthetic rubber compound, not recycled material. Unlike SBR (Styrene-Butadiene Rubber) made from recycled vehicle tyres, EPDM is UV-stable, colour-retentive for 8–10 years in Indian outdoor conditions, and maintains its elastic properties through extreme temperature cycles. It is poured in place with a polyurethane MDI binder and cures into a seamless, jointless surface, eliminating the joint cracking and seam deterioration issues common with recycled rubber tiles.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item reveal reveal-delay-4">
+          <div class="faq-question" role="button" tabindex="0" aria-expanded="false" id="faq-q5">
+            <span class="faq-q-text">Does U Win Floortech supply material only, or do they install as well?</span>
+            <span class="faq-icon" aria-hidden="true">+</span>
+          </div>
+          <div class="faq-answer" role="region" aria-labelledby="faq-q5">
+            <div class="faq-answer-inner">
+              U Win Floortech offers complete turnkey project execution as well as material-only supply. Turnkey projects are handled end-to-end by our trained installation crew, from site assessment and sub-base preparation to surface installation and line marking. For material-only supply, we provide full technical data sheets (TDS), a recommended layer schedule, and product-level application guidance to qualified installation contractors. Both options include ITF-certified material with full traceability.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 1.10 — FOOTER
+       ============================================================ -->
+  <footer id="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-grid">
+
+        <!-- Col 1 — Brand -->
+        <div>
+          <img src="images/uwin-logo.png" alt="U Win Floortech" class="footer-logo" width="160" height="48" loading="lazy" />
+          <div class="footer-rule" aria-hidden="true"></div>
+          <p class="footer-tagline">Turnkey Sports Flooring Solutions. ITF-certified surfaces supplied and installed across India, with no middlemen and competitive direct pricing.</p>
+          <div style="display:flex; gap:12px; margin-top:16px;">
+            <!-- Social placeholders -->
+            <a href="#" aria-label="LinkedIn" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.4);transition:all 0.2s;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.4);transition:all 0.2s;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" fill="none" stroke="currentColor" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube" style="width:36px;height:36px;border-radius:8px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,0.4);transition:all 0.2s;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#1E293B"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 — Products -->
+        <div>
+          <h3 class="footer-col-title">Products</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/products/pp-interlocking-tiles" class="footer-link">PP Interlocking Modular Tiles</a></li>
+            <li><a href="/products/epdm-tracks-surfaces" class="footer-link">EPDM Rubberised Tracks</a></li>
+            <li><a href="/products/acrylic-court-systems" class="footer-link">Acrylic Court Coating Systems</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 — Company -->
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/about" class="footer-link">About U Win Floortech</a></li>
+            <li><a href="/industries" class="footer-link">Industries We Serve</a></li>
+            <li><a href="/why-u-win" class="footer-link">Why U Win</a></li>
+            <li><a href="/contact" class="footer-link">Contact &amp; Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 — Contact -->
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 011 2.18 2 2 0 012.96 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <span class="footer-contact-text"><a href="tel:+919311818112">+91 93118 18112</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span class="footer-contact-text"><a href="mailto:info@uwinfloortech.com">info@uwinfloortech.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span class="footer-contact-text">NP113, NEAR GOPAL MANDIR, PITAMPURA, NEW DELHI - 110034</span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            </div>
+            <span class="footer-contact-text">Mon–Sat &nbsp;09:00 AM – 06:00 PM IST</span>
+          </div>
+          <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="footer-wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 U Win Floortech. All rights reserved. | Made in India.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <span class="footer-credit-text">Designed &amp; Managed by <a href="https://squarerootseo.com/" target="_blank" rel="noopener noreferrer" class="footer-seo-link">Square Root SEO</a></span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       WHATSAPP FLOATING BUTTON (Mobile)
+       ============================================================ -->
+  <div class="whatsapp-float" aria-label="WhatsApp Us">
+    <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="whatsapp-float-btn" id="floatWhatsApp" title="WhatsApp Us">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+
+  <!-- ============================================================
+       MOBILE STICKY BOTTOM CTA BAR
+       Visible only on mobile (≤680px) — 4 icon+label actions
+       ============================================================ -->
+  <div class="mobile-sticky-bar" id="mobileStickyBar" role="navigation" aria-label="Quick actions">
+
+    <!-- Quote -->
+    <a href="/contact" class="msb-item" id="msbQuote">
+      <span class="msb-icon msb-icon--blue">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+        </svg>
+      </span>
+      <span class="msb-label">Quote</span>
+    </a>
+
+    <!-- Call Now -->
+    <a href="tel:+919311818112" class="msb-item" id="msbCall">
+      <span class="msb-icon msb-icon--green">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.12 1.18 2 2 0 012.1 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.07 7.91a16 16 0 006.02 6.02l1.28-1.28a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+        </svg>
+      </span>
+      <span class="msb-label">Call Now</span>
+    </a>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="msb-item" id="msbWhatsapp">
+      <span class="msb-icon msb-icon--wa">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </span>
+      <span class="msb-label">WhatsApp</span>
+    </a>
+
+    <!-- Brochure -->
+    <a href="#" class="msb-item" id="msbBrochure">
+      <span class="msb-icon msb-icon--orange">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <polyline points="10 9 9 9 8 9"/>
+        </svg>
+      </span>
+      <span class="msb-label">Brochure</span>
+    </a>
+
+  </div>
+</Layout>
+
+<script>
+  import '../js/app.js';
+</script>

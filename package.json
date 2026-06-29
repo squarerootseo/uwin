@@ -1,10 +1,17 @@
 {
-  "name": "uwin-floortech-static",
+  "name": "uwin-floortech-astro",
   "version": "1.0.0",
-  "description": "Static site for uwin-floortech",
-  "main": "index.js",
+  "type": "module",
+  "description": "Astro site for uwin-floortech",
   "scripts": {
-    "build": "mkdir dist && cp -r css images js index.html dist/ || true"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.0.3"
   },
   "author": "",
   "license": "ISC"
