@@ -2504,6 +2504,15 @@ h1, h2, h3, h4 {
   line-height: 1.55;
 }
 
+.footer-contact-text a {
+  color: inherit;
+  transition: color var(--transition-fast);
+}
+
+.footer-contact-text a:hover {
+  color: var(--color-accent-light);
+}
+
 .footer-wa-btn {
   display: inline-flex;
   align-items: center;
