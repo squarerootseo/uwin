@@ -39,6 +39,52 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ── Dropdown: position:fixed to bypass overflow:hidden on parents ── */
+  const dropdownTriggers = document.querySelectorAll('.nav-item-dropdown');
+  dropdownTriggers.forEach(trigger => {
+    const dropdown = trigger.querySelector('.nav-dropdown');
+    if (!dropdown) return;
+
+    // Move dropdown to <body> so it's never clipped by any ancestor
+    document.body.appendChild(dropdown);
+    dropdown.style.position  = 'fixed';
+    dropdown.style.zIndex    = '9999';
+
+    let hideTimer;
+
+    const positionDropdown = () => {
+      const rect = trigger.getBoundingClientRect();
+      const ddW  = dropdown.offsetWidth || 280;
+      let left   = rect.left + rect.width / 2 - ddW / 2;
+      // keep within viewport
+      if (left < 8) left = 8;
+      if (left + ddW > window.innerWidth - 8) left = window.innerWidth - ddW - 8;
+      dropdown.style.top  = (rect.bottom + 8) + 'px';
+      dropdown.style.left = left + 'px';
+    };
+
+    const showDropdown = () => {
+      clearTimeout(hideTimer);
+      positionDropdown();
+      dropdown.style.opacity        = '1';
+      dropdown.style.pointerEvents  = 'all';
+      dropdown.style.transform      = 'translateY(0)';
+    };
+
+    const hideDropdown = () => {
+      hideTimer = setTimeout(() => {
+        dropdown.style.opacity       = '0';
+        dropdown.style.pointerEvents = 'none';
+        dropdown.style.transform     = 'translateY(-8px)';
+      }, 120);
+    };
+
+    trigger.addEventListener('mouseenter', showDropdown);
+    trigger.addEventListener('mouseleave', hideDropdown);
+    dropdown.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+    dropdown.addEventListener('mouseleave', hideDropdown);
+  });
+
 
   /* ============================================================
      2. HERO — Typewriter Effect
@@ -239,10 +285,16 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.08, rootMargin: '0px 0px -20px 0px' });
 
   document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .stamp-in').forEach(el => {
-    revealObserver.observe(el);
+    // If already in viewport at load time, reveal immediately (no delay)
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+      el.classList.add('visible');
+    } else {
+      revealObserver.observe(el);
+    }
   });
 
 

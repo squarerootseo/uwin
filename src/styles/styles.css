@@ -268,6 +268,7 @@ h1, h2, h3, h4 {
   transition: background var(--transition-mid), box-shadow var(--transition-mid), backdrop-filter var(--transition-mid);
   border-bottom: 1px solid rgba(32, 119, 180, 0.1);
   box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  overflow: visible;
 }
 
 #navbar.scrolled {
@@ -368,19 +369,20 @@ h1, h2, h3, h4 {
 
 .nav-dropdown {
   position: absolute;
-  top: calc(100% + 12px);
+  top: calc(100% + 8px);
   left: 50%;
   transform: translateX(-50%) translateY(-8px);
   background: var(--color-white);
   border-radius: 14px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.18);
-  min-width: 220px;
+  min-width: 280px;
   opacity: 0;
   pointer-events: none;
   transition: opacity var(--transition-mid), transform var(--transition-mid);
   border: 1px solid rgba(13,92,147,0.08);
-  overflow: hidden;
+  overflow: visible;
   padding: 8px;
+  z-index: 1100;
 }
 
 .nav-item-dropdown:hover .nav-dropdown {
