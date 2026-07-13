@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "prebuild": "rm -rf node_modules/@rollup node_modules/.vite && npm install"
   },
   "dependencies": {
     "astro": "^7.0.3"
@@ -19,5 +20,9 @@
     "@astrojs/check": "^0.9.9",
     "estree-walker": "^2.0.2",
     "typescript": "^6.0.3"
+  },
+  "overrides": {
+    "estree-walker": "2.0.2",
+    "@rollup/pluginutils": "5.1.0"
   }
 }
