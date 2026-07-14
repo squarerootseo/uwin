@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "astro build",
+    "build": "rm -rf node_modules/@rollup/pluginutils/node_modules/estree-walker node_modules/.vite && astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "prebuild": "rm -rf node_modules/@rollup node_modules/.vite && npm install"
+    "astro": "astro"
   },
   "dependencies": {
     "astro": "^7.0.3"
