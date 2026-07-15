@@ -17,7 +17,6 @@
   "license": "ISC",
   "devDependencies": {
     "@astrojs/check": "^0.9.9",
-    "estree-walker": "^2.0.2",
     "typescript": "^6.0.3"
   },
   "overrides": {
