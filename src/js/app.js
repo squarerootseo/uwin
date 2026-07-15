@@ -92,25 +92,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const subtitleEl = document.getElementById('heroSubtitle');
   if (subtitleEl) {
     const text = 'From idea to complete execution. From bare land to a ready-to-play court. U Win Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks. No middlemen. No reseller markups.';
-    subtitleEl.textContent = ''; // clear static fallback
-    let i = 0;
-    const cursor = document.createElement('span');
-    cursor.className = 'typewriter-cursor';
-    subtitleEl.appendChild(cursor);
+    
+    // Disable animation on mobile
+    if (window.innerWidth <= 768) {
+      subtitleEl.textContent = text;
+    } else {
+      subtitleEl.textContent = ''; // clear static fallback
+      let i = 0;
+      const cursor = document.createElement('span');
+      cursor.className = 'typewriter-cursor';
+      subtitleEl.appendChild(cursor);
 
-    const speed = 22;
-    function type() {
-      if (i < text.length) {
-        cursor.insertAdjacentText('beforebegin', text.charAt(i));
-        i++;
-        setTimeout(type, speed);
-      } else {
-        // hide cursor after done
-        setTimeout(() => { cursor.style.animation = 'none'; cursor.style.opacity = '0'; }, 2500);
+      const speed = 22;
+      function type() {
+        if (i < text.length) {
+          cursor.insertAdjacentText('beforebegin', text.charAt(i));
+          i++;
+          setTimeout(type, speed);
+        } else {
+          // hide cursor after done
+          setTimeout(() => { cursor.style.animation = 'none'; cursor.style.opacity = '0'; }, 2500);
+        }
       }
+      // Delay start by 800ms so hero title animation plays first
+      setTimeout(type, 800);
     }
-    // Delay start by 800ms so hero title animation plays first
-    setTimeout(type, 800);
   }
 
 
@@ -119,16 +125,20 @@ document.addEventListener('DOMContentLoaded', () => {
      ============================================================ */
   const heroTitle = document.getElementById('heroTitle');
   if (heroTitle) {
-    const words = heroTitle.textContent.trim().split(/\s+/);
-    heroTitle.innerHTML = '';
-    words.forEach((word, idx) => {
-      const span = document.createElement('span');
-      span.className = 'word';
-      span.textContent = word;
-      span.style.animationDelay = `${idx * 60 + 200}ms`;
-      heroTitle.appendChild(span);
-      if (idx < words.length - 1) heroTitle.appendChild(document.createTextNode(' '));
-    });
+    if (window.innerWidth <= 768) {
+      // Do nothing, leave static text
+    } else {
+      const words = heroTitle.textContent.trim().split(/\s+/);
+      heroTitle.innerHTML = '';
+      words.forEach((word, idx) => {
+        const span = document.createElement('span');
+        span.className = 'word';
+        span.textContent = word;
+        span.style.animationDelay = `${idx * 60 + 200}ms`;
+        heroTitle.appendChild(span);
+        if (idx < words.length - 1) heroTitle.appendChild(document.createTextNode(' '));
+      });
+    }
   }
 
 
