@@ -3,6 +3,11 @@
 
 # Ignore temporary screenshots
 screenshot_*.png
+acrylic_screenshot.png
 
 # Ignore build output
 dist/
+.astro/
+
+# Ignore dependencies
+node_modules/
