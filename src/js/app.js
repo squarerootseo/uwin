@@ -1,5 +1,5 @@
 /* ============================================================
-   U WIN FLOORTECH — INTERACTION LAYER (app.js)
+   UWIN FLOORTECH — INTERACTION LAYER (app.js)
    "Precision in Motion" — Vanilla JS
    ============================================================ */
 
@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
      ============================================================ */
   const subtitleEl = document.getElementById('heroSubtitle');
   if (subtitleEl) {
-    const text = 'From idea to complete execution. From bare land to a ready-to-play court. U Win Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks. No middlemen. No reseller markups.';
+    const text = 'From idea to complete execution. From bare land to a ready-to-play court. UWIN Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks. No middlemen. No reseller markups.';
     
     // Disable animation on mobile
     if (window.innerWidth <= 768) {

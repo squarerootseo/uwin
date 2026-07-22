@@ -1,5 +1,5 @@
 /* ============================================================
-   U WIN FLOORTECH — DESIGN SYSTEM
+   UWIN FLOORTECH — DESIGN SYSTEM
    "Precision in Motion" — Homepage Stylesheet
    ============================================================ */
 
@@ -10,7 +10,7 @@
    1. DESIGN TOKENS
    ============================================================ */
 :root {
-  /* ── Brand Colours — matched to new U Win logo ── */
+  /* ── Brand Colours — matched to new UWIN logo ── */
   /* Logo Blue:  #2077B4  |  Logo Green: #5BBE0F     */
   --color-primary:       #2077B4;   /* exact logo blue                */
   --color-primary-dark:  #155D90;   /* logo blue darkened 15%         */
