@@ -1,8 +1,37 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "EPDM Rubberised Athletic Tracks & Surfaces",
+    "description": "Virgin EPDM granules bonded with polyurethane MDI binder, poured in place to create a seamless, jointless athletic surface. UV-stable for 8-10 years in Indian outdoor conditions.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is EPDM rubber and why is it used for running tracks?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "EPDM (Ethylene Propylene Diene Monomer) is a virgin synthetic rubber compound that is UV-stable, colour-retentive, and significantly more durable outdoors than recycled SBR rubber. It is poured in place and cures into a seamless, jointless surface, making it the standard material for IAAF-specification athletic running tracks."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="EPDM Rubberised Athletic Tracks | U WIN Floortech India"
+  description="U Win Floortech installs premium virgin EPDM rubber athletic tracks and play surfaces across India. Seamless, UV-stable, and IAAF-compatible."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +126,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 02</span>
       <h1 class="product-hero__title">EPDM Rubberised<br/>Tracks &amp; Surfaces</h1>
-      <p class="product-hero__sub">Virgin EPDM granules bonded with polyurethane MDI binder, poured in place to create a seamless, jointless athletic surface. UV-stable for 8–10 years in Indian outdoor conditions. The standard for school running tracks, playgrounds, and recreational zones.</p>
+      <p class="product-hero__sub">U Win Floortech supplies and installs virgin EPDM granules bonded with polyurethane MDI binder across India. Poured in place to create a seamless athletic surface. UV-stable for 8–10 years in Indian outdoor conditions. The standard for running tracks and playgrounds.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,9 +173,10 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">Virgin EPDM, Not Recycled. The Difference Shows After 3 Years.</h2>
+        <h2 class="h2">Why use virgin EPDM instead of recycled rubber for tracks?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p>EPDM (Ethylene Propylene Diene Monomer) is a virgin synthetic rubber compound manufactured specifically for sports surface applications. Unlike recycled SBR (Styrene-Butadiene Rubber) made from shredded vehicle tyres, virgin EPDM is UV-stable, colour-retentive for 8–10 years in Indian outdoor conditions, and maintains its elastic properties through extreme temperature cycles.</p>
+        <p class="snapshot">Unlike recycled SBR made from shredded tyres, virgin EPDM (Ethylene Propylene Diene Monomer) is a synthetic rubber manufactured specifically for sports surfaces. It is UV-stable, maintains its vibrant colour for 8–10 years in Indian outdoor conditions, and retains its elastic properties through extreme temperature cycles without bleeding carbon black.</p>
+        <p>The material is poured on-site in a liquid state, mixed with a polyurethane MDI binder, and spread over an asphalt or concrete sub-base.</p>
         <p style="margin-top:1rem;">The material is poured on-site in a liquid state, mixed with a polyurethane MDI binder, and spread over an asphalt or concrete sub-base. As it cures, it forms a seamless, jointless surface, eliminating the joint cracking and seam deterioration issues common with rubber tile products.</p>
         <p style="margin-top:1rem;">UWIN supplies three system configurations to match project budget and performance requirements: Full-Pour (8–13 mm), Sandwich System, and Spray-Coat. All three are IAAF-compatible and suitable for school athletic tracks, municipal playgrounds, and residential play zones.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
@@ -170,9 +200,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="System configurations">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Three System Configurations</h2>
+        <h2 class="h2">What are the different EPDM system configurations available?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p class="section-snapshot">Each configuration is engineered for a different performance and budget profile. Our team recommends the right system based on your sub-base condition and intended use.</p>
+        <p class="snapshot">U Win Floortech offers three engineered configurations: Full-Pour (8–13 mm) for maximum cushioning and IAAF tracks, Sandwich System (SBR base with EPDM top) for playgrounds, and Spray-Coat (2–4 mm) for cost-effective renovations. We recommend the right system based on sub-base conditions and budget.</p>
       </div>
       <div class="why-grid" style="margin-top:2rem;">
         <div class="why-card reveal">
@@ -218,9 +248,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Applications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Where EPDM Is Installed</h2>
+        <h2 class="h2">Where are EPDM rubber surfaces installed in India?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p class="section-snapshot">EPDM is the go-to surface for any outdoor area requiring cushioning, colour retention, and durability under heavy foot traffic and Indian UV exposure.</p>
+        <p class="snapshot">EPDM is installed extensively across India for athletic running tracks, school playgrounds, children's safety play areas, and residential society recreational zones. It is the premier choice for any outdoor area requiring superior shock absorption, vibrant colour retention, and heavy foot traffic durability under Indian UV exposure.</p>
       </div>
       <div class="applications-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1rem;">
         <div class="app-card reveal">
@@ -253,8 +283,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of our EPDM tracks?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Our systems utilize virgin EPDM granules bound with polyurethane MDI. They are poured in-place over concrete or asphalt, creating a seamless, porous finish that drains easily. Available in IAAF-compliant thicknesses, these surfaces offer an expected lifespan of 8–15 years depending on the chosen configuration.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -315,8 +346,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Why choose EPDM">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">EPDM vs. SBR Rubber: Why It Matters</h2>
+        <h2 class="h2">What is the difference between EPDM and SBR rubber?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">SBR rubber is recycled from shredded tyres, making it prone to fading, bleeding carbon, and losing elasticity quickly. In contrast, virgin EPDM is purpose-manufactured for sports surfaces, ensuring decade-long colour vibrancy, consistent shock absorption, and a seamless monolithic finish that won't crack or peel at the joints.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">
