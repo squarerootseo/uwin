@@ -1,8 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Badminton PVC Vinyl Sports Flooring",
+    "description": "Premium multi-layered synthetic vinyl flooring delivering optimal shock absorption and slip resistance for professional badminton and indoor sports facilities.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What thickness of PVC vinyl is recommended for badminton courts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For professional and high-traffic badminton courts, a 4.5 mm to 5.0 mm thickness is standard, providing the necessary shock absorption (via high-density foam backing) to protect players' joints during jumps and lunges. 7.0 mm is available for multi-sport arenas requiring maximum cushioning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is PVC vinyl sports flooring installed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PVC vinyl comes in rolls (typically 1.8m wide) and must be installed on a smooth, flat, dry concrete or wooden subfloor. For permanent installations, it is fully glued down. For temporary tournament setups, rolls can be secured using specialized double-sided sports tape."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="Badminton PVC Vinyl Sports Flooring | U WIN Floortech India"
+  description="Buy BWF-standard PVC vinyl badminton flooring from U Win Floortech. Premium multi-layered synthetic flooring installed across India."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +134,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 03</span>
       <h1 class="product-hero__title">Badminton PVC Vinyl<br/>Sports Flooring</h1>
-      <p class="product-hero__sub">Premium multi-layered synthetic vinyl flooring delivering optimal shock absorption and slip resistance for professional badminton and indoor sports facilities.</p>
+      <p class="product-hero__sub">U Win Floortech supplies and installs premium multi-layered synthetic vinyl flooring across India, delivering optimal shock absorption and slip resistance for professional badminton and indoor sports facilities.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,9 +181,10 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">Professional Grade Synthetic Flooring for Badminton</h2>
+        <h2 class="h2">Why is PVC vinyl the professional standard for indoor badminton?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p>Engineered for high-performance indoor sports, our PVC vinyl sports flooring offers exceptional shock absorption, energy return, and slip resistance. It's the industry standard for badminton courts.</p>
+        <p class="snapshot">PVC vinyl sports flooring is the global industry standard for indoor badminton because its multi-layered construction delivers critical biomechanical benefits. It combines a highly slip-resistant textured surface (sand or litchi pattern) for rapid directional changes with a high-density foam backing that provides exceptional shock absorption, protecting players' joints from impact injuries.</p>
+        <p>The multi-layered construction includes a wear-resistant surface, a fiberglass reinforcement layer for dimensional stability, and a high-density foam backing for player comfort and joint protection.</p>
         <p style="margin-top:1rem;">The multi-layered construction includes a wear-resistant surface, a fiberglass reinforcement layer for dimensional stability, and a high-density foam backing for player comfort and joint protection.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
           <span class="pac-tag">Optimal Shock Absorption</span>
@@ -167,8 +205,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of our PVC vinyl flooring?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Our PVC vinyl sports flooring is available in thicknesses of 4.5 mm, 5.0 mm, and 7.0 mm, supplied in standard 1.8m wide rolls. It features BWF-approved sand or litchi surface textures and must be installed—either glued down or taped—over a smooth, flat, dry concrete or wooden sub-base.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -213,8 +252,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Why choose PVC Vinyl">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Why Choose PVC Vinyl Flooring</h2>
+        <h2 class="h2">Why choose PVC vinyl over wooden flooring for indoor sports?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Buyers choose PVC vinyl over wooden flooring because it offers superior, uniform shock absorption via its high-density foam backing, significantly reducing player joint fatigue. Furthermore, PVC vinyl requires virtually no maintenance compared to wood (which needs sanding and polishing), provides engineered slip resistance, and installs much faster at a lower cost.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">

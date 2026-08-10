@@ -1,8 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Sand Based Artificial Grass",
+    "description": "All-weather synthetic turf with silica sand infill, delivering consistent playability, superior drainage and low maintenance for tennis, padel and multi-sport facilities.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why is silica sand infill necessary for artificial sports grass?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Silica sand infill is crucial because it keeps the synthetic polyethylene fibres standing upright, providing necessary foot traction and allowing for controlled sliding (vital for tennis and padel). It also adds weight to the turf, preventing it from shifting, and protects the backing from UV degradation."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does sand-based artificial grass drain water effectively?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, sand-based artificial turf features a perforated backing specifically designed for rapid water drainage (up to 60 L/min/m²). When installed over a properly graded concrete or asphalt sub-base, the surface drains quickly, allowing the court to be playable almost immediately after heavy rain."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="Sand Based Artificial Grass for Sports | U WIN Floortech India"
+  description="U Win Floortech supplies and installs premium sand-based artificial grass across India. Ideal for tennis, padel, and all-weather multi-sport facilities."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +134,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 06</span>
       <h1 class="product-hero__title">Sand Based<br/>Artificial Grass</h1>
-      <p class="product-hero__sub">All-weather synthetic turf with silica sand infill, delivering consistent playability, superior drainage and low maintenance for tennis, padel and multi-sport facilities across India.</p>
+      <p class="product-hero__sub">U Win Floortech installs premium all-weather synthetic turf with silica sand infill across India, delivering consistent playability, superior drainage, and low maintenance for tennis, padel, and multi-sport facilities.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,8 +181,9 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">All-Weather Artificial Turf for Multi-Sport Use</h2>
+        <h2 class="h2">Why is sand-based artificial grass ideal for multi-sport use?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Sand-based artificial grass is ideal for multi-sport use because the precise silica sand infill keeps the synthetic fibres upright and provides optimal foot traction for players. It allows for controlled sliding without carpet burn, making it highly preferred for tennis and padel, while its rapid drainage ensures year-round, all-weather playability.</p>
         <p>Our sand-based artificial grass provides a highly durable, low-maintenance alternative to natural grass, ensuring your courts are playable year-round regardless of weather conditions.</p>
         <p style="margin-top:1rem;">The precise silica sand infill keeps the synthetic fibres upright, provides optimal foot traction for players, and allows for controlled slide, making it exceptionally popular for tennis, padel and multi-purpose recreational areas.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
@@ -167,8 +205,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of sand-based artificial grass?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">The system uses UV-resistant Polyethylene (PE) or Polypropylene (PP) yarn with a pile height of 15 mm to 25 mm. It features a perforated double-layer backing for rapid drainage (60 L/min/m²) and requires washed, dried, and rounded silica sand infill. It offers an expected lifespan of 8–10 years under heavy use.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -213,8 +252,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Why choose Sand Based Artificial Grass">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Why Choose Sand Based Artificial Grass</h2>
+        <h2 class="h2">Why choose sand-based artificial grass over natural turf?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Facilities choose artificial grass over natural turf because it eliminates the need for watering, mowing, and fertilising, drastically reducing maintenance costs. Furthermore, its rapid drainage system prevents waterlogging, allowing courts to be played on almost immediately after heavy rain, thereby maximizing facility utilisation and revenue throughout the year.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">

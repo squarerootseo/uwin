@@ -1,8 +1,37 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "PP Interlocking Modular Sports Tiles",
+    "description": "UV-stabilised polypropylene copolymer tiles with click-lock installation and self-draining grid. Suitable for outdoor basketball, volleyball, roller skating, and multi-sport courts.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What sub-base is required for PP interlocking sports tiles?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PP interlocking modular tiles require a level, flat concrete slab (minimum M20 grade, minimum 100mm thickness) or compacted asphalt base. The sub-base must slope at 1% to allow self-drainage through the tile grid. Soft, uneven, or grass sub-bases are not suitable."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="PP Interlocking Modular Sports Tiles | U WIN Floortech India"
+  description="Buy PP interlocking modular sports tiles directly from U Win Floortech. Ideal for outdoor basketball, volleyball, and multi-sport courts across India."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +126,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 01</span>
       <h1 class="product-hero__title">PP Interlocking<br/>Modular Sports Tiles</h1>
-      <p class="product-hero__sub">UV-stabilised polypropylene tiles that click together in minutes, no adhesive, no tools, no contractor dependency. The fastest way to a certified multi-sport court in India.</p>
+      <p class="product-hero__sub">U Win Floortech supplies and installs premium UV-stabilised polypropylene tiles across India that click together in minutes. No adhesive, no tools, no contractor dependency. The fastest way to a certified multi-sport court.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,9 +173,10 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">A Multi-Sport Surface That Installs in Hours, Not Days</h2>
+        <h2 class="h2">What makes PP tiles the fastest multi-sport surface to install?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p>PP Interlocking Modular Tiles are manufactured from UV-stabilised polypropylene copolymer, a weather-resistant thermoplastic that maintains structural integrity across India's full temperature spectrum, from Himalayan winters to Rajasthan summers.</p>
+        <p class="snapshot">PP Interlocking Modular Tiles are manufactured from UV-stabilised polypropylene copolymer. Each tile clicks directly into the next without adhesive, mortar, or tools. A single installation crew can lay a full basketball court in under a day, making it the fastest modular sports flooring system available.</p>
+        <p>This weather-resistant thermoplastic maintains structural integrity across India's full temperature spectrum, from Himalayan winters to Rajasthan summers.</p>
         <p style="margin-top:1rem;">Each tile clicks directly into the next without adhesive, mortar, or tools. The self-draining grid underneath every tile allows rainwater to pass through freely, eliminating puddles and making the surface playable within minutes of heavy rain.</p>
         <p style="margin-top:1rem;">A single installation crew can lay a full basketball court in under a day. The same tiles can be removed, relocated, and reinstalled, making them ideal for schools, residential societies, and commercial developments where future reconfiguration is likely.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
@@ -170,9 +200,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Applications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Where PP Tiles Are Installed</h2>
+        <h2 class="h2">Where are PP Tiles installed across India?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p class="section-snapshot">Suitable for any flat concrete or asphalt base. Installed across India in schools, residential societies, government projects, and commercial facilities.</p>
+        <p class="snapshot">PP tiles are installed over flat concrete or asphalt bases for outdoor basketball courts, volleyball courts, roller skating rinks, and multi-sport play zones. They are heavily specified for school playgrounds, residential society recreation areas, and public parks throughout India due to their self-draining properties.</p>
       </div>
       <div class="applications-grid" style="grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 1rem;">
         <div class="app-card reveal">
@@ -205,8 +235,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of PP Interlocking Tiles?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Our PP tiles measure 304.8 × 304.8 mm with a standard 14 mm thickness. The UV-stabilised copolymer offers a thermal tolerance of −20°C to +60°C and features a self-draining grid underside, providing a 10–15 year lifespan under standard Indian outdoor conditions.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -267,8 +298,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Why choose PP tiles">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Why Buyers Choose PP Tiles Over Concrete Painting</h2>
+        <h2 class="h2">Why do buyers choose PP Tiles over concrete painting?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Buyers choose PP interlocking tiles over painted concrete because tiles never crack, peel, or blister. They install in one day without curing time, offer a self-draining surface that is playable immediately after rain, and act as a fully relocatable asset with lower lifetime maintenance costs.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">

@@ -1,5 +1,21 @@
 ---
 import '../styles/styles.css';
+
+export interface Props {
+  title?: string;
+  description?: string;
+  ogTitle?: string;
+  ogDescription?: string;
+  schema?: string;
+}
+
+const {
+  title = "UWIN Floortech: Turnkey Sports Flooring Solutions | ITF Certified | India",
+  description = "UWIN Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks with turnkey project execution. Serving schools, developers, sports clubs & government contractors across India.",
+  ogTitle = "UWIN Floortech: Turnkey Sports Flooring Solutions",
+  ogDescription = "Turnkey sports flooring solutions in India. ITF-certified acrylic courts, PP tiles, EPDM tracks. No middlemen. Competitive direct pricing.",
+  schema
+} = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -7,11 +23,11 @@ import '../styles/styles.css';
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UWIN Floortech: Turnkey Sports Flooring Solutions | ITF Certified | India</title>
-  <meta name="description" content="UWIN Floortech supplies and installs ITF-certified acrylic court coatings, UV-stabilised PP interlocking modular tiles, and EPDM rubberised athletic tracks with turnkey project execution. Serving schools, developers, sports clubs & government contractors across India." />
+  <title>{title}</title>
+  <meta name="description" content={description} />
   <meta name="keywords" content="sports flooring supplier India, PP interlocking tiles, EPDM running track, acrylic court coating, ITF certified tennis court, turnkey sports flooring" />
-  <meta property="og:title" content="UWIN Floortech: Turnkey Sports Flooring Solutions" />
-  <meta property="og:description" content="Turnkey sports flooring solutions in India. ITF-certified acrylic courts, PP tiles, EPDM tracks. No middlemen. Competitive direct pricing." />
+  <meta property="og:title" content={ogTitle} />
+  <meta property="og:description" content={ogDescription} />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://uwinfloortech.com" />
   <link rel="icon" type="image/png" href="/favicon.png" />
@@ -42,18 +58,19 @@ import '../styles/styles.css';
     "areaServed": { "@type": "Country", "name": "India" }
   }
   </script>
-  <script type="application/ld+json" is:inline>
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      { "@type": "Question", "name": "What sub-base is required for PP interlocking sports tiles?", "acceptedAnswer": { "@type": "Answer", "text": "PP interlocking modular tiles require a level, flat concrete slab (minimum M20 grade, minimum 100mm thickness) or compacted asphalt base. The sub-base must slope at 1% to allow self-drainage through the tile grid. Soft, uneven, or grass sub-bases are not suitable." } },
-      { "@type": "Question", "name": "What is the difference between a 5-layer and 8-layer acrylic tennis court?", "acceptedAnswer": { "@type": "Answer", "text": "A 5-layer non-cushion acrylic system includes primer, resurfacer, two colour wear coats, and line marking, suitable for school and recreational courts. An 8-layer premium cushion system adds three milled SBR rubber cushion coats for superior shock absorption, joint stress reduction, and ITF tournament-grade performance." } },
-      { "@type": "Question", "name": "Can acrylic court coating be applied over an existing concrete surface?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Existing concrete courts can be resurfaced using the UWIN acrylic coating system, provided the concrete base is structurally sound, clean, and level. Cosmetic cracks and minor surface irregularities are filled with acrylic crack filler before the primer coat. Structural cracks require base repair prior to coating." } },
-      { "@type": "Question", "name": "What is EPDM rubber and why is it used for running tracks?", "acceptedAnswer": { "@type": "Answer", "text": "EPDM (Ethylene Propylene Diene Monomer) is a virgin synthetic rubber compound UV-stable, colour-retentive, and significantly more durable outdoors than recycled SBR rubber. It is poured in place and cures into a seamless, jointless surface, making it the standard material for IAAF-specification athletic running tracks." } },
-      { "@type": "Question", "name": "Does UWIN Floortech supply material only, or do they install as well?", "acceptedAnswer": { "@type": "Answer", "text": "UWIN Floortech offers complete turnkey project execution as well as material-only supply. Turnkey projects are handled end-to-end by our trained installation crew, from site assessment to finished court. For material-only supply, we provide full technical data sheets, recommended layer schedules, and application guidance." } }
-    ]
-  }
+  {schema && <script type="application/ld+json" is:inline set:html={schema}></script>}
+
+  <!-- GSC Verification -->
+  <meta name="google-site-verification" content="lqqqFqIvI5VR6Xhh51LUPRfdLCRXsMy0Y_SNiDtgP6U" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-1CGWMQ69RC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-1CGWMQ69RC');
   </script>
 </head>
 <body>

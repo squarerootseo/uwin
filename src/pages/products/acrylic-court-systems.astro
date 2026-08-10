@@ -1,8 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Acrylic Court Coating Systems",
+    "description": "Multi-layer 100% acrylic sports surfacing systems providing high-performance, durable, and low-maintenance courts for tennis, basketball, and multi-sport facilities.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the difference between a 5-layer and 8-layer acrylic tennis court?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A 5-layer non-cushion acrylic system includes primer, resurfacer, two colour wear coats, and line marking, suitable for school and recreational courts. An 8-layer premium cushion system adds three milled SBR rubber cushion coats for superior shock absorption, joint stress reduction, and ITF tournament-grade performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can acrylic court coating be applied over an existing concrete surface?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Existing concrete courts can be resurfaced using the UWIN acrylic coating system, provided the concrete base is structurally sound, clean, and level. Cosmetic cracks and minor surface irregularities are filled with acrylic crack filler before the primer coat. Structural cracks require base repair prior to coating."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="ITF Certified Acrylic Court Coating Systems | U WIN Floortech India"
+  description="U Win Floortech applies ITF-certified multi-layer acrylic sports surfacing systems for professional tennis and basketball courts across India."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +134,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 02</span>
       <h1 class="product-hero__title">Acrylic Court<br/>Coating Systems</h1>
-      <p class="product-hero__sub">Multi-layer 100% acrylic sports surfacing systems providing high-performance, durable, and low-maintenance courts for tennis, basketball, and multi-sport facilities.</p>
+      <p class="product-hero__sub">U Win Floortech installs ITF-certified, multi-layer 100% acrylic sports surfacing systems across India. We provide high-performance, durable, and low-maintenance courts for professional tennis, basketball, and multi-sport facilities.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,9 +181,10 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">ITF Certified Acrylic Surfacing for Professional Play</h2>
+        <h2 class="h2">Why is ITF-certified acrylic surfacing preferred for professional play?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p>Our 100% acrylic sports court systems are designed to provide consistent pace of play, vibrant colors, and long-lasting durability against harsh UV rays and heavy usage.</p>
+        <p class="snapshot">ITF-certified 100% acrylic sports court systems are globally preferred because they provide a highly consistent pace of play, precise slip resistance, and true ball bounce characteristics. Available in both hard court (3 to 5 layers) and cushioned (up to 8 layers) configurations, they offer extreme durability against harsh Indian UV rays and heavy usage.</p>
+        <p>Acrylic surfacing is the standard for professional tennis courts worldwide.</p>
         <p style="margin-top:1rem;">Available in both hard court (3 to 5 layers) and cushioned (upto 8 layers) configurations, acrylic surfacing is the standard for professional tennis courts worldwide, providing excellent slip resistance and true ball bounce characteristics.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
           <span class="pac-tag">True Ball Bounce</span>
@@ -167,8 +205,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of our acrylic court systems?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Our systems utilize 100% pure acrylic resins and pigments, squeegee-applied in multiple layers over cured concrete or asphalt. They feature silica sand for tunable slip resistance and pace (ITF Category 1 to 5), ensuring high UV resistance and an expected lifespan of 5-8 years before resurfacing is required.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -213,8 +252,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Why choose Acrylic Systems">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Why Choose Acrylic Court Systems</h2>
+        <h2 class="h2">Why choose acrylic court systems over other surfaces?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Acrylic systems are chosen for their seamless, monolithic finish that delivers true, identical ball bounce across the entire court. They offer a highly customizable pace through specific sand grading, and feature 100% acrylic pigments that provide vibrant, fade-resistant aesthetics that completely transform a facility.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">

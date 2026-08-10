@@ -1,8 +1,45 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Badminton Wooden Flooring",
+    "description": "BWF-certified Teakwood and Canadian Maple wood sports flooring designed for international standard play and optimal player safety.",
+    "brand": { "@type": "Brand", "name": "U Win Floortech" },
+    "category": "Sports Flooring"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is shock absorption achieved in wooden sports flooring?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Shock absorption in wooden sports flooring is achieved through an engineered substructure. The solid wood surface sits on a framework of pine wood sleepers (battens), which are supported by 10mm EPDM rubber shock pads. This multi-tiered system delivers over 53% shock absorption, protecting players' joints."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What maintenance is required for wooden badminton courts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Daily maintenance requires dry mopping to remove dust. Annually, a screen-and-recoat process applies a fresh layer of anti-skid PU polish to maintain grip. Every 7-10 years, depending on usage, the floor may require full sanding, re-lining, and complete refinishing to restore its original appearance and performance."
+        }
+      }
+    ]
+  }
+]);
 ---
 
-<Layout>
+<Layout 
+  title="BWF Certified Badminton Wooden Flooring | U WIN Floortech India"
+  description="U Win Floortech supplies and installs premium Teakwood and Canadian Maple badminton wooden flooring across India. BWF-certified for international play."
+  schema={schema}
+>
   <!-- ============================================================
        NAVIGATION
        ============================================================ -->
@@ -97,7 +134,7 @@ import Layout from '../../layouts/Layout.astro';
       </nav>
       <span class="product-hero__eyebrow">Surface System 04</span>
       <h1 class="product-hero__title">Badminton<br/>Wooden Flooring</h1>
-      <p class="product-hero__sub">BWF-certified Teakwood and Canadian Maple wood sports flooring designed for international standard play and optimal player safety.</p>
+      <p class="product-hero__sub">U Win Floortech supplies and installs BWF-certified Teakwood and Canadian Maple wood sports flooring across India, designed for international standard play and optimal player safety.</p>
       <div class="product-hero__ctas">
         <a href="/contact" class="btn btn-primary btn-lg">Get a Quote</a>
         <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
@@ -144,9 +181,10 @@ import Layout from '../../layouts/Layout.astro';
     <div class="container product-overview">
       <div class="product-overview__text">
         <span class="section-eyebrow">What It Is</span>
-        <h2 class="h2">The Gold Standard for Professional Badminton</h2>
+        <h2 class="h2">Why is wooden flooring the gold standard for professional badminton?</h2>
         <span class="section-divider" aria-hidden="true"></span>
-        <p>Our wooden sports flooring systems are crafted from premium Teakwood or Canadian Maple, engineered specifically to provide the perfect balance of friction and slide.</p>
+        <p class="snapshot">Wooden sports flooring, specifically premium Teakwood or Canadian Maple, is the gold standard for professional badminton because it offers the perfect balance of slide and friction required for elite play. Its engineered multi-tiered substructure—utilizing pine wood sleepers and 10mm EPDM rubber shock pads—drastically reduces joint impact while delivering exceptional energy return.</p>
+        <p>Constructed with a multi-tiered substructure including sleepers and shock-absorbing EPDM rubber pads, this flooring system delivers exceptional energy return and drastically reduces the impact on players' joints during intense play.</p>
         <p style="margin-top:1rem;">Constructed with a multi-tiered substructure including sleepers and shock-absorbing EPDM rubber pads, this flooring system delivers exceptional energy return and drastically reduces the impact on players' joints during intense play.</p>
         <div class="product-overview__tags" style="margin-top:1.5rem;">
           <span class="pac-tag">BWF Compliant Performance</span>
@@ -167,8 +205,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--white" aria-label="Technical specifications">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Technical Specifications</h2>
+        <h2 class="h2">What are the technical specifications of our wooden badminton flooring?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Our systems feature a 21 mm solid Teakwood or Canadian Maple surface over pine wood sleepers and 10mm EPDM rubber shock pads. This creates a total system profile of 75–85 mm that achieves EN 14904 compliant shock absorption (&ge;53%), finished with three coats of anti-skid polyurethane (PU) polish.</p>
       </div>
       <div class="specs-table-wrap reveal">
         <table class="specs-table">
@@ -213,8 +252,9 @@ import Layout from '../../layouts/Layout.astro';
   <section class="section section--surface" aria-label="Why choose Wooden Flooring">
     <div class="container">
       <div class="section-header reveal">
-        <h2 class="h2">Why Choose Wooden Sports Flooring</h2>
+        <h2 class="h2">Why choose wooden sports flooring for indoor facilities?</h2>
         <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">Indoor facilities choose wooden sports flooring because it provides the traditional, highly respected performance feel demanded by professional tournaments. Beyond its timeless, premium aesthetics that elevate facility value, the integrated shock pad substructure significantly reduces impact on the knees and ankles, allowing for safer extended gameplay.</p>
       </div>
       <div class="why-grid">
         <div class="why-card reveal">
