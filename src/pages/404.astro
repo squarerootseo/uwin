@@ -1,0 +1,575 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout 
+  title="404 Page Not Found | UWIN Floortech"
+  description="The requested page could not be found on UWIN Floortech. Explore our sports flooring products or return home."
+>
+  <!-- Navigation Header -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="UWIN Floortech Home">
+        <img src="/images/uwin-logo.png" alt="UWIN Floortech Logo" width="160" height="44" />
+      </a>
+
+      <ul class="nav-links" role="list">
+        <li class="nav-item-dropdown">
+          <a href="#products" class="nav-link" data-section="products">
+            Products
+            <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </a>
+          <div class="nav-dropdown" role="menu">
+            <a href="/products/pp-interlocking-tiles" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              PP Interlocking Tiles
+            </a>
+            <a href="/products/epdm-tracks-surfaces" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              EPDM Tracks &amp; Surfaces
+            </a>
+            <a href="/products/acrylic-court-systems" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              Acrylic Court Systems
+            </a>
+            <a href="/products/badminton-pvc-vinyl-sports-flooring" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              Badminton PVC Vinyl Sports Flooring
+            </a>
+            <a href="/products/badminton-wooden-flooring" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              Badminton Wooden Flooring (Teakwood &amp; Canadian Maple Wood)
+            </a>
+            <a href="/products/sand-based-artificial-grass" class="dropdown-item" role="menuitem">
+              <span class="dropdown-dot"></span>
+              Sand Based Artificial Grass
+            </a>
+          </div>
+        </li>
+        <li><a href="/industries" class="nav-link">Industries</a></li>
+        <li><a href="/why-uwin" class="nav-link">Why UWIN</a></li>
+        <li><a href="/about" class="nav-link">About</a></li>
+        <li><a href="/contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="tel:+919311818112" class="nav-phone" aria-label="Call us">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 011 2.18 2 2 0 012.96 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"></path>
+          </svg>
+          +91 93118 18112
+        </a>
+        <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="nav-whatsapp-btn" id="navWhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          WhatsApp Us
+        </a>
+      </div>
+
+      <button class="nav-hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="/products/pp-interlocking-tiles" class="mobile-nav-link">PP Interlocking Tiles</a>
+    <a href="/products/epdm-tracks-surfaces" class="mobile-nav-link">EPDM Tracks &amp; Surfaces</a>
+    <a href="/products/acrylic-court-systems" class="mobile-nav-link">Acrylic Court Systems</a>
+    <a href="/products/badminton-pvc-vinyl-sports-flooring" class="mobile-nav-link">Badminton PVC Vinyl Sports Flooring</a>
+    <a href="/products/badminton-wooden-flooring" class="mobile-nav-link">Badminton Wooden Flooring (Teakwood &amp; Canadian Maple Wood)</a>
+    <a href="/products/sand-based-artificial-grass" class="mobile-nav-link">Sand Based Artificial Grass</a>
+    <a href="/industries" class="mobile-nav-link">Industries</a>
+    <a href="/why-uwin" class="mobile-nav-link">Why UWIN</a>
+    <a href="/about" class="mobile-nav-link">About</a>
+    <div class="mobile-menu-footer">
+      <a href="/contact" class="btn btn-primary btn-lg">Get a Free Quote</a>
+      <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="btn btn-whatsapp btn-lg">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        WhatsApp Us Now
+      </a>
+    </div>
+  </div>
+
+  <!-- 404 Hero Section -->
+  <section class="error-hero">
+    <div class="error-hero-bg"></div>
+    <div class="error-hero-grid-pattern"></div>
+    
+    <div class="container error-hero-inner">
+      <div class="error-badge">
+        <span class="error-dot"></span>
+        <span>ERROR 404 &nbsp;&middot;&nbsp; OUT OF BOUNDS</span>
+      </div>
+
+      <div class="error-number-wrap">
+        <span class="error-number">4</span>
+        <div class="error-court-icon" aria-hidden="true">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="5" y="5" width="90" height="90" rx="12" stroke="#5BBE0F" stroke-width="4" stroke-dasharray="6 4" fill="rgba(91,190,15,0.08)"/>
+            <line x1="5" y1="50" x2="95" y2="50" stroke="#5BBE0F" stroke-width="3"/>
+            <circle cx="50" cy="50" r="18" stroke="#5BBE0F" stroke-width="3" fill="none"/>
+            <circle cx="50" cy="50" r="4" fill="#5BBE0F"/>
+          </svg>
+        </div>
+        <span class="error-number">4</span>
+      </div>
+
+      <h1 class="error-title">Oops! Looks Like You've Stepped Out of Bounds</h1>
+      <p class="error-subtitle">
+        The page or sports surface solution you are looking for doesn't exist, has been moved, or is currently unavailable. Let's get you back in play.
+      </p>
+
+      <div class="error-ctas">
+        <a href="/" class="btn btn-primary btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+            <polyline points="9 22 9 12 15 12 15 22"/>
+          </svg>
+          Return to Home
+        </a>
+
+        <a href="/contact" class="btn btn-secondary-glow btn-lg">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/>
+          </svg>
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products & Quick Links Section -->
+  <section class="section section--surface">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="h2">Explore Our Sports Flooring Systems</h2>
+        <span class="section-divider" aria-hidden="true"></span>
+        <p class="snapshot">
+          Find the exact turnkey sports flooring solution for your school, club, residential township, or government infrastructure project.
+        </p>
+      </div>
+
+      <div class="error-products-grid">
+        <!-- 1. PP Interlocking -->
+        <a href="/products/pp-interlocking-tiles" class="error-product-card">
+          <div class="epc-icon epc-icon--green">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="4" y="4" width="14" height="14" rx="2" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+              <rect x="22" y="4" width="14" height="14" rx="2" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+              <rect x="4" y="22" width="14" height="14" rx="2" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+              <rect x="22" y="22" width="14" height="14" rx="2" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>PP Interlocking Modular Tiles</h3>
+            <p>UV-stabilised click-lock tiles for outdoor basketball, volleyball &amp; roller skating courts.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 2. EPDM -->
+        <a href="/products/epdm-tracks-surfaces" class="error-product-card">
+          <div class="epc-icon epc-icon--blue">
+            <svg viewBox="0 0 40 40" fill="none">
+              <ellipse cx="20" cy="20" rx="16" ry="10" fill="#2077B4" opacity="0.2" stroke="#2077B4" stroke-width="1.5"/>
+              <ellipse cx="20" cy="20" rx="10" ry="5" fill="none" stroke="#2077B4" stroke-width="1.2"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>EPDM Rubberised Tracks</h3>
+            <p>IAAF-compatible athletic running tracks and safety playground flooring systems.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 3. Acrylic -->
+        <a href="/products/acrylic-court-systems" class="error-product-card">
+          <div class="epc-icon epc-icon--green">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="5" y="8" width="30" height="24" rx="2" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+              <line x1="5" y1="20" x2="35" y2="20" stroke="#5BBE0F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>Acrylic Court Systems</h3>
+            <p>ITF pace-classified multi-layer acrylic court coatings for tennis, basketball &amp; badminton.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 4. PVC Vinyl -->
+        <a href="/products/badminton-pvc-vinyl-sports-flooring" class="error-product-card">
+          <div class="epc-icon epc-icon--blue">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="6" y="6" width="28" height="28" rx="3" fill="#2077B4" opacity="0.2" stroke="#2077B4" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>Badminton PVC Vinyl Flooring</h3>
+            <p>Indoor badminton court vinyl flooring with high shock absorption &amp; anti-slip surface.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 5. Wooden Flooring -->
+        <a href="/products/badminton-wooden-flooring" class="error-product-card">
+          <div class="epc-icon epc-icon--green">
+            <svg viewBox="0 0 40 40" fill="none">
+              <rect x="5" y="10" width="30" height="20" fill="#5BBE0F" opacity="0.2" stroke="#5BBE0F" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>Badminton Wooden Flooring</h3>
+            <p>Teakwood &amp; Canadian Maple wood systems for professional indoor badminton courts.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+
+        <!-- 6. Artificial Grass -->
+        <a href="/products/sand-based-artificial-grass" class="error-product-card">
+          <div class="epc-icon epc-icon--blue">
+            <svg viewBox="0 0 40 40" fill="none">
+              <path d="M10 28 Q 15 12 20 28 Q 25 12 30 28" fill="none" stroke="#2077B4" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="epc-content">
+            <h3>Sand Based Artificial Grass</h3>
+            <p>High-density synthetic turf for multi-sport pitches, football fields &amp; play zones.</p>
+            <span class="epc-link">View Surface System &rarr;</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer" role="contentinfo">
+    <div class="container footer-inner">
+      <div class="footer-grid">
+        <!-- Col 1, Brand -->
+        <div class="footer-brand">
+          <a href="/" class="footer-logo-link" aria-label="UWIN Floortech Home">
+            <img src="/images/uwin-logo.png" alt="UWIN Floortech Logo" width="160" height="44" class="footer-logo" />
+          </a>
+          <p class="footer-tagline">
+            Turnkey Sports Flooring Solutions — Pan-India material supply, site assessment, installation, and line marking. ITF-certified quality.
+          </p>
+          <div class="footer-trust-pills">
+            <span class="trust-pill">ITF Certified</span>
+            <span class="trust-pill">Pan-India Projects</span>
+            <span class="trust-pill">Direct Manufacturer Pricing</span>
+          </div>
+        </div>
+
+        <!-- Col 2, Products -->
+        <div>
+          <h3 class="footer-col-title">Products</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/products/pp-interlocking-tiles" class="footer-link">PP Interlocking Modular Tiles</a></li>
+            <li><a href="/products/epdm-tracks-surfaces" class="footer-link">EPDM Rubberised Tracks</a></li>
+            <li><a href="/products/acrylic-court-systems" class="footer-link">Acrylic Court Coating Systems</a></li>
+            <li><a href="/products/badminton-pvc-vinyl-sports-flooring" class="footer-link">Badminton PVC Vinyl Sports Flooring</a></li>
+            <li><a href="/products/badminton-wooden-flooring" class="footer-link">Badminton Wooden Flooring (Teakwood &amp; Canadian Maple Wood)</a></li>
+            <li><a href="/products/sand-based-artificial-grass" class="footer-link">Sand Based Artificial Grass</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3, Company -->
+        <div>
+          <h3 class="footer-col-title">Company</h3>
+          <ul class="footer-links" role="list">
+            <li><a href="/about" class="footer-link">About UWIN Floortech</a></li>
+            <li><a href="/industries" class="footer-link">Industries We Serve</a></li>
+            <li><a href="/why-uwin" class="footer-link">Why UWIN</a></li>
+            <li><a href="/contact" class="footer-link">Contact &amp; Get a Quote</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4, Contact -->
+        <div>
+          <h3 class="footer-col-title">Contact</h3>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 011 2.18 2 2 0 012.96 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
+            </div>
+            <span class="footer-contact-text"><a href="tel:+919311818112">+91 93118 18112</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <span class="footer-contact-text"><a href="mailto:info@uwinfloortech.com">info@uwinfloortech.com</a></span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <span class="footer-contact-text" style="line-height: 1.6;">
+              <strong>UWIN FLOORTECH</strong><br/>
+              GSTN: 07AAJFU4451C1ZA<br/>
+              NP 113, NEAR GOPAL MANDIR, PITAM PURA<br/>
+              New Delhi, West Delhi, Delhi - 110034
+            </span>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.5)" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12,6 12,12 16,14"/></svg>
+            </div>
+            <span class="footer-contact-text">Mon–Sat &nbsp;09:00 AM – 06:00 PM IST</span>
+          </div>
+          <a href="https://wa.me/919311818112" target="_blank" rel="noopener" class="footer-wa-btn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            WhatsApp Inquiry
+          </a>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p class="footer-copy">&#169; 2026 UWIN FLOORTECH. All rights reserved.</p>
+        <nav class="footer-legal" aria-label="Legal links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms-and-conditions">Terms &amp; Conditions</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <span class="footer-legal-divider" aria-hidden="true">|</span>
+          <span class="footer-credit-text">Designed &amp; Managed by <a href="https://squarerootseo.com/" target="_blank" rel="noopener noreferrer" class="footer-seo-link">Square Root SEO</a></span>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    import '../js/app.js';
+  </script>
+</Layout>
+
+<style>
+  /* 404 Hero Styling */
+  .error-hero {
+    position: relative;
+    padding: 140px 24px 100px;
+    background: var(--color-primary-deep);
+    color: var(--color-white);
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .error-hero-bg {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 30%, rgba(32, 119, 180, 0.35) 0%, rgba(13, 62, 99, 0.95) 70%);
+    z-index: 1;
+  }
+
+  .error-hero-grid-pattern {
+    position: absolute;
+    inset: 0;
+    background-image: 
+      linear-gradient(to right, rgba(255,255,255,0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 40px 40px;
+    z-index: 2;
+    mask-image: radial-gradient(circle at 50% 50%, black 40%, transparent 80%);
+  }
+
+  .error-hero-inner {
+    position: relative;
+    z-index: 3;
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .error-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 18px;
+    border-radius: 100px;
+    background: rgba(91, 190, 15, 0.12);
+    border: 1px solid rgba(91, 190, 15, 0.3);
+    color: var(--color-accent-light);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+  }
+
+  .error-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    box-shadow: 0 0 10px var(--color-accent);
+  }
+
+  .error-number-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    line-height: 1;
+    margin-bottom: 24px;
+  }
+
+  .error-number {
+    font-family: var(--font-heading);
+    font-size: clamp(6rem, 15vw, 10rem);
+    font-weight: 800;
+    background: linear-gradient(180deg, #FFFFFF 20%, rgba(255, 255, 255, 0.4) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+
+  .error-court-icon {
+    width: clamp(70px, 12vw, 110px);
+    height: clamp(70px, 12vw, 110px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: floatCourt 4s ease-in-out infinite alternate;
+  }
+
+  @keyframes floatCourt {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-10px) rotate(3deg); }
+  }
+
+  .error-title {
+    font-family: var(--font-heading);
+    font-size: clamp(1.8rem, 4vw, 2.75rem);
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: var(--color-white);
+  }
+
+  .error-subtitle {
+    font-size: clamp(1rem, 2vw, 1.15rem);
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.6;
+    margin-bottom: 36px;
+    max-width: 640px;
+  }
+
+  .error-ctas {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .btn-secondary-glow {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--color-white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: var(--transition-mid);
+  }
+
+  .btn-secondary-glow:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: var(--color-white);
+    transform: translateY(-2px);
+  }
+
+  /* Product Quick Cards Grid */
+  .error-products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+  }
+
+  .error-product-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    background: var(--color-white);
+    border-radius: var(--card-radius);
+    border: 1px solid var(--color-border);
+    box-shadow: var(--shadow-sm);
+    text-decoration: none;
+    color: var(--color-text);
+    transition: var(--transition-mid);
+  }
+
+  .error-product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: rgba(32, 119, 180, 0.3);
+  }
+
+  .epc-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .epc-icon--green {
+    background: rgba(91, 190, 15, 0.1);
+  }
+
+  .epc-icon--blue {
+    background: rgba(32, 119, 180, 0.1);
+  }
+
+  .epc-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--color-text);
+
+  }
+
+  .epc-content p {
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+
+  .epc-link {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-primary);
+    transition: var(--transition-fast);
+  }
+
+  .error-product-card:hover .epc-link {
+    color: var(--color-accent-dark);
+  }
+
+  @media (max-width: 640px) {
+    .error-hero {
+      padding: 110px 16px 70px;
+    }
+    
+    .error-ctas {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .error-ctas .btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+</style>
