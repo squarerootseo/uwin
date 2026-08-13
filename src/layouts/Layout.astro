@@ -16,6 +16,8 @@ const {
   ogDescription = "Turnkey sports flooring solutions in India. ITF-certified acrylic courts, PP tiles, EPDM tracks. No middlemen. Competitive direct pricing.",
   schema
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site || 'https://uwinfloortech.com');
 ---
 
 <!DOCTYPE html>
@@ -26,10 +28,12 @@ const {
   <title>{title}</title>
   <meta name="description" content={description} />
   <meta name="keywords" content="sports flooring supplier India, PP interlocking tiles, EPDM running track, acrylic court coating, ITF certified tennis court, turnkey sports flooring" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href={canonicalURL} />
   <meta property="og:title" content={ogTitle} />
   <meta property="og:description" content={ogDescription} />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://uwinfloortech.com" />
+  <meta property="og:url" content={canonicalURL} />
   <link rel="icon" type="image/png" href="/favicon.png" />
 
   <!-- Preconnect fonts -->
