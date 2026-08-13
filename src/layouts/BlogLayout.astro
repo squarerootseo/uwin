@@ -1,0 +1,94 @@
+---
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": frontmatter.meta_title || frontmatter.title,
+  "description": frontmatter.meta_description,
+  "author": {
+    "@type": "Organization",
+    "name": frontmatter.author || "U Win Floortech"
+  },
+  "datePublished": frontmatter.date
+});
+---
+
+<Layout 
+  title={frontmatter.meta_title || frontmatter.title} 
+  description={frontmatter.meta_description}
+  schema={schema}
+>
+  <main class="blog-container">
+    <article class="blog-article">
+      <header class="blog-header">
+        <h1 class="blog-title">{frontmatter.title}</h1>
+        <div class="blog-meta">
+          <span>By {frontmatter.author || "U Win Floortech"}</span>
+          <span class="meta-divider">•</span>
+          <span>{new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
+        </div>
+      </header>
+      <div class="prose">
+        <slot />
+      </div>
+    </article>
+  </main>
+</Layout>
+
+<style>
+  .blog-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 140px 24px 80px;
+  }
+  .blog-article {
+    max-width: 840px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: var(--card-radius);
+    padding: 64px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+  }
+  .blog-header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+  }
+  .blog-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .blog-meta {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .meta-divider {
+    color: var(--color-border);
+  }
+  
+  @media (max-width: 768px) {
+    .blog-article {
+      padding: 32px 24px;
+    }
+    .blog-container {
+      padding: 100px 16px 40px;
+    }
+    .blog-title {
+      font-size: 2rem;
+    }
+  }
+</style>
