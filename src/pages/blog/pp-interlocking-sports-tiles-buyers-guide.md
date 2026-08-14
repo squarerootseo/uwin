@@ -223,7 +223,16 @@ Heavy rain is not an issue. PP interlocking tiles feature an open-grid design th
 
 ---
 
-*UWIN Floortech is India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems. [Contact us today](/contact) to build your next championship court.*
+<div class="blog-footer-card">
+  <div class="card-logo">
+    <img src="/images/uwin-logo.png" alt="UWIN Floortech" />
+  </div>
+  <div class="card-content">
+    <h4>UWIN Floortech</h4>
+    <p>India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems.</p>
+    <a href="/contact" class="footer-cta-btn">Build Your Next Championship Court &rarr;</a>
+  </div>
+</div>
 
 <script type="application/ld+json">
 {
