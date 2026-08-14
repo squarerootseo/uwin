@@ -237,14 +237,15 @@ Compare this to an [Acrylic Court System](/products/acrylic-court-systems) or pa
 
 ---
 
-<div class="blog-footer-card">
-  <div class="card-logo">
+<div class="author-bio-card">
+  <div class="author-avatar">
     <img src="/images/uwin-logo.png" alt="UWIN Floortech" />
   </div>
-  <div class="card-content">
-    <h4>UWIN Floortech</h4>
-    <p>India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems.</p>
-    <a href="/contact" class="footer-cta-btn">Build Your Next Championship Court &rarr;</a>
+  <div class="author-info">
+    <span class="author-label">About the Author</span>
+    <h4>UWIN Floortech Engineering Team</h4>
+    <p>We are India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems.</p>
+    <a href="/about" class="author-link">Learn More About Us &rarr;</a>
   </div>
 </div>
 
