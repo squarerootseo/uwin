@@ -1,9 +1,9 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
 title: "PP Interlocking Sports Tiles: The Complete B2B Buyers Guide"
-meta_title: "PP Interlocking Sports Tiles Guide | U Win Floortech"
+meta_title: "PP Interlocking Sports Tiles Guide | UWIN Floortech"
 meta_description: "Discover why schools and developers across India are switching to UV-stabilised PP interlocking sports tiles. Manufacturer-direct pricing, 10-year durability."
-author: "U Win Floortech"
+author: "UWIN Floortech"
 date: "2026-08-14"
 hero_image: "/images/hero-pp-tiles.png"
 tags: ["PP Interlocking Tiles", "Sports Flooring", "B2B Guide", "Outdoor Courts"]
@@ -13,7 +13,7 @@ For decades, Indian schools, residential developers, and sports academies relied
 
 Whether you are a school principal upgrading a worn-out basketball court, or a real estate developer specifying a multi-sport zone for a new township, choosing the right surface is a critical 10-year investment.
 
-In this comprehensive guide, we will break down exactly what PP interlocking sports tiles are, why they outperform traditional surfaces, and how to avoid the "middlemen cost trap" by working directly with a manufacturer-direct solution provider like U Win Floortech.
+In this comprehensive guide, we will break down exactly what PP interlocking sports tiles are, why they outperform traditional surfaces, and how to avoid the "middlemen cost trap" by working directly with a manufacturer-direct solution provider like UWIN Floortech.
 
 <div class="toc-box">
 
@@ -51,7 +51,7 @@ For institutions looking to build high-performance outdoor courts, [PP Interlock
 
 <div class="cta-banner">
 <strong>Need a quote for your outdoor court?</strong>
-<p>Skip the trading middlemen. U Win Floortech supplies and installs certified PP interlocking tiles with direct factory pricing across India.</p>
+<p>Skip the trading middlemen. UWIN Floortech supplies and installs certified PP interlocking tiles with direct factory pricing across India.</p>
 <a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp Us Now</a>
 
 </div>
@@ -87,7 +87,7 @@ Professional PP interlocking tiles are manufactured from high-impact polypropyle
 
 When evaluating a vendor for your sports flooring, it is critical to demand the exact technical specifications. Trading middlemen often import low-grade plastics that become brittle and shatter after one summer. 
 
-At U Win Floortech, our tiles adhere to the following strict material standards:
+At UWIN Floortech, our tiles adhere to the following strict material standards:
 
 *   **Material:** 100% Virgin Polypropylene (PP) Copolymer. We do not use recycled regrind plastics, which compromise tensile strength.
 *   **UV Stabilisation:** High-grade UV inhibitors are mixed directly into the polymer during injection molding. This ensures the vibrant colours (Green, Blue, Red, Grey, Yellow, Orange) remain fade-resistant for 8-10 years under direct Indian sunlight.
@@ -107,7 +107,7 @@ The required sub-base for PP interlocking tiles is a flat, structurally sound co
 
 The biggest misconception in the sports flooring industry is that modular tiles can hide a terrible sub-base. They cannot. Because the tiles are rigid and click together, placing them on an undulating, uneven surface will cause the locking mechanisms to stress and eventually snap under foot traffic.
 
-### The U Win Floortech Sub-Base Checklist:
+### The UWIN Floortech Sub-Base Checklist:
 1.  **Structural Integrity:** The concrete must be fully cured (minimum 28 days for new pours) and structurally sound.
 2.  **Flatness Tolerance:** The surface must be perfectly leveled. A standard rule is no deviations greater than 3mm under a 3-meter straight edge.
 3.  **Slope for Drainage:** While the tiles themselves drain water instantly, that water must go somewhere. The concrete slab must have a gentle 1% slope directing water toward a drainage channel.
@@ -115,7 +115,7 @@ The biggest misconception in the sports flooring industry is that modular tiles 
 
 <div class="cta-banner">
 <strong>Unsure if your current concrete base is ready for tiles?</strong>
-<p>U Win Floortech provides turnkey solutions. We will assess your site and guide you on sub-base preparation before installation.</p>
+<p>UWIN Floortech provides turnkey solutions. We will assess your site and guide you on sub-base preparation before installation.</p>
 <a href="/contact">👉 Request a Free Site Consultation</a>
 
 </div>
@@ -131,7 +131,7 @@ Installing a standard PP interlocking tile sports court (e.g., a basketball cour
 </div>
 
 ### Step-by-Step Execution
-When U Win Floortech executes a turnkey project, the installation follows a precise, military-grade protocol:
+When UWIN Floortech executes a turnkey project, the installation follows a precise, military-grade protocol:
 
 1.  **Site Audit and Layout:** Our trained installation crew sweeps the sub-base and measures the exact court dimensions, snapping chalk lines to ensure the grid starts perfectly square.
 2.  **Tile Assembly:** The tiles are laid out in the pre-approved color pattern. The interlocking loops and pins are aligned, and the crew uses specialized rubber mallets to gently tap the tiles into a secure, seamless lock.
@@ -159,7 +159,7 @@ When institutional buyers use generic contractor portals, they encounter the **M
 *   **The Result:** The buyer overpays for an inferior product installed by untrained labour. When the tiles warp in the sun six months later, the contractor blames the trader, and the trader blames the factory. You are left with a broken court.
 
 ### The Manufacturer-Direct Solution
-U Win Floortech operates as a true turnkey, manufacturer-direct provider. We source certified, UV-stabilised PP materials directly from production level. We do not use third-party traders. Our own trained crews execute the installation. 
+UWIN Floortech operates as a true turnkey, manufacturer-direct provider. We source certified, UV-stabilised PP materials directly from production level. We do not use third-party traders. Our own trained crews execute the installation. 
 This means schools and developers get **producer-level pricing** and **single-point accountability**. If there is an issue with the court, you call us. We fix it. 
 
 
@@ -186,7 +186,7 @@ While professional indoor academies require [BWF-certified Badminton Wooden Floo
 <div class="cta-banner">
 <strong>Planning a multi-sport court for your school or township?</strong>
 <p>Get factory-direct pricing and technical advice from our engineering team today.</p>
-<a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp U Win Floortech Now</a>
+<a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp UWIN Floortech Now</a>
 
 </div>
 
@@ -216,14 +216,14 @@ Compare this to an [Acrylic Court System](/products/acrylic-court-systems) or pa
 No. PP interlocking tiles require a solid, flat, and hard sub-base, such as a concrete slab or compacted asphalt. Installing them over dirt, grass, or gravel will cause the tiles to sink, undulate, and eventually snap at the interlocking joints under the weight of players.
 
 ### Does the colour of the sports tiles fade in the sun?
-Premium PP tiles manufactured by U Win Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years.
+Premium PP tiles manufactured by UWIN Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years.
 
 ### What happens if it rains heavily on a PP tile court?
 Heavy rain is not an issue. PP interlocking tiles feature an open-grid design that allows rainwater to pass straight through the surface to the concrete sub-base below. Provided your concrete base has a standard 1% slope, the water drains away immediately. The court surface itself is puddle-free and offers excellent anti-slip grip, making it playable within minutes after the rain stops.
 
 ---
 
-*U Win Floortech is India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems. [Contact us today](/contact) to build your next championship court.*
+*UWIN Floortech is India’s premier turnkey sports flooring solution provider. We eliminate trading middlemen to deliver producer-level pricing, certified materials, and full execution accountability across all six surface systems. [Contact us today](/contact) to build your next championship court.*
 
 <script type="application/ld+json">
 {
@@ -243,7 +243,7 @@ Heavy rain is not an issue. PP interlocking tiles feature an open-grid design th
       "name": "Does the colour of the sports tiles fade in the sun?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Premium PP tiles manufactured by U Win Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years."
+        "text": "Premium PP tiles manufactured by UWIN Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years."
       }
     },
     {
