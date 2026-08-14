@@ -105,6 +105,11 @@ const schema = JSON.stringify({
   </div>
 
   <main class="blog-container">
+    {frontmatter.hero_image && (
+      <div class="blog-hero-banner">
+        <img src={frontmatter.hero_image} alt={frontmatter.title} />
+      </div>
+    )}
     <article class="blog-article">
       <header class="blog-header">
         <h1 class="blog-title">{frontmatter.title}</h1>
@@ -235,6 +240,19 @@ const schema = JSON.stringify({
     padding: 64px;
     box-shadow: var(--shadow-sm);
     border: 1px solid var(--color-border);
+  }
+  .blog-hero-banner {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .blog-hero-banner img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
   }
   .blog-header {
     margin-bottom: 48px;
