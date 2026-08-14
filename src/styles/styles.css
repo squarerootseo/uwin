@@ -3027,10 +3027,10 @@ h1, h2, h3, h4 {
   position: relative;
 }
 .ai-snapshot::before {
-  content: "✨ Quick Answer";
+  content: "✨";
   display: block;
   font-family: var(--font-heading);
-  font-size: 0.85rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--color-accent-dark);
   text-transform: uppercase;
