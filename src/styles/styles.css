@@ -3358,3 +3358,8 @@ h1, h2, h3, h4 {
   
   /* Collapse TOC by default on mobile (handled by JS ideally, but we added open attribute in HTML so it stays open on desktop, let's let it be for now or handle via CSS if possible, but details state is DOM driven) */
 }
+
+.blog-index-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md) !important;
+}
