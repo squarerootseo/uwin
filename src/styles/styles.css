@@ -3084,7 +3084,7 @@ h1, h2, h3, h4 {
 .cta-banner a {
   display: inline-block;
   background: var(--color-accent);
-  color: var(--color-primary-deep) !important;
+  color: #fff !important;
   text-decoration: none !important;
   padding: 14px 28px;
   border-radius: 8px;
