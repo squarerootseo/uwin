@@ -15,9 +15,9 @@ Whether you are a school principal upgrading a worn-out basketball court, or a r
 
 In this comprehensive guide, we will break down exactly what PP interlocking sports tiles are, why they outperform traditional surfaces, and how to avoid the "middlemen cost trap" by working directly with a manufacturer-direct solution provider like UWIN Floortech.
 
-<div class="toc-box">
-
-## Table of Contents
+<details class="toc-box" open>
+  <summary><h2>Table of Contents</h2></summary>
+  <div class="toc-content">
 1. [What Are PP Interlocking Sports Tiles?](#what-are-pp-interlocking-sports-tiles)
 2. [Why Are PP Tiles Replacing Concrete Courts?](#why-are-pp-tiles-replacing-concrete-courts)
 3. [Technical Specifications and Material Science](#technical-specifications-and-material-science)
@@ -27,9 +27,8 @@ In this comprehensive guide, we will break down exactly what PP interlocking spo
 7. [Applications for Schools, Developers, and Clubs](#applications-for-schools-developers-and-clubs)
 8. [Maintenance and Lifespan](#maintenance-and-lifespan)
 9. [Frequently Asked Questions (FAQ)](#frequently-asked-questions)
-
-
-</div>
+  </div>
+</details>
 
 ## What Are PP Interlocking Sports Tiles?
 
@@ -45,7 +44,7 @@ Unlike solid poured floors, PP interlocking tiles are modular squares - typicall
 
 The term "interlocking" refers to the snap-and-click mechanism along the edges of each tile. This allows the tiles to connect seamlessly to one another, forming a unified, floating floor over your existing concrete or asphalt sub-base. Because they require no adhesives or toxic glues, they are environmentally safe and incredibly fast to install. 
 
-![PP Tiles Close Up](/images/gallery-pp-tile-closeup.png)
+<img src="/images/gallery-pp-tile-closeup.png" alt="PP Tiles Close Up" width="800" height="600" loading="lazy" />
 
 For institutions looking to build high-performance outdoor courts, [PP Interlocking Modular Tiles](/products/pp-interlocking-tiles) offer the perfect balance of biomechanical player safety, vibrant aesthetics, and zero-maintenance longevity.
 
@@ -74,7 +73,7 @@ Monsoon season in India renders traditional painted courts useless. Concrete cou
 ### Zero Cracking or Peeling
 If you've ever managed an acrylic or painted concrete court, you know the frustration of ground shifting. Minor seismic movements or ground settling will inevitably cause concrete to crack, which tears the acrylic coating above it. Because PP interlocking tiles form a "floating" surface, they are immune to minor sub-floor cracks. They will never peel, blister, or delaminate.
 
-![Basketball Court on PP Tiles](/images/app-basketball-court.png)
+<img src="/images/app-basketball-court.png" alt="Basketball Court on PP Tiles" width="800" height="600" loading="lazy" />
 
 ## Technical Specifications and Material Science
 
@@ -175,7 +174,7 @@ The best applications for PP interlocking sports tiles are outdoor multi-sport c
 ### 1. Schools and Universities
 Physical education departments need maximum utility. A concrete court limits usage during the monsoon and causes injuries. By installing PP interlocking tiles, schools can create a single "Multi-Sport Zone" with overlapping lines for basketball, volleyball, and badminton. The vibrant colours (like blue keys and red borders) dramatically elevate the visual prestige of the campus, impressing parents during admissions season.
 
-![School Playground PP Tiles](/images/app-school-playground.png)
+<img src="/images/app-school-playground.png" alt="School Playground PP Tiles" width="800" height="600" loading="lazy" />
 
 ### 2. Residential Developers and Townships
 Real estate developers specifying amenities for premium townships need surfaces that look spectacular on day one and remain maintenance-free for the Facility Management team five years later. PP tiles provide exactly that. We regularly install these systems for society clubhouses, outdoor badminton courts, and dedicated children's skating zones. (For landscaping zones, developers also pair these with our [Sand-Based Artificial Grass](/products/sand-based-artificial-grass)).
