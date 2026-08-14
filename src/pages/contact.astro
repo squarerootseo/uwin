@@ -129,10 +129,23 @@ import Layout from '../layouts/Layout.astro';
         <!-- Left: Form -->
         <div style="flex: 2; min-width: 320px; background: white; padding: 48px; border-radius: 16px; box-shadow: 0 12px 32px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
           <h2 class="h2" style="margin-bottom: 32px; font-size: 1.8rem; color: #1e293b;">Project Inquiry Form</h2>
-          <form name="contact" method="POST" data-netlify="true" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+          <form id="contactForm" name="contact" method="POST" data-netlify="true" style="display: grid; grid-template-columns: 1fr 1fr; gap: 24px;">
+            <!-- Netlify Form Detection Hidden Input -->
+            <input type="hidden" name="form-name" value="contact" />
+
             <div style="grid-column: 1 / -1;">
               <label style="display:block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: #475569;">Full Name *</label>
               <input type="text" name="name" required style="width: 100%; padding: 14px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--color-primary)'; this.style.outline='none';" onblur="this.style.borderColor='#cbd5e1';">
+            </div>
+
+            <div>
+              <label style="display:block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: #475569;">Phone Number *</label>
+              <input type="tel" name="phone" required placeholder="+91 XXXXX XXXXX" style="width: 100%; padding: 14px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--color-primary)'; this.style.outline='none';" onblur="this.style.borderColor='#cbd5e1';">
+            </div>
+
+            <div>
+              <label style="display:block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: #475569;">Email Address *</label>
+              <input type="email" name="email" required placeholder="name@company.com" style="width: 100%; padding: 14px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 1rem; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--color-primary)'; this.style.outline='none';" onblur="this.style.borderColor='#cbd5e1';">
             </div>
             
             <div>
@@ -186,11 +199,112 @@ import Layout from '../layouts/Layout.astro';
               <label style="display:block; margin-bottom: 8px; font-weight: 600; font-size: 14px; color: #475569;">Message / Details</label>
               <textarea name="message" rows="4" style="width: 100%; padding: 14px 16px; border: 1px solid #cbd5e1; border-radius: 8px; font-family: inherit; font-size: 1rem; resize: vertical; transition: border-color 0.2s;" onfocus="this.style.borderColor='var(--color-primary)'; this.style.outline='none';" onblur="this.style.borderColor='#cbd5e1';"></textarea>
             </div>
+
+            <!-- Cloudflare Turnstile Widget -->
+            <div style="grid-column: 1 / -1; margin-top: 8px; display: flex; justify-content: center;">
+              <div class="cf-turnstile" data-sitekey="0x4AAAAAAEPpndnmTotzjPHl" data-theme="light"></div>
+            </div>
             
-            <div style="grid-column: 1 / -1; margin-top: 16px;">
-              <button type="submit" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem; border-radius: 8px; font-weight: 600; cursor: pointer;">Send Inquiry to Factory</button>
+            <div style="grid-column: 1 / -1; margin-top: 8px;">
+              <button type="submit" id="submitBtn" class="btn btn-primary" style="width: 100%; padding: 18px; font-size: 1.1rem; border-radius: 8px; font-weight: 600; cursor: pointer;">Send Inquiry to Factory</button>
+            </div>
+
+            <div id="formSuccess" style="display: none; grid-column: 1 / -1; background: #ecfdf5; border: 1px solid #10b981; color: #065f46; padding: 16px 20px; border-radius: 8px; font-weight: 500; font-size: 1rem; margin-top: 12px;">
+              ✓ Thank you! Your inquiry has been submitted successfully. Our factory team will reach out to you within 4 working hours.
+            </div>
+            <div id="formError" style="display: none; grid-column: 1 / -1; background: #fef2f2; border: 1px solid #ef4444; color: #991b1b; padding: 16px 20px; border-radius: 8px; font-weight: 500; font-size: 1rem; margin-top: 12px;">
+              ✕ Something went wrong submitting your form. Please try again or call us directly at +91 93118 18112.
             </div>
           </form>
+
+<!-- Cloudflare Turnstile API Script -->
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+
+<script>
+  // Deployed Google Apps Script Web App URL
+  const GOOGLE_SCRIPT_URL = import.meta.env.PUBLIC_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbx450xCDFFy8_u8APXUlU8o8wRbBW4LUJaqpkMb28i8HeGL5MeyO2Dnttrb8fMpFMDjPg/exec';
+
+  const form = document.getElementById('contactForm') as HTMLFormElement | null;
+  const successMsg = document.getElementById('formSuccess');
+  const errorMsg = document.getElementById('formError');
+  const submitBtn = document.getElementById('submitBtn') as HTMLButtonElement | null;
+
+  if (form) {
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      if (successMsg) successMsg.style.display = 'none';
+      if (errorMsg) errorMsg.style.display = 'none';
+
+      const formData = new FormData(form);
+      const turnstileToken = formData.get('cf-turnstile-response');
+
+      if (!turnstileToken) {
+        if (errorMsg) {
+          errorMsg.innerText = '✕ Please complete the security check (CAPTCHA) before submitting.';
+          errorMsg.style.display = 'block';
+        }
+        return;
+      }
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'Sending Inquiry...';
+      }
+
+      const data = new URLSearchParams();
+      formData.forEach((value, key) => {
+        data.append(key, value.toString());
+      });
+
+      try {
+        if (GOOGLE_SCRIPT_URL && !GOOGLE_SCRIPT_URL.includes('YOUR_GOOGLE_APPS_SCRIPT_URL_HERE')) {
+          await fetch(GOOGLE_SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: data.toString(),
+          });
+          form.reset();
+          if ((window as any).turnstile) {
+            (window as any).turnstile.reset();
+          }
+          // Redirect to Thank You Page
+          window.location.href = '/thank-you';
+        } else {
+          // If Google Script URL not set yet, attempt fallback POST submit
+          const response = await fetch('/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+            body: data.toString(),
+          });
+          if (response.ok) {
+            form.reset();
+            if ((window as any).turnstile) {
+              (window as any).turnstile.reset();
+            }
+            window.location.href = '/thank-you';
+          } else {
+            if (errorMsg) {
+              errorMsg.innerText = '✕ Something went wrong submitting your form. Please try again or call us directly at +91 93118 18112.';
+              errorMsg.style.display = 'block';
+            }
+          }
+        }
+      } catch (err) {
+        if (errorMsg) {
+          errorMsg.innerText = '✕ Something went wrong submitting your form. Please try again or call us directly at +91 93118 18112.';
+          errorMsg.style.display = 'block';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = 'Send Inquiry to Factory';
+        }
+      }
+    });
+  }
+</script>
         </div>
 
         <!-- Right: Contact Details -->
