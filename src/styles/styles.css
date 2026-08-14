@@ -3363,3 +3363,5 @@ h1, h2, h3, h4 {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md) !important;
 }
+
+.blog-index-card:hover .blog-card-img { transform: scale(1.05) !important; }
