@@ -17,17 +17,17 @@ In this comprehensive guide, we will break down exactly what PP interlocking spo
 
 <details class="toc-box" open>
   <summary><h2>Table of Contents</h2></summary>
-  <div class="toc-content">
-1. [What Are PP Interlocking Sports Tiles?](#what-are-pp-interlocking-sports-tiles)
-2. [Why Are PP Tiles Replacing Concrete Courts?](#why-are-pp-tiles-replacing-concrete-courts)
-3. [Technical Specifications and Material Science](#technical-specifications-and-material-science)
-4. [Sub-Base Requirements and Preparation](#sub-base-requirements-and-preparation)
-5. [The Installation Process Explained](#the-installation-process-explained)
-6. [The Middlemen Cost Inflation Trap in India](#the-middlemen-cost-inflation-trap-in-india)
-7. [Applications for Schools, Developers, and Clubs](#applications-for-schools-developers-and-clubs)
-8. [Maintenance and Lifespan](#maintenance-and-lifespan)
-9. [Frequently Asked Questions (FAQ)](#frequently-asked-questions)
-  </div>
+  <ol class="toc-content" style="padding-left: 20px;">
+    <li><a href="#what-are-pp-interlocking-sports-tiles">What Are PP Interlocking Sports Tiles?</a></li>
+    <li><a href="#why-are-pp-tiles-replacing-concrete-courts">Why Are PP Tiles Replacing Concrete Courts?</a></li>
+    <li><a href="#technical-specifications-and-material-science">Technical Specifications and Material Science</a></li>
+    <li><a href="#sub-base-requirements-and-preparation">Sub-Base Requirements and Preparation</a></li>
+    <li><a href="#the-installation-process-explained">The Installation Process Explained</a></li>
+    <li><a href="#the-middlemen-cost-inflation-trap-in-india">The Middlemen Cost Inflation Trap in India</a></li>
+    <li><a href="#applications-for-schools-developers-and-clubs">Applications for Schools, Developers, and Clubs</a></li>
+    <li><a href="#maintenance-and-lifespan">Maintenance and Lifespan</a></li>
+    <li><a href="#frequently-asked-questions">Frequently Asked Questions (FAQ)</a></li>
+  </ol>
 </details>
 
 ## What Are PP Interlocking Sports Tiles?
