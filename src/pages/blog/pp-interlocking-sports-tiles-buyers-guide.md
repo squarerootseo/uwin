@@ -212,14 +212,28 @@ Compare this to an [Acrylic Court System](/products/acrylic-court-systems) or pa
 
 ## Frequently Asked Questions
 
-### Can PP interlocking tiles be installed over dirt or grass?
-No. PP interlocking tiles require a solid, flat, and hard sub-base, such as a concrete slab or compacted asphalt. Installing them over dirt, grass, or gravel will cause the tiles to sink, undulate, and eventually snap at the interlocking joints under the weight of players.
+<div class="faq-accordion">
+  <details class="faq-item">
+    <summary>Can PP interlocking tiles be installed over dirt or grass?</summary>
+    <div class="faq-content">
+      <p>No. PP interlocking tiles require a solid, flat, and hard sub-base, such as a concrete slab or compacted asphalt. Installing them over dirt, grass, or gravel will cause the tiles to sink, undulate, and eventually snap at the interlocking joints under the weight of players.</p>
+    </div>
+  </details>
 
-### Does the colour of the sports tiles fade in the sun?
-Premium PP tiles manufactured by UWIN Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years.
+  <details class="faq-item">
+    <summary>Does the colour of the sports tiles fade in the sun?</summary>
+    <div class="faq-content">
+      <p>Premium PP tiles manufactured by UWIN Floortech are infused with high-grade UV stabilisers during the molding process. While a very slight natural weathering may occur over a decade, the tiles are specifically engineered to resist extreme fading, chalking, and discoloration under direct, intense Indian sunlight for 8 to 10 years.</p>
+    </div>
+  </details>
 
-### What happens if it rains heavily on a PP tile court?
-Heavy rain is not an issue. PP interlocking tiles feature an open-grid design that allows rainwater to pass straight through the surface to the concrete sub-base below. Provided your concrete base has a standard 1% slope, the water drains away immediately. The court surface itself is puddle-free and offers excellent anti-slip grip, making it playable within minutes after the rain stops.
+  <details class="faq-item">
+    <summary>What happens if it rains heavily on a PP tile court?</summary>
+    <div class="faq-content">
+      <p>Heavy rain is not an issue. PP interlocking tiles feature an open-grid design that allows rainwater to pass straight through the surface to the concrete sub-base below. Provided your concrete base has a standard 1% slope, the water drains away immediately. The court surface itself is puddle-free and offers excellent anti-slip grip, making it playable within minutes after the rain stops.</p>
+    </div>
+  </details>
+</div>
 
 ---
 

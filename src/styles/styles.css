@@ -3166,3 +3166,56 @@ h1, h2, h3, h4 {
     gap: 24px;
   }
 }
+
+
+/* FAQ Accordion */
+.faq-accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px 0;
+}
+.faq-item {
+  background: var(--color-surface);
+  border: 1px solid rgba(0,0,0,0.08);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.faq-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+}
+.faq-item summary {
+  padding: 20px 24px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--color-primary-deep);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: '+';
+  font-size: 1.5rem;
+  color: var(--color-accent);
+  transition: transform 0.3s ease;
+  line-height: 1;
+}
+.faq-item[open] summary::after {
+  content: '−';
+  transform: rotate(180deg);
+}
+.faq-content {
+  padding: 0 24px 24px 24px;
+  color: var(--color-text-body);
+  line-height: 1.6;
+}
+.faq-content p:last-child {
+  margin-bottom: 0;
+}
