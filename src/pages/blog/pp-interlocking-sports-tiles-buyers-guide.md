@@ -39,7 +39,7 @@ Yes, PP interlocking sports tiles are highly recommended for Indian summers. The
 </div>
 
 ### The Anatomy of a PP Sports Tile
-Unlike solid poured floors, PP interlocking tiles are modular squares—typically measuring 304.8mm x 304.8mm (12 inches by 12 inches). They are engineered with a sophisticated grid pattern on the top surface and a shock-absorbing pillar structure underneath. 
+Unlike solid poured floors, PP interlocking tiles are modular squares - typically measuring 304.8mm x 304.8mm (12 inches by 12 inches). They are engineered with a sophisticated grid pattern on the top surface and a shock-absorbing pillar structure underneath. 
 
 The term "interlocking" refers to the snap-and-click mechanism along the edges of each tile. This allows the tiles to connect seamlessly to one another, forming a unified, floating floor over your existing concrete or asphalt sub-base. Because they require no adhesives or toxic glues, they are environmentally safe and incredibly fast to install. 
 

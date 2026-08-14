@@ -2988,15 +2988,12 @@ h1, h2, h3, h4 {
 .prose li { margin-bottom: 0.5em; }
 .prose a {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-color: rgba(32, 119, 180, 0.4);
-  text-underline-offset: 4px;
+  text-decoration: none;
   font-weight: 500;
   transition: var(--transition-fast);
 }
 .prose a:hover {
   color: var(--color-accent-dark);
-  text-decoration-color: var(--color-accent-dark);
 }
 .prose blockquote {
   border-left: 4px solid var(--color-accent);
