@@ -1,10 +1,25 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from './Layout.astro';
+
+const { frontmatter } = Astro.props;
+
+const schema = JSON.stringify({
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": frontmatter.meta_title || frontmatter.title,
+  "description": frontmatter.meta_description,
+  "author": {
+    "@type": "Organization",
+    "name": frontmatter.author || "U Win Floortech"
+  },
+  "datePublished": frontmatter.date
+});
 ---
 
 <Layout 
-  title="Why Choose UWIN Floortech? | Turnkey Sports Flooring Solutions"
-  description="Discover why buyers choose UWIN Floortech for their sports flooring projects. Certified materials, direct factory pricing, and full execution accountability."
+  title={frontmatter.meta_title || frontmatter.title} 
+  description={frontmatter.meta_description}
+  schema={schema}
 >
 <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-inner">
@@ -14,7 +29,7 @@ import Layout from '../layouts/Layout.astro';
 
       <ul class="nav-links" role="list">
         <li class="nav-item-dropdown">
-          <a href="#products" class="nav-link" data-section="products">
+          <a href="/#products" class="nav-link" data-section="products">
             Products
             <svg class="dropdown-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="6 9 12 15 18 9"></polyline>
@@ -48,7 +63,7 @@ import Layout from '../layouts/Layout.astro';
           </div>
         </li>
         <li><a href="/industries" class="nav-link" data-section="who-we-build">Industries</a></li>
-        <li><a href="/why-uwin" class="nav-link" nav-link--active">Why UWIN</a></li>
+        <li><a href="/why-uwin" class="nav-link">Why UWIN</a></li>
         
         <li><a href="/about" class="nav-link">About</a></li>
         <li><a href="/blog" class="nav-link">Blog</a></li>
@@ -93,149 +108,26 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 
-
-  <section class="hero-subpage" style="background-color: var(--color-primary); color: white; padding: 120px 24px 80px;">
-    <div class="container">
-      <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 48px;">
-        <div style="flex: 1; min-width: 300px;">
-          <h1 class="h1" style="margin-bottom: 24px;">Why Choose UWIN Floortech?</h1>
-          <p class="snapshot" style="font-size: 1.15rem; line-height: 1.6; opacity: 0.9;">
-            We are direct manufacturers — not traders or dealers. When you work with us, you skip the middleman margin and gain direct access to certified materials, turnkey installation, and factory accountability.
-          </p>
-        </div>
-        <div style="flex: 1; min-width: 300px;">
-          <img src="/images/gallery-multisport-court.png" alt="UWIN Manufacturing Excellence" style="width: 100%; border-radius: 12px; box-shadow: 0 12px 32px rgba(0,0,0,0.2);" />
-        </div>
+  <main class="blog-container">
+    {frontmatter.hero_image && (
+      <div class="blog-hero-banner">
+        <img src={frontmatter.hero_image} alt={frontmatter.title} />
       </div>
-    </div>
-  </section>
-
-  <section class="section section--surface" style="background-color: #f8fafc; padding-bottom: 80px;">
-    <div class="container">
-      <h2 class="h2 text-center" style="margin-bottom: 48px;">Our Five Competitive Moats</h2>
-      
-      <style>
-        .moat-grid {
-          display: grid;
-          gap: 32px;
-          grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-        }
-        .moat-card {
-          background: white; 
-          padding: 32px; 
-          border-radius: 12px; 
-          box-shadow: 0 4px 20px rgba(0,0,0,0.04); 
-          transition: transform 0.3s ease, box-shadow 0.3s ease; 
-          border-top: 4px solid var(--color-primary);
-          display: flex;
-          flex-direction: column;
-        }
-        .moat-card:hover {
-          transform: translateY(-5px); 
-          box-shadow: 0 12px 24px rgba(0,0,0,0.08);
-        }
-        .moat-num {
-          background: rgba(13, 92, 147, 0.08);
-          color: var(--color-primary);
-          width: 48px; height: 48px; 
-          border-radius: 50%; 
-          display: flex; align-items: center; justify-content: center; 
-          font-weight: 700; font-size: 1.2rem;
-          margin-bottom: 20px;
-        }
-      </style>
-
-      <div class="moat-grid">
-        <!-- Card 1 -->
-        <div class="moat-card">
-          <div class="moat-num">01</div>
-          <h3 class="h3" style="color: var(--color-primary); margin-bottom: 12px; font-size: 1.3rem;">Direct Manufacturer</h3>
-          <p style="color: var(--color-text); line-height: 1.6;">Not a trader. Not a dealer. Factory to site. You pay the manufacturing cost, not a trading margin.</p>
+    )}
+    <article class="blog-article">
+      <header class="blog-header">
+        <h1 class="blog-title">{frontmatter.title}</h1>
+        <div class="blog-meta">
+          <span>By {frontmatter.author || "U Win Floortech"}</span>
+          <span class="meta-divider">•</span>
+          <span>{new Date(frontmatter.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</span>
         </div>
-
-        <!-- Card 2 -->
-        <div class="moat-card">
-          <div class="moat-num">02</div>
-          <h3 class="h3" style="color: var(--color-primary); margin-bottom: 12px; font-size: 1.3rem;">Three Product Lines, One Partner</h3>
-          <p style="color: var(--color-text); line-height: 1.6;">PP tiles, EPDM, and acrylic from a single accountable source. One contract. One warranty. One point of contact.</p>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="moat-card">
-          <div class="moat-num">03</div>
-          <h3 class="h3" style="color: var(--color-primary); margin-bottom: 12px; font-size: 1.3rem;">Turnkey Installation</h3>
-          <p style="color: var(--color-text); line-height: 1.6;">Our manufacturing team trains the installation crew. The specification does not change between factory and site.</p>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="moat-card">
-          <div class="moat-num">04</div>
-          <h3 class="h3" style="color: var(--color-primary); margin-bottom: 12px; font-size: 1.3rem;">Certification Traceability</h3>
-          <p style="color: var(--color-text); line-height: 1.6;">ITF-certified materials with production batch records. Not a verbal claim — a traceable material chain.</p>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="moat-card">
-          <div class="moat-num">05</div>
-          <h3 class="h3" style="color: var(--color-primary); margin-bottom: 12px; font-size: 1.3rem;">Digital Factory Authority</h3>
-          <p style="color: var(--color-text); line-height: 1.6;">The first sports flooring manufacturer in India building genuine content authority and AI-citation readiness.</p>
-        </div>
+      </header>
+      <div class="prose">
+        <slot />
       </div>
-    </div>
-  </section>
-
-  <section class="section section--white">
-    <div class="container" style="max-width: 1000px; margin: 0 auto;">
-      <h2 class="h2 text-center" style="margin-bottom: 16px;">The Cost of Going Through Traders</h2>
-      <p class="text-center" style="margin-bottom: 48px; font-size: 1.1rem; color: #64748b; max-width: 700px; margin-left: auto; margin-right: auto;">
-        Here is what the price difference actually means when comparing IndiaMART traders to our direct factory operations.
-      </p>
-
-      <div style="background: white; border-radius: 16px; box-shadow: 0 8px 32px rgba(0,0,0,0.08); overflow: hidden;">
-        <table style="width: 100%; border-collapse: collapse; text-align: left;">
-          <thead>
-            <tr style="background: #f1f5f9; border-bottom: 2px solid #e2e8f0;">
-              <th style="padding: 24px; font-size: 1.1rem; color: #475569; width: 30%;">Dimension</th>
-              <th style="padding: 24px; font-size: 1.1rem; color: #64748b; width: 35%;">IndiaMART Trader</th>
-              <th style="padding: 24px; font-size: 1.1rem; color: var(--color-primary); width: 35%; background: rgba(13,92,147,0.03);">UWIN Floortech <br/><span style="font-size: 0.9rem; font-weight: 500;">(Direct Factory)</span></th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr style="border-bottom: 1px solid #e2e8f0; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'">
-              <td style="padding: 24px; font-weight: 600; color: #334155;">Price markup</td>
-              <td style="padding: 24px; color: #64748b;">25–40% over manufacturer cost</td>
-              <td style="padding: 24px; color: var(--color-primary); font-weight: 600; background: rgba(13,92,147,0.03);">Factory pricing — zero trader margin</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'">
-              <td style="padding: 24px; font-weight: 600; color: #334155;">Material certification</td>
-              <td style="padding: 24px; color: #64748b;">Trader's word — no batch traceability</td>
-              <td style="padding: 24px; color: var(--color-primary); font-weight: 600; background: rgba(13,92,147,0.03);">ITF-certified with production batch records</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'">
-              <td style="padding: 24px; font-weight: 600; color: #334155;">Installation accountability</td>
-              <td style="padding: 24px; color: #64748b;">Third-party contractor, no specification lock</td>
-              <td style="padding: 24px; color: var(--color-primary); font-weight: 600; background: rgba(13,92,147,0.03);">UWIN trained installation crew</td>
-            </tr>
-            <tr style="border-bottom: 1px solid #e2e8f0; transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'">
-              <td style="padding: 24px; font-weight: 600; color: #334155;">Post-install support</td>
-              <td style="padding: 24px; color: #64748b;">Trader may not be reachable</td>
-              <td style="padding: 24px; color: var(--color-primary); font-weight: 600; background: rgba(13,92,147,0.03);">Factory-direct support</td>
-            </tr>
-            <tr style="transition: background 0.2s;" onmouseover="this.style.backgroundColor='#f8fafc'" onmouseout="this.style.backgroundColor='transparent'">
-              <td style="padding: 24px; font-weight: 600; color: #334155;">What you own</td>
-              <td style="padding: 24px; color: #64748b;">A surface from an unknown supply chain</td>
-              <td style="padding: 24px; color: var(--color-primary); font-weight: 600; background: rgba(13,92,147,0.03);">A certified surface with a factory warranty</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <div style="text-align: center; margin-top: 56px;">
-        <a href="https://wa.me/919311818112" class="btn btn-whatsapp btn-lg" style="padding: 16px 32px; font-size: 1.1rem; border-radius: 8px;">Have a project brief? Let's talk factory-direct.</a>
-      </div>
-    </div>
-  </section>
-
+    </article>
+  </main>
 
 <footer id="footer" role="contentinfo">
     <div class="footer-inner">
@@ -331,7 +223,7 @@ import Layout from '../layouts/Layout.astro';
         <nav class="footer-legal" aria-label="Legal links">
           <a href="/privacy-policy">Privacy Policy</a>
           <a href="/terms-and-conditions">Terms &amp; Conditions</a>
-          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/sitemap-index.xml">Sitemap</a>
           <span class="footer-legal-divider" aria-hidden="true">|</span>
           <span class="footer-credit-text">Designed &amp; Managed by <a href="https://squarerootseo.com/" target="_blank" rel="noopener noreferrer" class="footer-seo-link">Square Root SEO</a></span>
         </nav>
@@ -339,3 +231,71 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </footer>
 </Layout>
+
+<style>
+  .blog-container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 140px 24px 80px;
+  }
+  .blog-article {
+    max-width: 840px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: var(--card-radius);
+    padding: 64px;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+  }
+  .blog-hero-banner {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+  }
+  .blog-hero-banner img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 21 / 9;
+    object-fit: cover;
+  }
+  .blog-header {
+    margin-bottom: 48px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+  }
+  .blog-title {
+    font-family: var(--font-heading);
+    font-size: clamp(2rem, 4vw, 2.75rem);
+    font-weight: 800;
+    color: var(--color-text);
+    line-height: 1.2;
+    margin-bottom: 24px;
+  }
+  .blog-meta {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--color-text-muted);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+  }
+  .meta-divider {
+    color: var(--color-border);
+  }
+  
+  @media (max-width: 768px) {
+    .blog-article {
+      padding: 32px 24px;
+    }
+    .blog-container {
+      padding: 100px 16px 40px;
+    }
+    .blog-title {
+      font-size: 2rem;
+    }
+  }
+</style>
