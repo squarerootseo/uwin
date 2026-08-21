@@ -9,7 +9,7 @@ hero_image: "/images/hero-acrylic.png"
 tags: ["Acrylic Courts", "Tennis", "School Infrastructure", "ITF Certified"]
 ---
 
-When schools, sports clubs, and badminton academies decide to build or upgrade their outdoor hard courts, the most critical decision involves the surface specification. Choosing the wrong surface leads to early structural failure, player injuries, and wasted budgets. The industry standard for outdoor tennis and multi-sport hard courts is the water-based acrylic polymer coating system. However, buyers are often presented with quotes for varying thicknesses, primarily the 5-layer non-cushion and the 8-layer premium cushion systems. 
+When schools, sports clubs, and badminton academies decide to build or upgrade their outdoor hard courts, the most critical decision involves the surface specification. Choosing the wrong surface leads to early structural failure, player injuries, and wasted budgets. The industry standard for outdoor tennis and multi-sport hard courts is the <a href="/products/acrylic-court-systems">water-based acrylic polymer coating system</a>. However, buyers are often presented with quotes for varying thicknesses, primarily the 5-layer non-cushion and the 8-layer premium cushion systems. 
 
 This guide breaks down exact acrylic sports court specifications, comparing the 5-layer and 8-layer systems layer-by-layer, to help institutional buyers make the right procurement decision based on player safety, ITF court pace classifications, and long-term durability. 
 
@@ -109,7 +109,7 @@ When comparing acrylic sports court specifications, player safety must be evalua
 
 A tennis academy where athletes train for four hours a day *must* invest in the 8-layer cushion system. The repeated micro-traumas of running and stopping abruptly on rigid concrete lead to career-threatening joint injuries. The rubber matrix in the 8-layer system compresses under the athlete's weight, absorbing the kinetic energy that would otherwise travel up the leg.
 
-Conversely, a school playground that hosts basketball, morning assemblies, and general student foot traffic is often better served by the 5-layer non-cushion system. While it lacks shock absorption, it is significantly more resistant to damage from non-athletic shoes, dragged equipment, or heavy point loads. For ultimate player safety in a school environment where heavy multi-use is expected, UWIN Floortech often recommends entirely different surfaces, such as EPDM rubberised tracks for play areas or PP interlocking sports tiles for outdoor courts, which offer built-in structural shock absorption without the wear-and-tear vulnerability of acrylic cushion coats.
+Conversely, a school playground that hosts basketball, morning assemblies, and general student foot traffic is often better served by the 5-layer non-cushion system. While it lacks shock absorption, it is significantly more resistant to damage from non-athletic shoes, dragged equipment, or heavy point loads. For ultimate player safety in a school environment where heavy multi-use is expected, UWIN Floortech often recommends entirely different surfaces, such as <a href="/products/epdm-tracks-surfaces">EPDM rubberised tracks</a> for play areas or <a href="/products/pp-interlocking-tiles">PP interlocking sports tiles</a> for outdoor courts, which offer built-in structural shock absorption without the wear-and-tear vulnerability of acrylic cushion coats.
 
 <h2 id="itf-court-pace-classification">ITF Court Pace Classification Explained</h2>
 
@@ -139,7 +139,7 @@ The most common mistake institutional buyers make is assuming an acrylic system 
 
 For either a 5-layer or 8-layer system to succeed, the concrete must be of M20 grade minimum, properly cured for 28 days, equipped with a vapor barrier to prevent rising moisture, and sloped at 1% for surface drainage. Furthermore, the concrete must feature proper expansion joints to accommodate thermal movement.
 
-If your school or club has a heavily cracked existing court, applying an acrylic resurfacer is a temporary cosmetic fix that will fail. In these scenarios, UWIN Floortech advises two options: completely demolish and rebuild the concrete sub-base, or install UV-stabilised PP interlocking sports tiles over the existing slab, which "float" above the cracks and ignore sub-base imperfections.
+If your school or club has a heavily cracked existing court, applying an acrylic resurfacer is a temporary cosmetic fix that will fail. In these scenarios, UWIN Floortech advises two options: completely demolish and rebuild the concrete sub-base, or install <a href="/blog/pp-interlocking-sports-tiles-buyers-guide">UV-stabilised PP interlocking sports tiles</a> over the existing slab, which "float" above the cracks and ignore sub-base imperfections.
 
 <div class="cta-banner">
 <strong>Stop dealing with trading middlemen.</strong>
