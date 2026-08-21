@@ -372,6 +372,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 ## 8. DOS AND DONTS — NON-NEGOTIABLE EXECUTION RULES
 
 ### ALWAYS DO THIS
+- Naturally weave in 3-4 internal links to relevant service pages or other blog posts within the main body of every blog asset.
 - Apply the Snapshot Rule to every H2 and H3. After every heading, write a 40-60 word direct, citation-ready answer before any elaboration.
 - Cite specific specifications. Say 13mm IAAF-specification EPDM sandwich track and Canadian Maple kiln-dried sports-grade wooden flooring.
 - Name the target institution type in every piece. Schools, universities, developers, clubs, badminton academies.
@@ -382,6 +383,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 - Distinguish PVC vinyl from wooden flooring clearly. PVC vinyl = performance surface, more affordable, indoor. Wooden = premium, tournament-standard, longer lifespan.
 
 ### NEVER DO THIS
+- Never use the brand name (e.g. UWIN Floortech) in the meta title for blog pages.
 - Never use banned filler phrases: high-quality, world-class, best sports flooring company, cutting-edge, seamless solutions, innovative, game-changer.
 - Never publish a content asset under 1,500 words. The topical authority standard is 2,500 words.
 - Never use stock photography of sports courts.

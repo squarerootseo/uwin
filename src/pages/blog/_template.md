@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
 title: "[Insert Blog Post Title Here]"
-meta_title: "[Insert SEO Meta Title - Max 60 Chars]"
+meta_title: "[Insert SEO Meta Title - Max 60 Chars - NEVER USE BRAND NAME]"
 meta_description: "[Insert SEO Meta Description - Max 160 Chars]"
 author: "UWIN Floortech"
 date: "YYYY-MM-DD"
@@ -31,7 +31,7 @@ tags: ["Tag 1", "Tag 2", "Tag 3"]
 
 ### [Sub-Section Title]
 
-[Insert main body content here.]
+[Insert main body content here. Ensure you add 3-4 natural internal links to relevant service pages.]
 
 <img src="/images/[insert-image-filename.png]" alt="[Insert Descriptive Alt Text]" width="800" height="600" loading="lazy" />
 
