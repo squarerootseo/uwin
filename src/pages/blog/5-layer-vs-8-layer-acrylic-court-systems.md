@@ -5,7 +5,7 @@ meta_title: "5-Layer vs 8-Layer Acrylic Court Systems | UWIN Floortech"
 meta_description: "Understand the critical differences between 5-layer non-cushion and 8-layer premium cushion acrylic sports court specifications. Manufacturer-direct pricing."
 author: "UWIN Floortech"
 date: "2026-08-21"
-hero_image: "/images/acrylic-court-hero.jpg"
+hero_image: "/images/hero-acrylic.png"
 tags: ["Acrylic Courts", "Tennis", "School Infrastructure", "ITF Certified"]
 ---
 
