@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
 title: "PP Interlocking Sports Tiles: The Complete B2B Buyers Guide"
-meta_title: "PP Interlocking Sports Tiles Guide | UWIN Floortech"
+meta_title: "PP Interlocking Sports Tiles Guide"
 meta_description: "Discover why schools and developers across India are switching to UV-stabilised PP interlocking sports tiles. Manufacturer-direct pricing, 10-year durability."
 author: "UWIN Floortech"
 date: "2026-08-14"

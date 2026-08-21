@@ -1,7 +1,7 @@
 ---
 layout: "../../layouts/BlogLayout.astro"
 title: "5-Layer vs 8-Layer Acrylic Court Systems: What Every School and Club Buyer Must Know"
-meta_title: "5-Layer vs 8-Layer Acrylic Court Systems | UWIN Floortech"
+meta_title: "5-Layer vs 8-Layer Acrylic Court Systems"
 meta_description: "Understand the critical differences between 5-layer non-cushion and 8-layer premium cushion acrylic sports court specifications. Manufacturer-direct pricing."
 author: "UWIN Floortech"
 date: "2026-08-21"
