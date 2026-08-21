@@ -153,7 +153,7 @@ The Indian sports infrastructure market is heavily fragmented. When a residentia
 
 These middlemen add 25% to 40% margins on the chemical materials and outsource the installation to daily-wage painters who do not understand the technical requirements of silica sand suspension, temperature-controlled curing, or ITF pace standards. The result is peeling surfaces, inconsistent ball bounce, and zero accountability.
 
-UWIN Floortech operates on a strict manufacturer-direct model. We supply certified water-based acrylic polymers and execute the turnkey installation using our own trained crews. For schools and clubs, this means you pay only for the materials and the labour—the trading margin is completely eliminated, and accountability rests with a single, highly technical provider.
+UWIN Floortech operates on a strict manufacturer-direct model. We supply certified water-based acrylic polymers and execute the turnkey installation using our own trained crews. For schools and clubs, this means you pay only for the materials and the labour - the trading margin is completely eliminated, and accountability rests with a single, highly technical provider.
 
 ---
 
