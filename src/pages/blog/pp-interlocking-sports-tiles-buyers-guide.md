@@ -51,7 +51,7 @@ For institutions looking to build high-performance outdoor courts, [PP Interlock
 <div class="cta-banner">
 <strong>Need a quote for your outdoor court?</strong>
 <p>Skip the trading middlemen. UWIN Floortech supplies and installs certified PP interlocking tiles with direct factory pricing across India.</p>
-<a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp Us Now</a>
+<a href="https://wa.me/919821648112" target="_blank" rel="noopener">👉 WhatsApp Us Now</a>
 
 </div>
 
@@ -185,7 +185,7 @@ While professional indoor academies require [BWF-certified Badminton Wooden Floo
 <div class="cta-banner">
 <strong>Planning a multi-sport court for your school or township?</strong>
 <p>Get factory-direct pricing and technical advice from our engineering team today.</p>
-<a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp UWIN Floortech Now</a>
+<a href="https://wa.me/919821648112" target="_blank" rel="noopener">👉 WhatsApp UWIN Floortech Now</a>
 
 </div>
 
