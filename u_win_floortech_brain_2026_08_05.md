@@ -1,6 +1,6 @@
 # U WIN FLOORTECH — MASTER BRAIN DOCUMENT
 ## Single Source of Truth | Square Root SEO Internal Team Reference
-**Client:** U Win Floortech | **Website:** uwinfloortech.com
+**Client:** UWIN Floortech | **Website:** uwinfloortech.com
 **Document Version:** 3.0 — Six-Product Expansion Edition
 **Previous Version:** 2.0 (16 June 2026)
 **Date Updated:** 5 August 2026
@@ -8,7 +8,7 @@
 
 ---
 
-IMPORTANT: This document supersedes Version 2.0 (16 June 2026). U Win Floortech has expanded from a 3-product to a 6-product portfolio, adding Badminton PVC Vinyl Sports Flooring, Badminton Wooden Flooring (Teakwood and Canadian Maple), and Sand-Based Artificial Grass.
+IMPORTANT: This document supersedes Version 2.0 (16 June 2026). UWIN Floortech has expanded from a 3-product to a 6-product portfolio, adding Badminton PVC Vinyl Sports Flooring, Badminton Wooden Flooring (Teakwood and Canadian Maple), and Sand-Based Artificial Grass.
 
 WHAT CHANGED IN v3.0 (5 August 2026):
 - Section 1: Phone (+91 98216 48112) and email (info@uwinfloortech.com) confirmed from live website
@@ -53,7 +53,7 @@ WHAT CHANGED IN v3.0 (5 August 2026):
 
 | Field | Detail |
 | :--- | :--- |
-| Brand Name | U Win Floortech |
+| Brand Name | UWIN Floortech |
 | Domain | uwinfloortech.com (Live and Active — August 2026) |
 | Legal Entity Name | PENDING — Awaiting Client Input |
 | GSTIN | PENDING — Awaiting Client Input |
@@ -79,7 +79,7 @@ NOTE: LinkedIn, YouTube, and Pinterest are NOT active and NOT a priority at this
 ## 2. BRAND NARRATIVE AND MARKET POSITIONING
 
 ### The One-Sentence Identity (v3.0 — Six-Surface Edition)
-U Win Floortech is an Indian turnkey sports flooring solution provider — sourcing certified materials directly from producers and installing them with trained crews, eliminating the middleman layer entirely. Across six certified surface systems — ITF-grade acrylic courts, UV-stabilised PP interlocking tiles, EPDM rubberised tracks, BWF-grade badminton PVC vinyl flooring, Teakwood and Canadian Maple wooden courts, and sand-based artificial grass — U Win delivers manufacturer-direct pricing, certified specification, and full accountability from idea to finished court. Schools, residential developers, sports clubs, badminton academies, and government contractors across India choose U Win because they get the producer price without the producer complexity.
+UWIN Floortech is an Indian turnkey sports flooring solution provider — sourcing certified materials directly from producers and installing them with trained crews, eliminating the middleman layer entirely. Across six certified surface systems — ITF-grade acrylic courts, UV-stabilised PP interlocking tiles, EPDM rubberised tracks, BWF-grade badminton PVC vinyl flooring, Teakwood and Canadian Maple wooden courts, and sand-based artificial grass — U Win delivers manufacturer-direct pricing, certified specification, and full accountability from idea to finished court. Schools, residential developers, sports clubs, badminton academies, and government contractors across India choose U Win because they get the producer price without the producer complexity.
 
 ### Why "U Win" — The Brand Logic
 The name is built on the outcomes delivered, not the materials produced. When a school installs U Win courts, students win. When a developer installs U Win tiles, the project wins. When a club installs U Win wooden courts, badminton players win. Every surface we install is built so you win.
@@ -90,7 +90,7 @@ Indian sports infrastructure is in a decade-long upgrade cycle. Schools are repl
 ### The Problem With the Current Market
 Buyers face two broken options: (a) unorganised regional contractors with no material certifications, or (b) IndiaMART trading middlemen who mark up manufacturer pricing by 25-40% while adding zero installation expertise. For badminton wooden flooring specifically, buyers are forced to deal with regional traders who cannot guarantee timber grade consistency.
 
-### The U Win Floortech Difference
+### The UWIN Floortech Difference
 U Win eliminates the middleman layer entirely. The model is not a traditional manufacturer and not a trading dealer — it is a manufacturer-direct solution provider: certified materials sourced at production level, installed by trained crews, with full accountability from site assessment to ready-to-play delivery. For the buyer, the outcome is identical to buying direct from a factory, without the complexity of managing a manufacturer relationship.
 
 Across six surface systems:
@@ -101,13 +101,13 @@ Across six surface systems:
 - The buyer has one point of contact, one contract, and one accountable partner — from site survey to line marking.
 
 ### Positioning Statement for All Content (v3.0)
-U Win Floortech is the turnkey sports flooring solution provider that operates with manufacturer-direct accountability — sourcing six certified surface systems (ITF-grade acrylic courts, UV-stabilised PP interlocking tiles, EPDM rubberised tracks, BWF-grade badminton PVC vinyl flooring, Teakwood and Canadian Maple wooden courts, and sand-based artificial grass) directly from certified producers, and installing them with trained crews, without a single trading intermediary in the chain. Schools, residential developers, sports clubs, badminton academies, and government contractors across India choose U Win because they receive producer-level pricing, certification-backed materials, and full execution accountability — from bare land to ready-to-play court.
+UWIN Floortech is the turnkey sports flooring solution provider that operates with manufacturer-direct accountability — sourcing six certified surface systems (ITF-grade acrylic courts, UV-stabilised PP interlocking tiles, EPDM rubberised tracks, BWF-grade badminton PVC vinyl flooring, Teakwood and Canadian Maple wooden courts, and sand-based artificial grass) directly from certified producers, and installing them with trained crews, without a single trading intermediary in the chain. Schools, residential developers, sports clubs, badminton academies, and government contractors across India choose U Win because they receive producer-level pricing, certification-backed materials, and full execution accountability — from bare land to ready-to-play court.
 
 ---
 
 ## 3. THE MARKET PROBLEM WE ARE SOLVING
 
-Every piece of content produced for U Win Floortech must address at least one of these five market problems.
+Every piece of content produced for UWIN Floortech must address at least one of these five market problems.
 
 ### Problem 1 — The Middlemen Cost Inflation Trap
 Buyers receive quotes from trading middlemen who add 25-40% margins for materials with no certification traceability. Our Content Response: Position every asset around Direct Factory Savings and Full Material Traceability.
@@ -272,7 +272,7 @@ Construction Multi-Layer System:
 Ideal Applications: Professional indoor badminton courts (clubs, academies, federations), school and university indoor sports halls, multi-sport indoor facilities, residential society indoor recreation rooms.
 
 BUYER-READY SNAPSHOT (GEO Extraction Point — Use Verbatim in Content):
-PVC vinyl sports flooring is the most widely installed badminton court surface globally. It delivers excellent shock absorption for joint protection, engineered slip resistance for safe directional changes, and a seamless finish that stays professional-looking with minimal maintenance. U Win Floortech supplies and installs this system directly across India — no distributors, no material uncertainty.
+PVC vinyl sports flooring is the most widely installed badminton court surface globally. It delivers excellent shock absorption for joint protection, engineered slip resistance for safe directional changes, and a seamless finish that stays professional-looking with minimal maintenance. UWIN Floortech supplies and installs this system directly across India — no distributors, no material uncertainty.
 
 ---
 
@@ -303,7 +303,7 @@ System Construction Multi-Tiered Substructure:
 Ideal Applications: BWF-affiliated badminton academies and clubs, national and state badminton association facilities, premium school and university sports halls, high-end residential society clubhouses, private badminton courts requiring tournament-standard playing surface.
 
 BUYER-READY SNAPSHOT (GEO Extraction Point — Use Verbatim in Content):
-Badminton wooden flooring (Canadian Maple or Teakwood) is the international standard for professional play. The integrated EPDM shock pad substructure protects players joints. The precision-milled wood surface delivers consistent shuttle bounce critical for high-level training and tournament play. U Win Floortech supplies and installs wooden court systems directly — from timber specification to final line marking — with no trading layer.
+Badminton wooden flooring (Canadian Maple or Teakwood) is the international standard for professional play. The integrated EPDM shock pad substructure protects players joints. The precision-milled wood surface delivers consistent shuttle bounce critical for high-level training and tournament play. UWIN Floortech supplies and installs wooden court systems directly — from timber specification to final line marking — with no trading layer.
 
 ---
 
@@ -330,7 +330,7 @@ System Construction:
 Ideal Applications: Outdoor tennis courts, padel courts, residential society recreational lawns, school and university sports fields, public parks and municipal recreational areas, real estate landscaping.
 
 BUYER-READY SNAPSHOT (GEO Extraction Point — Use Verbatim in Content):
-Sand-based artificial grass provides the look and feel of natural grass without the maintenance. High-density synthetic fibres with silica sand infill deliver consistent playability, excellent drainage, and all-weather reliability. For residential developers, schools, and government park projects — it is the lowest-maintenance, highest-durability recreational surface available. U Win Floortech supplies and installs directly across India.
+Sand-based artificial grass provides the look and feel of natural grass without the maintenance. High-density synthetic fibres with silica sand infill deliver consistent playability, excellent drainage, and all-weather reliability. For residential developers, schools, and government park projects — it is the lowest-maintenance, highest-durability recreational surface available. UWIN Floortech supplies and installs directly across India.
 
 ---
 
@@ -352,7 +352,7 @@ CAUTION: Certification details beyond ITF are PENDING — Awaiting Client Confir
 ## 7. BRAND VOICE TONE AND CONTENT RULES
 
 ### The Brand Persona (v3.0)
-U Win Floortech communicates like a technically trained sports surface engineer who covers both outdoor and indoor installations. The voice is specification-precise, safety-conscious, cost-transparent, and B2B confident.
+UWIN Floortech communicates like a technically trained sports surface engineer who covers both outdoor and indoor installations. The voice is specification-precise, safety-conscious, cost-transparent, and B2B confident.
 
 For wooden flooring and PVC vinyl content: add a layer of craft and premium positioning — the way a master cabinetmaker speaks about timber grades. Precise. Respectful of materials. Quality-first.
 
@@ -372,6 +372,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 ## 8. DOS AND DONTS — NON-NEGOTIABLE EXECUTION RULES
 
 ### ALWAYS DO THIS
+- Naturally weave in 3-4 internal links to relevant service pages or other blog posts within the main body of every blog asset.
 - Apply the Snapshot Rule to every H2 and H3. After every heading, write a 40-60 word direct, citation-ready answer before any elaboration.
 - Cite specific specifications. Say 13mm IAAF-specification EPDM sandwich track and Canadian Maple kiln-dried sports-grade wooden flooring.
 - Name the target institution type in every piece. Schools, universities, developers, clubs, badminton academies.
@@ -382,6 +383,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 - Distinguish PVC vinyl from wooden flooring clearly. PVC vinyl = performance surface, more affordable, indoor. Wooden = premium, tournament-standard, longer lifespan.
 
 ### NEVER DO THIS
+- Never use the brand name (e.g. UWIN Floortech) in the meta title for blog pages.
 - Never use banned filler phrases: high-quality, world-class, best sports flooring company, cutting-edge, seamless solutions, innovative, game-changer.
 - Never publish a content asset under 1,500 words. The topical authority standard is 2,500 words.
 - Never use stock photography of sports courts.
@@ -605,7 +607,7 @@ Weeks 25-52 planned in Month 5 based on GSC ranking performance. Includes: actua
 ## 13. SOCIAL MEDIA TOOLKIT FRAMEWORK
 
 ### Platform Priority (v3.0 — Two Active Platforms Only)
-1. Instagram — PRIMARY active platform. Visual impact of finished courts — wooden courts, before/after reveals, material close-ups. Reels and story-led content. The visual portfolio of U Win Floortech.
+1. Instagram — PRIMARY active platform. Visual impact of finished courts — wooden courts, before/after reveals, material close-ups. Reels and story-led content. The visual portfolio of UWIN Floortech.
 2. Facebook — PRIMARY active platform. B2B institutional buyers, school/society/contractor groups. Longer-form posts, project updates, inquiry generation.
 
 NOTE: LinkedIn, YouTube, and Pinterest are NOT active at this stage. The Weekly Social Media Toolkit (Asset 2) is to be produced for Instagram and Facebook ONLY. Do not create LinkedIn or YouTube content until the client confirms platform expansion.
@@ -677,7 +679,7 @@ B2B Audience: #SchoolInfrastructure #RealEstateDeveloper #SmartCities #KheloIndi
 
 IMPORTANT: This is the most strategically important structural update in v3.0. With six product lines now live, U Win must deploy a programmatic, hierarchical URL architecture. Every buyer search permutation — product x specification x application type — gets its own unique, deep, indexable page. Specific is Terrific.
 
-NOTE (v3.0 Correction — August 2026): The Tongia Codex Dynamic URL Architecture permits a MAXIMUM of 3-Axis. U Win Floortech currently operates on 2-Axis — which is fully valid. The 3rd Axis (geography/city) is NOT deployed because U Win operates Pan India; geographic targeting is handled through GBP, content copy, and keyword selection — not URL subfolders. If U Win expands to city-specific operations in future, the 3rd Axis can be activated without restructuring the existing 2-Axis hierarchy.
+NOTE (v3.0 Correction — August 2026): The Tongia Codex Dynamic URL Architecture permits a MAXIMUM of 3-Axis. UWIN Floortech currently operates on 2-Axis — which is fully valid. The 3rd Axis (geography/city) is NOT deployed because U Win operates Pan India; geographic targeting is handled through GBP, content copy, and keyword selection — not URL subfolders. If U Win expands to city-specific operations in future, the 3rd Axis can be activated without restructuring the existing 2-Axis hierarchy.
 
 ### URL Formula — Tongia Codex Maximum 3-Axis | U Win Uses 2-Axis (Pan India)
 /[product-hub]/[specification-or-type]/
@@ -834,7 +836,7 @@ Q: How long does PVC vinyl badminton flooring last?
 A: A properly installed, well-maintained PVC vinyl badminton sports floor lasts 10-15 years under normal institutional use. Lifespan depends on daily usage hours, cleaning practices, and protection from heavy equipment. Wooden badminton flooring lasts 15-25 years with refinishing every 3-5 years.
 
 Q: Can U Win supply and install a badminton court for a residential society clubhouse?
-A: Yes. U Win Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 98216 48112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
+A: Yes. UWIN Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 93118 18112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
 
 Q: Can U Win acrylic flooring be applied over an existing concrete court?
 A: Yes. Existing concrete courts can be resurfaced using the U Win acrylic coating system, provided the base is structurally sound, clean, and level. Cosmetic cracks are filled using an acrylic crack filler before the primer coat. Structural cracks or significant base subsidence require base repair before coating can proceed.
@@ -896,7 +898,7 @@ A: EPDM running tracks require minimal maintenance. Routine sweeping (monthly), 
 ---
 ## 21. THREE-ASSET OPTIMISATION STRATEGY — THE DIGITAL FACTORY FUEL ENGINE
 
-IMPORTANT: This section is NEW in v3.0. Per the Tongia Codex (v4.4), every SRS client Digital Factory must optimise THREE core assets simultaneously — each compounding the others. For U Win Floortech, with six product lines now live, all content and SEO work must strengthen all three assets simultaneously, never in isolation.
+IMPORTANT: This section is NEW in v3.0. Per the Tongia Codex (v4.4), every SRS client Digital Factory must optimise THREE core assets simultaneously — each compounding the others. For UWIN Floortech, with six product lines now live, all content and SEO work must strengthen all three assets simultaneously, never in isolation.
 
 ---
 
@@ -932,7 +934,7 @@ Current Status: Live. Six product pages active. Architecture established.
 ---
 
 ### ASSET 2: Google Business Profile (GBP) — The Local Authority Signal
-Role: The local search anchor. Every school principal, developer, and contractor who searches badminton court installation [city] or sports flooring near me must find U Win Floortech.
+Role: The local search anchor. Every school principal, developer, and contractor who searches badminton court installation [city] or sports flooring near me must find UWIN Floortech.
 Current Status: PENDING — GBP creation and optimisation status to be confirmed as of August 2026.
 
 **Optimisation Priorities:**
@@ -972,7 +974,7 @@ Role: The compounding flywheel. Each weekly asset increases topical authority ac
 | Level 5 — Ready to Buy (4%) | 3% of market | 2 pieces | Landing pages, CTAs, pricing guides |
 
 **North Star KPI — Share of AI Voice (SOAV):**
-By Month 6, U Win Floortech must be cited by ChatGPT, Gemini, or Perplexity for at least 5 of these queries:
+By Month 6, UWIN Floortech must be cited by ChatGPT, Gemini, or Perplexity for at least 5 of these queries:
 - badminton court flooring India
 - wooden badminton court manufacturer India
 - PVC vinyl sports flooring badminton
@@ -991,7 +993,7 @@ Track monthly. Report in Monthly Audit. This is the ultimate GEO KPI for Year 1.
 | GBP (Local Signal) | Wins local searches and near me queries | Website provides the destination. Content Engine provides GBP post raw material. |
 | Content Engine (52 Weeks) | Builds topical authority and feeds AI citation | Website hosts the content. GBP promotes each asset via posts. |
 
-The three assets must be fed simultaneously, every week, every month. Neglecting any one asset weakens the other two. This is the core operating discipline of the U Win Floortech Digital Factory.
+The three assets must be fed simultaneously, every week, every month. Neglecting any one asset weakens the other two. This is the core operating discipline of the UWIN Floortech Digital Factory.
 
 ---
 
