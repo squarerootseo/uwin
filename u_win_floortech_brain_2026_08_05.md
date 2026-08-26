@@ -836,7 +836,7 @@ Q: How long does PVC vinyl badminton flooring last?
 A: A properly installed, well-maintained PVC vinyl badminton sports floor lasts 10-15 years under normal institutional use. Lifespan depends on daily usage hours, cleaning practices, and protection from heavy equipment. Wooden badminton flooring lasts 15-25 years with refinishing every 3-5 years.
 
 Q: Can U Win supply and install a badminton court for a residential society clubhouse?
-A: Yes. UWIN Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 93118 18112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
+A: Yes. UWIN Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 98216 48112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
 
 Q: Can U Win acrylic flooring be applied over an existing concrete court?
 A: Yes. Existing concrete courts can be resurfaced using the U Win acrylic coating system, provided the base is structurally sound, clean, and level. Cosmetic cracks are filled using an acrylic crack filler before the primer coat. Structural cracks or significant base subsidence require base repair before coating can proceed.
