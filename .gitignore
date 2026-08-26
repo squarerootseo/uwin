@@ -9,5 +9,8 @@ acrylic_screenshot.png
 dist/
 .astro/
 
+# Environment variables
+.env
+
 # Ignore dependencies
 node_modules/

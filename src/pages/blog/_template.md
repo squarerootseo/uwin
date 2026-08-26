@@ -38,7 +38,7 @@ tags: ["Tag 1", "Tag 2", "Tag 3"]
 <div class="cta-banner">
 <strong>[Insert a compelling Call to Action heading]</strong>
 <p>[Insert brief supporting text explaining why they should contact you.]</p>
-<a href="https://wa.me/919311818112" target="_blank" rel="noopener">👉 WhatsApp Us Now</a>
+<a href="https://wa.me/919821648112" target="_blank" rel="noopener">👉 WhatsApp Us Now</a>
 </div>
 
 ## [Section 2 Title]

@@ -11,7 +11,7 @@
 IMPORTANT: This document supersedes Version 2.0 (16 June 2026). UWIN Floortech has expanded from a 3-product to a 6-product portfolio, adding Badminton PVC Vinyl Sports Flooring, Badminton Wooden Flooring (Teakwood and Canadian Maple), and Sand-Based Artificial Grass.
 
 WHAT CHANGED IN v3.0 (5 August 2026):
-- Section 1: Phone (+91 93118 18112) and email (info@uwinfloortech.com) confirmed from live website
+- Section 1: Phone (+91 98216 48112) and email (info@uwinfloortech.com) confirmed from live website
 - Section 2: Brand narrative upgraded to six-surface positioning
 - Section 5: Lines 4, 5, 6 added with full specification tables
 - Section 7: Brand voice updated for indoor surfaces and premium natural-material positioning
@@ -59,8 +59,8 @@ WHAT CHANGED IN v3.0 (5 August 2026):
 | GSTIN | PENDING — Awaiting Client Input |
 | PAN | PENDING — Awaiting Client Input |
 | Email | info@uwinfloortech.com (confirmed from live website August 2026) |
-| Primary Phone / WhatsApp | +91 93118 18112 (confirmed from live website August 2026) |
-| WhatsApp Click Link | wa.me/919311818112 |
+| Primary Phone / WhatsApp | +91 98216 48112 (confirmed from live website August 2026) |
+| WhatsApp Click Link | wa.me/919821648112 |
 | Factory / Office Address | PENDING — Awaiting Client Input |
 | Business Type | Turnkey Sports Flooring Solution Provider — Manufacturer-Direct Model |
 | Product Portfolio | 6 Surface Systems: PP Tiles, EPDM Tracks, Acrylic Courts, Badminton PVC Vinyl, Badminton Wooden Flooring, Sand-Based Artificial Grass |
@@ -376,7 +376,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 - Apply the Snapshot Rule to every H2 and H3. After every heading, write a 40-60 word direct, citation-ready answer before any elaboration.
 - Cite specific specifications. Say 13mm IAAF-specification EPDM sandwich track and Canadian Maple kiln-dried sports-grade wooden flooring.
 - Name the target institution type in every piece. Schools, universities, developers, clubs, badminton academies.
-- Include a WhatsApp CTA in every content asset. Minimum 3 times per long-form piece. Phone: +91 93118 18112.
+- Include a WhatsApp CTA in every content asset. Minimum 3 times per long-form piece. Phone: +91 98216 48112.
 - Explain sub-base requirements whenever describing any product.
 - Reference certifications by the full standard name the first time.
 - Distinguish wood species correctly. Always name whether it is Canadian Maple or Teakwood and state the specific performance difference.
@@ -491,7 +491,7 @@ Every Friday, the Square Root SEO team delivers three assets to the client.
 | Table of Contents | Required on every long-form piece. |
 | Snapshot Rule | 40-60 word direct answer immediately after every H2 and H3. The most important GEO tactic. |
 | Internal Links | 3-5 descriptive anchor-text links pointing to product service pages. |
-| CTAs | Minimum 3 WhatsApp/quote CTAs (+91 93118 18112) embedded throughout. |
+| CTAs | Minimum 3 WhatsApp/quote CTAs (+91 98216 48112) embedded throughout. |
 | FAQs | Minimum 3 FAQ questions per asset with FAQPage JSON-LD schema. |
 | Images | Minimum 3 — real project photos or AI-generated visuals. All WebP. Descriptive alt text. |
 | Meta Title | 50-60 characters, primary keyword + brand name. |
@@ -753,7 +753,7 @@ Allow without restriction: GPTBot | ChatGPT-User | OAI-SearchBot | anthropic-ai 
 | Discovery | Buyer searches for sports court specifications | Google / AI Search |
 | Education | Buyer reads U Win technical guide | Website Blog |
 | Intent | Buyer visits product page or requests quote | Website Product Page |
-| Conversion | Buyer sends WhatsApp inquiry | WhatsApp: +91 93118 18112 |
+| Conversion | Buyer sends WhatsApp inquiry | WhatsApp: +91 98216 48112 |
 | Qualification | Team responds within 4 hours, requests project brief | WhatsApp / Email |
 | Proposal | Technical specification and cost sheet sent | Email / PDF |
 
@@ -942,7 +942,7 @@ Current Status: PENDING — GBP creation and optimisation status to be confirmed
 2. Weekly Post Rhythm — 52 GBP posts/year. Immediately prioritise Lines 4, 5, 6.
 3. Q&A Pre-Seeding — Add 5+ Q&As about new products (see Section 14).
 4. Photo Strategy — Once project photos of Lines 4, 5, 6 are available, upload immediately.
-5. NAP Consistency — Phone: +91 93118 18112 | Email: info@uwinfloortech.com | Address: [confirm]. Must be identical across GBP, website, and all directory listings.
+5. NAP Consistency — Phone: +91 98216 48112 | Email: info@uwinfloortech.com | Address: [confirm]. Must be identical across GBP, website, and all directory listings.
 
 ---
 
@@ -952,7 +952,7 @@ Role: The compounding flywheel. Each weekly asset increases topical authority ac
 **Three Non-Negotiables per Content Asset:**
 1. Snapshot Rule Applied — 40-60 word direct answer after every H2/H3. This is the GEO extraction point.
 2. FAQPage Schema — Minimum 3 Q&As per piece in JSON-LD. AI engines index FAQ schema preferentially.
-3. WhatsApp CTA — Minimum 3 per long-form piece. Phone: +91 93118 18112.
+3. WhatsApp CTA — Minimum 3 per long-form piece. Phone: +91 98216 48112.
 
 **Content Distribution Across Six Clusters (Annual 52-Piece Plan):**
 | Cluster | Annual Pieces | Priority |
@@ -1003,8 +1003,8 @@ This file supersedes Version 2.0 (16 June 2026) in its entirety.
 
 Version 3.0 reflects confirmed data from the live website (uwinfloortech.com, verified 5 August 2026):
 - Six products live
-- Phone +91 93118 18112 confirmed
-- WhatsApp wa.me/919311818112 confirmed
+- Phone +91 98216 48112 confirmed
+- WhatsApp wa.me/919821648112 confirmed
 - Email info@uwinfloortech.com confirmed
 
 Compiled and upgraded by Square Root SEO LLP | Punit Pawan Tongia | 5 August 2026
