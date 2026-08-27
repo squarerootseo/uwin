@@ -372,6 +372,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 ## 8. DOS AND DONTS — NON-NEGOTIABLE EXECUTION RULES
 
 ### ALWAYS DO THIS
+- Always use port 4322 (`http://localhost:4322`) when running the local development server for preview purposes.
 - Naturally weave in 3-4 internal links to relevant service pages or other blog posts within the main body of every blog asset.
 - Apply the Snapshot Rule to every H2 and H3. After every heading, write a 40-60 word direct, citation-ready answer before any elaboration.
 - Cite specific specifications. Say 13mm IAAF-specification EPDM sandwich track and Canadian Maple kiln-dried sports-grade wooden flooring.
