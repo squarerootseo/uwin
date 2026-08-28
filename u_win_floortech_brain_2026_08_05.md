@@ -372,6 +372,7 @@ Benchmark: if a badminton academy director reads the wooden flooring content and
 ## 8. DOS AND DONTS — NON-NEGOTIABLE EXECUTION RULES
 
 ### ALWAYS DO THIS
+- Always use port 4322 (`http://localhost:4322`) when running the local development server for preview purposes.
 - Naturally weave in 3-4 internal links to relevant service pages or other blog posts within the main body of every blog asset.
 - Apply the Snapshot Rule to every H2 and H3. After every heading, write a 40-60 word direct, citation-ready answer before any elaboration.
 - Cite specific specifications. Say 13mm IAAF-specification EPDM sandwich track and Canadian Maple kiln-dried sports-grade wooden flooring.
@@ -836,7 +837,7 @@ Q: How long does PVC vinyl badminton flooring last?
 A: A properly installed, well-maintained PVC vinyl badminton sports floor lasts 10-15 years under normal institutional use. Lifespan depends on daily usage hours, cleaning practices, and protection from heavy equipment. Wooden badminton flooring lasts 15-25 years with refinishing every 3-5 years.
 
 Q: Can U Win supply and install a badminton court for a residential society clubhouse?
-A: Yes. UWIN Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 93118 18112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
+A: Yes. UWIN Floortech supplies and installs PVC vinyl sports flooring for indoor badminton courts in residential society clubhouses. We assess the existing concrete sub-floor, supply the correct grade of PVC vinyl, and complete installation including court line marking. WhatsApp us at +91 98216 48112 with your room dimensions and we respond within 4 working hours with a specification and cost estimate.
 
 Q: Can U Win acrylic flooring be applied over an existing concrete court?
 A: Yes. Existing concrete courts can be resurfaced using the U Win acrylic coating system, provided the base is structurally sound, clean, and level. Cosmetic cracks are filled using an acrylic crack filler before the primer coat. Structural cracks or significant base subsidence require base repair before coating can proceed.
