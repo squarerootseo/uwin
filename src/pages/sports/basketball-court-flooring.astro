@@ -1,28 +1,62 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
 
-const schema = JSON.stringify([
-  {
+const schema = JSON.stringify([{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Basketball Court Flooring",
-    "description": "Professional basketball court flooring installation and surfacing solutions by U Win Floortech."
-  }
-]);
+    "name": "Basketball Court Flooring"
+  }]);
 ---
 
-<Layout title="Basketball Court Flooring | UWIN Floortech" description="Professional basketball court flooring installation and surfacing solutions across India.">
+<Layout title="Basketball Court Flooring: ITF-Grade Acrylic & PP Tiles | UWIN" description="Build a professional basketball court. UWIN Floortech provides 5-layer acrylic and UV-stabilised PP interlocking tiles for outdoor school and club courts." schema={schema}>
+  <Navbar />
+  
   <main class="pt-24 pb-16 bg-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-6">Basketball Court Flooring</h1>
-      <p class="text-lg text-slate-600 mb-8">
-        We provide turnkey basketball court flooring solutions, sourcing materials directly from manufacturers and installing them with expert crews. No middlemen, full accountability.
-      </p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-8">Basketball Court Flooring: ITF-Grade Acrylic & PP Tiles</h1>
       
-      <div class="bg-blue-50 border border-blue-100 rounded-xl p-8 mb-12">
-        <h2 class="text-2xl font-bold text-[#1E293B] mb-4">Content Pending</h2>
-        <p class="text-slate-600">This page structure has been scaffolded per the new 3-Silo architecture and is scheduled for content population.</p>
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-10 ai-snapshot">
+        <strong>Snapshot:</strong> What flooring is used for outdoor basketball courts in India? UV-stabilized PP interlocking tiles and 5-layer acrylic coating systems are the standard. Acrylic provides a seamless, fast-paced hard court, while PP tiles offer excellent drainage and easy installation over existing concrete.
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-slate-700">
+        
+    <h2>Professional Basketball Surfaces for Schools and Developers</h2>
+    <div class="ai-snapshot bg-gray-50 p-4 rounded-md mb-6 border-l-4 border-gray-400">
+      <strong>Is acrylic coating good for basketball courts?</strong> Yes, a 5-layer non-cushion acrylic system provides the perfect hard-court surface for basketball, delivering consistent ball bounce, high slip resistance, and vibrant UV-stable colors for outdoor courts.
+    </div>
+    <p>An outdoor basketball court requires a surface that can handle heavy foot traffic, abrasive wear, and harsh weather conditions while delivering perfect, consistent ball bounce. UWIN Floortech provides two primary solutions for the Indian market.</p>
+
+    <h3>Option 1: The 5-Layer Acrylic Coating System</h3>
+    <p>The global standard for outdoor hard courts. We apply a water-based acrylic polymer emulsion directly over a prepared M20 concrete or asphalt base. The system includes a primer, an acrylic resurfacer to fill minor pores, two silica-sand infused color wear coats for grip, and precision line marking.</p>
+    <ul>
+      <li><strong>Performance:</strong> Fast-paced, medium-high friction, perfect ball rebound.</li>
+      <li><strong>Durability:</strong> 5-8 years before a top-coat resurface is required.</li>
+      <li><strong>Best For:</strong> Professional academies, schools, and university campuses.</li>
+    </ul>
+
+    <h3>Option 2: PP Interlocking Modular Tiles</h3>
+    <p>For facilities looking for a fast upgrade without the curing time of wet-poured acrylics, PP tiles are the ultimate solution. These UV-stabilized copolymer tiles snap together to form a suspended, self-draining grid.</p>
+    <ul>
+      <li><strong>Drainage:</strong> Rainwater passes straight through the grid. The court is playable 15 minutes after a monsoon downpour.</li>
+      <li><strong>Thermal Tolerance:</strong> Built with expansion joints to handle temperatures from -20°C to +60°C without buckling.</li>
+      <li><strong>Best For:</strong> Residential societies, township developers, and multi-sport zones.</li>
+    </ul>
+  
+      </div>
+      
+      <div class="mt-12 p-8 bg-[#1E293B] rounded-2xl text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Ready to upgrade your sports infrastructure?</h3>
+        <p class="mb-6 text-slate-300">Get manufacturer-direct pricing with zero middlemen markups. We supply and install Pan-India.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="tel:+919821648112" class="bg-white text-[#1E293B] px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors">Call +91 98216 48112</a>
+          <a href="https://wa.me/919821648112" target="_blank" rel="noopener" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-colors">WhatsApp Us</a>
+        </div>
       </div>
     </div>
   </main>
+
+  <Footer />
 </Layout>

@@ -1,28 +1,66 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
 
-const schema = JSON.stringify([
-  {
+const schema = JSON.stringify([{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Synthetic Court Flooring",
-    "description": "Professional synthetic court flooring installation and surfacing solutions by U Win Floortech."
-  }
-]);
+    "name": "Synthetic Court Flooring"
+  }]);
 ---
 
-<Layout title="Synthetic Court Flooring | UWIN Floortech" description="Professional synthetic court flooring installation and surfacing solutions across India.">
+<Layout title="Synthetic Court Flooring: Turnkey Solutions for Schools & Clubs | UWIN Floortech" description="Upgrade to certified synthetic court flooring. We provide manufacturer-direct PVC vinyl, acrylic, and PP tiles for sports facilities across India. Get a quote." schema={schema}>
+  <Navbar />
+  
   <main class="pt-24 pb-16 bg-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-6">Synthetic Court Flooring</h1>
-      <p class="text-lg text-slate-600 mb-8">
-        We provide turnkey synthetic court flooring solutions, sourcing materials directly from manufacturers and installing them with expert crews. No middlemen, full accountability.
-      </p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-8">Synthetic Court Flooring: Turnkey Solutions for Schools & Clubs</h1>
       
-      <div class="bg-blue-50 border border-blue-100 rounded-xl p-8 mb-12">
-        <h2 class="text-2xl font-bold text-[#1E293B] mb-4">Content Pending</h2>
-        <p class="text-slate-600">This page structure has been scaffolded per the new 3-Silo architecture and is scheduled for content population.</p>
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-10 ai-snapshot">
+        <strong>Snapshot:</strong> What is the best synthetic court flooring? Synthetic flooring offers UV stability, point-elastic shock absorption, and all-weather durability. UWIN Floortech provides ITF-certified acrylic and BWF-grade PVC vinyl surfaces engineered for the extreme temperature variations of Indian weather.
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-slate-700">
+        
+    <h2>The Shift to Synthetic Sports Surfaces in India</h2>
+    <div class="ai-snapshot bg-gray-50 p-4 rounded-md mb-6 border-l-4 border-gray-400">
+      <strong>Why are schools replacing concrete courts?</strong> Bare concrete courts cause severe joint impact injuries and knee strain. Synthetic court flooring—whether acrylic, PVC, or PP tiles—provides essential shock absorption, slip resistance, and certified player safety.
+    </div>
+    <p>Indian sports infrastructure is undergoing a massive upgrade cycle. The days of playing on raw asphalt or hard concrete are over. Modern institutions require certified surfaces that protect athletes and meet international federation standards.</p>
+    
+    <h3>Types of Synthetic Court Flooring</h3>
+    <p>We supply and install the three primary categories of synthetic sports surfaces:</p>
+    <ul>
+      <li><strong>Acrylic Court Coatings:</strong> 5-layer and 8-layer cushion systems. ITF-certified for tennis and basketball. Ideal for outdoor hard courts.</li>
+      <li><strong>PVC Vinyl Sports Flooring:</strong> High-density, multi-layer indoor flooring. BWF-compliant for badminton, table tennis, and indoor multi-sport halls.</li>
+      <li><strong>PP Interlocking Tiles:</strong> UV-stabilized copolymer tiles. Excellent for fast outdoor retrofits over existing damaged concrete.</li>
+    </ul>
+
+    <h2>Sub-Base Requirements for Synthetic Flooring</h2>
+    <p>No synthetic surface can compensate for a failing foundation. For a successful installation, the sub-base must be:</p>
+    <ul>
+      <li><strong>M20 Grade Concrete:</strong> Minimum compressive strength required to prevent base cracking.</li>
+      <li><strong>Moisture Barrier:</strong> A 200-micron vapor barrier must be installed beneath the concrete to prevent rising dampness from delaminating the synthetic top coat.</li>
+      <li><strong>Slope for Drainage:</strong> Outdoor courts require a strict 0.8% to 1% slope to ensure immediate water runoff.</li>
+    </ul>
+
+    <h2>The UWIN Floortech Manufacturer-Direct Advantage</h2>
+    <p>Buying sports flooring in India usually involves navigating a maze of regional contractors and IndiaMART middlemen who mark up prices by 25-40% without adding installation value.</p>
+    <p>UWIN Floortech eliminates the middleman. We source ITF and BWF-grade materials directly from producers and install them with our own trained crews. You pay for the surface, not the trader's margin.</p>
+  
+      </div>
+      
+      <div class="mt-12 p-8 bg-[#1E293B] rounded-2xl text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Ready to upgrade your sports infrastructure?</h3>
+        <p class="mb-6 text-slate-300">Get manufacturer-direct pricing with zero middlemen markups. We supply and install Pan-India.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="tel:+919821648112" class="bg-white text-[#1E293B] px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors">Call +91 98216 48112</a>
+          <a href="https://wa.me/919821648112" target="_blank" rel="noopener" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-colors">WhatsApp Us</a>
+        </div>
       </div>
     </div>
   </main>
+
+  <Footer />
 </Layout>

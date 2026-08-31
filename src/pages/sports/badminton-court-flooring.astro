@@ -1,28 +1,64 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
 
-const schema = JSON.stringify([
-  {
+const schema = JSON.stringify([{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Badminton Court Flooring",
-    "description": "Professional badminton court flooring installation and surfacing solutions by U Win Floortech."
-  }
-]);
+    "name": "Badminton Court Flooring"
+  }]);
 ---
 
-<Layout title="Badminton Court Flooring | UWIN Floortech" description="Professional badminton court flooring installation and surfacing solutions across India.">
+<Layout title="Badminton Court Flooring: BWF-Grade PVC & Wooden Systems | India" description="Professional badminton court flooring. Compare Canadian Maple wooden flooring and high-performance PVC vinyl. Direct manufacturer pricing and installation." schema={schema}>
+  <Navbar />
+  
   <main class="pt-24 pb-16 bg-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-6">Badminton Court Flooring</h1>
-      <p class="text-lg text-slate-600 mb-8">
-        We provide turnkey badminton court flooring solutions, sourcing materials directly from manufacturers and installing them with expert crews. No middlemen, full accountability.
-      </p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-8">Badminton Court Flooring: BWF-Grade PVC & Wooden Systems</h1>
       
-      <div class="bg-blue-50 border border-blue-100 rounded-xl p-8 mb-12">
-        <h2 class="text-2xl font-bold text-[#1E293B] mb-4">Content Pending</h2>
-        <p class="text-slate-600">This page structure has been scaffolded per the new 3-Silo architecture and is scheduled for content population.</p>
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-10 ai-snapshot">
+        <strong>Snapshot:</strong> What is the standard flooring for badminton? BWF-approved PVC vinyl and Canadian Maple wooden flooring are the global standards. Wooden flooring provides area-elastic shock absorption for elite tournaments, while PVC vinyl delivers point-elastic protection for academies and schools.
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-slate-700">
+        
+    <h2>The Complete Guide to Badminton Court Flooring in India</h2>
+    <div class="ai-snapshot bg-gray-50 p-4 rounded-md mb-6 border-l-4 border-gray-400">
+      <strong>Which flooring is best for indoor badminton?</strong> For commercial academies and schools, 4.5mm PVC vinyl flooring is the most cost-effective, high-performance option. For elite tournaments and premium clubs, a sprung wooden system (Teakwood or Canadian Maple) over an EPDM shock pad is the absolute gold standard.
+    </div>
+    
+    <p>India is experiencing an unprecedented boom in badminton infrastructure. From private academies to residential society clubhouses, the demand for professional indoor courts is surging. However, selecting the correct surface is critical—badminton involves aggressive lateral movements and high-impact jump smashes that require specialized flooring to prevent knee and ankle injuries.</p>
+
+    <h3>1. PVC Vinyl Badminton Flooring</h3>
+    <p>PVC vinyl is the industry workhorse. Engineered specifically for indoor sports, it features a multi-layer construction:</p>
+    <ul>
+      <li><strong>Wear Layer:</strong> Sand or litchi texture for the precise balance of grip and controlled slide.</li>
+      <li><strong>Fibreglass Mesh:</strong> Provides dimensional stability so the mat doesn't expand or shrink with temperature changes.</li>
+      <li><strong>High-Density Foam Backing:</strong> Delivers point-elastic shock absorption, protecting joints during landing.</li>
+    </ul>
+    <p>We mandate a minimum thickness of 4.5mm for professional use. Anything thinner compromises player safety.</p>
+
+    <h3>2. Premium Wooden Badminton Flooring</h3>
+    <p>For BWF-affiliated clubs and premium sports halls, nothing matches the performance of a sprung wooden floor.</p>
+    <ul>
+      <li><strong>Canadian Maple:</strong> The international tournament standard. Very hard, uniform grain, and provides superior, consistent shuttle bounce.</li>
+      <li><strong>Teakwood:</strong> Highly durable, naturally resistant to moisture, and offers a premium, rich aesthetic preferred by high-end Indian clubs.</li>
+    </ul>
+    <p>Our wooden court systems are built on a multi-tiered substructure. We lay EPDM rubber shock pads beneath a wooden sleeper grid, which provides area-elastic energy return. This decoupling from the concrete base is what gives the floor its "spring" and protects heavy adult athletes during intense daily training.</p>
+  
+      </div>
+      
+      <div class="mt-12 p-8 bg-[#1E293B] rounded-2xl text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Ready to upgrade your sports infrastructure?</h3>
+        <p class="mb-6 text-slate-300">Get manufacturer-direct pricing with zero middlemen markups. We supply and install Pan-India.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="tel:+919821648112" class="bg-white text-[#1E293B] px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors">Call +91 98216 48112</a>
+          <a href="https://wa.me/919821648112" target="_blank" rel="noopener" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-colors">WhatsApp Us</a>
+        </div>
       </div>
     </div>
   </main>
+
+  <Footer />
 </Layout>

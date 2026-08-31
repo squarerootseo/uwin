@@ -1,28 +1,60 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import Navbar from '../../components/Navbar.astro';
+import Footer from '../../components/Footer.astro';
 
-const schema = JSON.stringify([
-  {
+const schema = JSON.stringify([{
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Pickleball Court Flooring",
-    "description": "Professional pickleball court flooring installation and surfacing solutions by U Win Floortech."
-  }
-]);
+    "name": "Pickleball Court Flooring"
+  }]);
 ---
 
-<Layout title="Pickleball Court Flooring | UWIN Floortech" description="Professional pickleball court flooring installation and surfacing solutions across India.">
+<Layout title="Pickleball Court Flooring: High-Performance Surfaces | UWIN" description="Professional pickleball court construction in India. We install multi-layer acrylic systems over concrete for perfect bounce and acoustic control." schema={schema}>
+  <Navbar />
+  
   <main class="pt-24 pb-16 bg-white min-h-screen">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-6">Pickleball Court Flooring</h1>
-      <p class="text-lg text-slate-600 mb-8">
-        We provide turnkey pickleball court flooring solutions, sourcing materials directly from manufacturers and installing them with expert crews. No middlemen, full accountability.
-      </p>
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="text-4xl md:text-5xl font-bold text-[#1E293B] mb-8">Pickleball Court Flooring: High-Performance Outdoor Surfaces</h1>
       
-      <div class="bg-blue-50 border border-blue-100 rounded-xl p-8 mb-12">
-        <h2 class="text-2xl font-bold text-[#1E293B] mb-4">Content Pending</h2>
-        <p class="text-slate-600">This page structure has been scaffolded per the new 3-Silo architecture and is scheduled for content population.</p>
+      <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mb-10 ai-snapshot">
+        <strong>Snapshot:</strong> What is the best surface for pickleball courts? Multi-layer acrylic coating systems applied over an M20 concrete sub-base provide the ideal combination of true ball bounce, slip-resistant grip, and vital acoustic dampening for outdoor pickleball courts in India.
+      </div>
+
+      <div class="prose prose-lg prose-blue max-w-none text-slate-700">
+        
+    <h2>Capitalize on the Pickleball Boom in India</h2>
+    <div class="ai-snapshot bg-gray-50 p-4 rounded-md mb-6 border-l-4 border-gray-400">
+      <strong>Can I convert a tennis court into a pickleball court?</strong> Yes. A standard tennis court can easily accommodate up to four pickleball courts. We can resurface the existing acrylic and apply custom line marking to create dedicated or multi-sport pickleball zones.
+    </div>
+    
+    <p>Pickleball is the fastest-growing sport globally, and its footprint in India is expanding rapidly across sports clubs, residential societies, and schools. Because the game is played with a hard plastic Wiffle-style ball, the court surface requires specific grip textures and acoustic management.</p>
+
+    <h3>Acrylic Systems for Pickleball</h3>
+    <p>We utilize our ITF-certified acrylic coatings for pickleball court construction. The system involves:</p>
+    <ul>
+      <li><strong>Concrete Preparation:</strong> Acid etching and pressure washing the M20 concrete base.</li>
+      <li><strong>Primer and Resurfacer:</strong> Sealing the concrete and filling minor voids to create a perfectly flat plane.</li>
+      <li><strong>Silica-Infused Color Coats:</strong> The wear layers are mixed with specific grades of silica sand. This provides the micro-texture needed for players to make rapid lateral movements without slipping.</li>
+    </ul>
+
+    <h3>Acoustic Dampening</h3>
+    <p>One of the primary challenges with pickleball in residential areas is the sharp "pop" sound of the paddle hitting the ball. By upgrading to a 7-layer or 8-layer cushion acrylic system, the rubberized sub-layers help dampen the high-frequency acoustic impact, making the courts more neighborhood-friendly.</p>
+    
+    <p>Whether you are a real estate developer looking to add a trendy amenity, or a sports club expanding your racket sports offering, UWIN Floortech provides manufacturer-direct pricing and turnkey installation across India.</p>
+  
+      </div>
+      
+      <div class="mt-12 p-8 bg-[#1E293B] rounded-2xl text-white text-center">
+        <h3 class="text-2xl font-bold mb-4">Ready to upgrade your sports infrastructure?</h3>
+        <p class="mb-6 text-slate-300">Get manufacturer-direct pricing with zero middlemen markups. We supply and install Pan-India.</p>
+        <div class="flex justify-center gap-4 flex-wrap">
+          <a href="tel:+919821648112" class="bg-white text-[#1E293B] px-8 py-3 rounded-full font-bold hover:bg-slate-100 transition-colors">Call +91 98216 48112</a>
+          <a href="https://wa.me/919821648112" target="_blank" rel="noopener" class="bg-green-500 text-white px-8 py-3 rounded-full font-bold hover:bg-green-600 transition-colors">WhatsApp Us</a>
+        </div>
       </div>
     </div>
   </main>
+
+  <Footer />
 </Layout>
