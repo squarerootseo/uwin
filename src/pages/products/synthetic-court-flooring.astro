@@ -3,11 +3,36 @@ import Layout from '../../layouts/Layout.astro';
 import Navbar from '../../components/Navbar.astro';
 import Footer from '../../components/Footer.astro';
 
-const schema = JSON.stringify([{
+const schema = JSON.stringify([
+  {
     "@context": "https://schema.org",
     "@type": "WebPage",
     "name": "Synthetic Court Flooring"
-  }]);
+  },
+  {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://uwinfloortech.com"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Products",
+      "item": "https://uwinfloortech.com/products"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Synthetic Court Flooring"
+    }
+  ]
+}
+]);
 ---
 
 <Layout title="Synthetic Court Flooring: Turnkey Solutions for Schools & Clubs | UWIN Floortech" description="Upgrade to certified synthetic court flooring. We provide manufacturer-direct PVC vinyl, acrylic, and PP tiles for sports facilities across India. Get a quote." schema={schema}>
