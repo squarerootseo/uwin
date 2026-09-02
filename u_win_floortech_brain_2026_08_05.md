@@ -676,45 +676,48 @@ B2B Audience: #SchoolInfrastructure #RealEstateDeveloper #SmartCities #KheloIndi
 
 ---
 
-### DYNAMIC URL ARCHITECTURE — Tongia Codex Framework 7C
+### DYNAMIC URL ARCHITECTURE — 3-Silo Intent-Based Taxonomy (Updated)
 
-IMPORTANT: This is the most strategically important structural update in v3.0. With six product lines now live, U Win must deploy a programmatic, hierarchical URL architecture. Every buyer search permutation — product x specification x application type — gets its own unique, deep, indexable page. Specific is Terrific.
+IMPORTANT: This is the most strategically important structural update. With the full product line expansion, U Win must deploy a strict 3-Silo taxonomy to map every search intent category cleanly.
 
-NOTE (v3.0 Correction — August 2026): The Tongia Codex Dynamic URL Architecture permits a MAXIMUM of 3-Axis. UWIN Floortech currently operates on 2-Axis — which is fully valid. The 3rd Axis (geography/city) is NOT deployed because U Win operates Pan India; geographic targeting is handled through GBP, content copy, and keyword selection — not URL subfolders. If U Win expands to city-specific operations in future, the 3rd Axis can be activated without restructuring the existing 2-Axis hierarchy.
+The architecture is divided into three primary search intent silos:
+1. `/products/` (Material-based Search Intent)
+2. `/sports/` (Application/Sport Search Intent)
+3. `/industries/` (B2B Buyer Persona Search Intent)
 
-### URL Formula — Tongia Codex Maximum 3-Axis | U Win Uses 2-Axis (Pan India)
-/[product-hub]/[specification-or-type]/
+### Applied URL Matrix — 3-Silo Structure
 
-Axis 1 — What: Product / Surface Category
-Axis 2 — Spec: Variant / Material / Grade / Court Type / Application Type
+Silo 1: `/products/` (Material-based Search Intent)
+- `/products/pp-interlocking-tiles/`
+- `/products/acrylic-court-surfaces/` (maps to existing `acrylic-court-systems.astro`)
+- `/products/epdm-rubber-flooring/` (maps to existing `epdm-tracks-surfaces.astro`)
+- `/products/pvc-vinyl-sports-flooring/` (maps to existing `badminton-pvc-vinyl-sports-flooring.astro`)
+- `/products/wooden-sports-flooring/` (maps to existing `badminton-wooden-flooring.astro`)
+- `/products/artificial-grass-turf/` (maps to existing `sand-based-artificial-grass.astro`)
+- `/products/synthetic-court-flooring/` [NEW]
 
-Why hierarchical subfolders, not flat slugs? Every Spoke page under /badminton-wooden-flooring/ sends topical authority UP to the Hub. BreadcrumbList schema only works with hierarchy. AI crawlers (GPTBot, CCBot, PerplexityBot) parse the URL path as semantic structure before reading page content. 2-Axis = maximum precision for Pan India operation. The framework supports a 3rd Axis (geography) which can be activated if U Win ever moves to city-specific operations — the existing 2-Axis structure nests cleanly into a 3-Axis hierarchy without migration.
+Silo 2: `/sports/` (Application/Sport Search Intent)
+- `/sports/badminton-court-flooring/` [NEW]
+- `/sports/basketball-court-flooring/` [NEW]
+- `/sports/tennis-court-flooring/` [NEW]
+- `/sports/pickleball-court-flooring/` [NEW]
+- `/sports/athletic-running-track/` [NEW]
+- `/sports/squash-court-flooring/` [NEW]
+- `/sports/multi-sport-court-flooring/` [NEW]
+- `/sports/volleyball-court-flooring/` [NEW]
+- `/sports/gymnasium-flooring/` [NEW]
+- `/sports/handball-court-flooring/` [NEW]
+- `/sports/kids-playground-flooring/` [NEW]
+- `/sports/football-turf/` [NEW]
+- `/sports/artificial-cricket-pitch/` [NEW]
+- `/sports/hockey-ground-flooring/` [NEW]
+- `/sports/table-tennis-flooring/` [NEW]
 
-### Applied URL Matrix — All Six Product Lines (2-Axis, Pan India — 3rd Axis Reserved)
-
-Line 1 — PP Interlocking Tiles:
-Hub: /pp-interlocking-tiles/
-Spokes: /pp-interlocking-tiles/basketball-court/ | /pp-interlocking-tiles/outdoor-volleyball-court/ | /pp-interlocking-tiles/school-playground/ | /pp-interlocking-tiles/roller-skating-rink/ | /pp-interlocking-tiles/multi-sport-court/
-
-Line 2 — EPDM Rubberised Surfaces:
-Hub: /epdm-tracks-surfaces/
-Spokes: /epdm-tracks-surfaces/running-track/ | /epdm-tracks-surfaces/playground-safety-surface/ | /epdm-tracks-surfaces/gym-flooring/ | /epdm-tracks-surfaces/sandwich-system/ | /epdm-tracks-surfaces/full-pour-system/
-
-Line 3 — Acrylic Court Coatings:
-Hub: /acrylic-court-systems/
-Spokes: /acrylic-court-systems/tennis-court/ | /acrylic-court-systems/basketball-court/ | /acrylic-court-systems/itf-certified-cushion/ | /acrylic-court-systems/pickleball-court/ | /acrylic-court-systems/5-layer-system/ | /acrylic-court-systems/8-layer-premium-system/
-
-Line 4 — Badminton PVC Vinyl Flooring (NEW):
-Hub: /badminton-pvc-vinyl-sports-flooring/
-Spokes: /badminton-pvc-vinyl-sports-flooring/indoor-court/ | /badminton-pvc-vinyl-sports-flooring/school-sports-hall/ | /badminton-pvc-vinyl-sports-flooring/academy-court/ | /badminton-pvc-vinyl-sports-flooring/multi-sport-hall/ | /badminton-pvc-vinyl-sports-flooring/residential-clubhouse/
-
-Line 5 — Badminton Wooden Flooring (NEW):
-Hub: /badminton-wooden-flooring/
-Spokes: /badminton-wooden-flooring/canadian-maple/ | /badminton-wooden-flooring/teakwood/ | /badminton-wooden-flooring/bwf-certified-court/ | /badminton-wooden-flooring/tournament-standard/ | /badminton-wooden-flooring/school-sports-hall/
-
-Line 6 — Sand-Based Artificial Grass (NEW):
-Hub: /sand-based-artificial-grass/
-Spokes: /sand-based-artificial-grass/tennis-court/ | /sand-based-artificial-grass/padel-court/ | /sand-based-artificial-grass/residential-developer/ | /sand-based-artificial-grass/school-sports-field/ | /sand-based-artificial-grass/public-park/
+Silo 3: `/industries/` (B2B Buyer Persona Search Intent)
+- `/industries/schools-universities/` [NEW]
+- `/industries/real-estate-developers/` [NEW]
+- `/industries/sports-clubs-academies/` [NEW]
+- `/industries/government-contractors/` [NEW]
 
 ### 8 Root Files (Mandatory — Audit Monthly)
 | File | Purpose | Priority |
