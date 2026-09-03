@@ -385,6 +385,13 @@ h1, h2, h3, h4 {
   z-index: 1100;
 }
 
+.nav-dropdown--2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 8px;
+  min-width: 480px;
+}
+
 .nav-item-dropdown:hover .nav-dropdown {
   opacity: 1;
   pointer-events: all;
