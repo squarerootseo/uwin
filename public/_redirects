@@ -1,0 +1,18 @@
+# WWW to Non-WWW 301 Redirect
+https://www.uwinfloortech.com/* https://uwinfloortech.com/:splat 301!
+http://www.uwinfloortech.com/* https://uwinfloortech.com/:splat 301!
+
+# Legacy 404 URL 301 Redirects
+/ar/pages/about /about 301
+/es/pages/about /about 301
+/ru/pages/privacy-policy /privacy-policy 301
+/:lang/pages/about /about 301
+/:lang/pages/privacy-policy /privacy-policy 301
+/:lang/pages/contact /contact 301
+/:lang/pages/terms-and-conditions /terms-and-conditions 301
+/:lang/pages/why-uwin /why-uwin 301
+/pages/:slug /:slug 301
+/:lang/pages/:slug /:slug 301
+/:lang/products/:slug* /products/:slug* 301
+/:lang/sports/:slug* /sports/:slug* 301
+/:lang/blog/:slug* /blog/:slug* 301
