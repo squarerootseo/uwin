@@ -1,9 +1,6 @@
 import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
-import sitemap from '@astrojs/sitemap';
-
 export default defineConfig({
-  site: 'https://uwinfloortech.com',
-  integrations: [sitemap()]
+  site: 'https://uwinfloortech.com'
 });

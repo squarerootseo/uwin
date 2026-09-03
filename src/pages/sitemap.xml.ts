@@ -3,15 +3,22 @@ import type { APIRoute } from 'astro';
 export const GET: APIRoute = async ({ site }) => {
   const baseUrl = site ? site.href.replace(/\/$/, '') : 'https://uwinfloortech.com';
 
-  const modules = import.meta.glob('./**/*.astro');
+  const astroModules = import.meta.glob('./**/*.astro');
+  const mdModules = import.meta.glob('./**/*.md');
+  const allModules = { ...astroModules, ...mdModules };
   
   const urls: string[] = [];
 
-  for (const path in modules) {
+  for (const path in allModules) {
+    // Ignore private files/templates starting with _ (e.g. _template.md)
+    if (path.includes('/_') || path.startsWith('./_')) {
+      continue;
+    }
+
     // Clean up path
     let route = path
       .replace(/^\.\//, '')
-      .replace(/\.astro$/, '');
+      .replace(/\.(astro|md)$/, '');
 
     if (route === '404' || route.includes('[')) {
       continue;
@@ -47,3 +54,4 @@ ${urls
     },
   });
 };
+
