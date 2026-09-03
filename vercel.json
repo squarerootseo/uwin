@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.uwinfloortech.com"
+        }
+      ],
+      "destination": "https://uwinfloortech.com/:path*",
+      "permanent": true
+    },
+    {
       "source": "/ar/pages/about",
       "destination": "/about",
       "permanent": true
