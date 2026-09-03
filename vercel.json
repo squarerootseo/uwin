@@ -1,0 +1,80 @@
+{
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "www.uwinfloortech.com"
+        }
+      ],
+      "destination": "https://uwinfloortech.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/ar/pages/about",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/es/pages/about",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/ru/pages/privacy-policy",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/about",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/privacy-policy",
+      "destination": "/privacy-policy",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/contact",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/terms-and-conditions",
+      "destination": "/terms-and-conditions",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/why-uwin",
+      "destination": "/why-uwin",
+      "permanent": true
+    },
+    {
+      "source": "/pages/:slug",
+      "destination": "/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/pages/:slug",
+      "destination": "/:slug",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/products/:slug*",
+      "destination": "/products/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/sports/:slug*",
+      "destination": "/sports/:slug*",
+      "permanent": true
+    },
+    {
+      "source": "/:lang([a-z]{2})/blog/:slug*",
+      "destination": "/blog/:slug*",
+      "permanent": true
+    }
+  ]
+}

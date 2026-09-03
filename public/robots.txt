@@ -44,5 +44,4 @@ User-agent: Amazonbot
 Allow: /
 
 Sitemap: https://uwinfloortech.com/sitemap.xml
-Sitemap: https://uwinfloortech.com/sitemap-index.xml
 
