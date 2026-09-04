@@ -1,0 +1,359 @@
+---
+import Navbar from '../../components/Navbar.astro';
+import Layout from '../../layouts/Layout.astro';
+import Footer from '../../components/Footer.astro';
+
+const schema = JSON.stringify([
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Sports Flooring by Application",
+    "description": "UWIN Floortech provides specialized flooring and surfacing solutions for 15+ sports including badminton, basketball, tennis, running tracks, and synthetic turf.",
+    "brand": { "@type": "Brand", "name": "U WIN Floortech" }
+  }
+]);
+---
+
+<Layout 
+  title="Sports Flooring by Application | U WIN Floortech"
+  description="Discover specialized sports flooring solutions for badminton, basketball, tennis, athletics, and more. ITF and FIH certified surfaces installed pan-India."
+  schema={schema}
+>
+  <Navbar />
+
+  <!-- ============================================================
+       HERO SECTION
+       ============================================================ -->
+  <section class="products-hub-hero">
+    <div class="products-hub-hero__overlay"></div>
+    <div class="container products-hub-hero__content">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Sports</span>
+      </nav>
+      <span class="section-eyebrow" style="color:var(--color-accent); margin-bottom:1rem; display:block;">Applications</span>
+      <h1 class="h1 text-white">Flooring by Sport</h1>
+      <p class="hero-sub">From ITF-certified tennis courts to FIFA-grade football turf, explore our specialized surface systems engineered for specific sports applications.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SPORTS GRID
+       ============================================================ -->
+  <section class="section section--white">
+    <div class="container">
+      
+      <div class="product-grid">
+        
+        <!-- 1. Badminton Court Flooring -->
+        <a href="/sports/badminton-court-flooring" class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="/images/hero-badminton-court.jpg" alt="Badminton Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Badminton Court Flooring</h2>
+            <p class="product-card__desc">Professional synthetic and wooden surfaces for indoor and outdoor badminton courts. Certified shock absorption and anti-slip properties.</p>
+            <span class="product-card__link">View Sport Surfaces <span>→</span></span>
+          </div>
+        </a>
+
+        <!-- 2. Basketball Court Flooring -->
+        <a href="/sports/basketball-court-flooring" class="product-card reveal reveal-delay-1">
+          <div class="product-card__img-wrap">
+            <img src="/images/hero-basketball-court.jpg" alt="Basketball Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Basketball Court Flooring</h2>
+            <p class="product-card__desc">High-performance ITF-certified acrylic and PP interlocking tiles for outdoor and indoor basketball courts. Maximum durability and true ball bounce.</p>
+            <span class="product-card__link">View Sport Surfaces <span>→</span></span>
+          </div>
+        </a>
+
+        <!-- 3. Tennis Court Flooring -->
+        <a href="/sports/tennis-court-flooring" class="product-card reveal reveal-delay-2">
+          <div class="product-card__img-wrap">
+            <img src="/images/hero-tennis-court.jpg" alt="Tennis Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Tennis Court Flooring</h2>
+            <p class="product-card__desc">ITF Pace Classified acrylic hard courts and synthetic turf systems. The standard for professional tournaments and residential academies.</p>
+            <span class="product-card__link">View Sport Surfaces <span>→</span></span>
+          </div>
+        </a>
+
+        <!-- 4. Pickleball Court Flooring -->
+        <a href="/sports/pickleball-court-flooring" class="product-card reveal">
+          <div class="product-card__img-wrap">
+            <img src="/images/hero-pickleball-court.jpg" alt="Pickleball Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Pickleball Court Flooring</h2>
+            <p class="product-card__desc">Specialized 5-layer and 8-layer acrylic surfaces designed for the fast-growing sport of pickleball. Precision texture and glare reduction.</p>
+            <span class="product-card__link">View Sport Surfaces <span>→</span></span>
+          </div>
+        </a>
+
+        <!-- 5. Athletic Running Tracks -->
+        <div class="product-card reveal reveal-delay-1" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/track-epdm.png" alt="Athletic Running Tracks" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Athletic Running Tracks</h2>
+            <p class="product-card__desc">Seamless EPDM and polyurethane pour-in-place track systems. Designed for spikes, offering optimal kinetic energy return.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 6. Squash Court Flooring -->
+        <div class="product-card reveal reveal-delay-2" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/gallery-wooden-floor.png" alt="Squash Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Squash Court Flooring</h2>
+            <p class="product-card__desc">Premium Canadian Maple and Teak wood flooring systems with specialized shock-absorbing underlays for high-impact indoor squash.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 7. Multi-Sport Court Flooring -->
+        <div class="product-card reveal" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/gallery-multisport-court.png" alt="Multi-Sport Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Multi-Sport Court Flooring</h2>
+            <p class="product-card__desc">Versatile surface solutions allowing basketball, tennis, volleyball, and badminton to be played on a single unified court.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 8. Volleyball Court Flooring -->
+        <div class="product-card reveal reveal-delay-1" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/app-volleyball-court.png" alt="Volleyball Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Volleyball Court Flooring</h2>
+            <p class="product-card__desc">Indoor PVC vinyl and outdoor PP interlocking tiles engineered for the high vertical impact and lateral movements of volleyball.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 9. Gymnasium Flooring -->
+        <div class="product-card reveal reveal-delay-2" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/app-indoor-gym.png" alt="Gymnasium Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Gymnasium Flooring</h2>
+            <p class="product-card__desc">Heavy-duty rubber and vinyl flooring for commercial gyms and fitness centers. Exceptional weight-drop resistance and acoustic dampening.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 10. Handball Court Flooring -->
+        <div class="product-card reveal" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/app-pp-tiles.png" alt="Handball Court Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Handball Court Flooring</h2>
+            <p class="product-card__desc">Durable and seamless synthetic systems designed for the high-friction, fast-paced requirements of professional handball.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 11. Kids Playground Flooring -->
+        <div class="product-card reveal reveal-delay-1" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/playground-epdm.png" alt="Kids Playground Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Kids Playground Flooring</h2>
+            <p class="product-card__desc">Critical Fall Height (CFH) certified EPDM rubber safety surfacing. Seamless, colourful, and completely non-toxic for child safety.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 12. Football Turf -->
+        <div class="product-card reveal reveal-delay-2" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/app-synthetic-turf.png" alt="Football Turf" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Football Turf</h2>
+            <p class="product-card__desc">FIFA-quality synthetic grass systems with silica sand and SBR rubber infill. All-weather playability with natural grass aesthetics.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 13. Artificial Cricket Pitch -->
+        <div class="product-card reveal" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/gallery-synthetic-turf.png" alt="Artificial Cricket Pitch" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Artificial Cricket Pitch</h2>
+            <p class="product-card__desc">High-density, short-pile synthetic turf designed specifically for cricket pitches. True bounce, consistent pace, and zero rolling required.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 14. Hockey Ground Flooring -->
+        <div class="product-card reveal reveal-delay-1" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/hero-synthetic-court.jpg" alt="Hockey Ground Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Hockey Ground Flooring</h2>
+            <p class="product-card__desc">FIH-certified water-based and sand-dressed synthetic turf systems for extremely fast, flat, and professional hockey gameplay.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+        <!-- 15. Table Tennis Flooring -->
+        <div class="product-card reveal reveal-delay-2" style="cursor: default;">
+          <div class="product-card__img-wrap">
+            <img src="/images/badminton-pvc-vinyl-court.png" alt="Table Tennis Flooring" class="product-card__img" loading="lazy" />
+          </div>
+          <div class="product-card__content">
+            <h2 class="product-card__title">Table Tennis Flooring</h2>
+            <p class="product-card__desc">Specialized indoor PVC vinyl flooring with textured embossing to provide perfect grip for rapid lateral table tennis movements.</p>
+            <span class="product-card__link">Coming Soon</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <Footer />
+</Layout>
+
+<style>
+  /* ── Hero Section ── */
+  .products-hub-hero {
+    position: relative;
+    background: url('/images/hero-badminton-court.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 420px;
+    display: flex;
+    align-items: center;
+    margin-top: var(--nav-height);
+  }
+  .products-hub-hero__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(10,30,55,0.92) 0%, rgba(10,30,55,0.7) 100%);
+  }
+  .products-hub-hero__content {
+    position: relative;
+    z-index: 2;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+  }
+  .hero-sub {
+    color: rgba(255,255,255,0.8);
+    font-size: 1.15rem;
+    max-width: 600px;
+    margin-top: 1rem;
+    line-height: 1.6;
+  }
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.78rem;
+    color: rgba(255,255,255,0.65);
+    margin-bottom: 1.5rem;
+  }
+  .breadcrumb a { color: rgba(255,255,255,0.65); }
+  .breadcrumb a:hover { color: var(--color-accent); }
+
+  /* ── Product Grid ── */
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 32px;
+  }
+  .product-card {
+    background: #fff;
+    border-radius: var(--card-radius);
+    border: 1px solid var(--color-border);
+    overflow: hidden;
+    transition: all var(--transition-mid);
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(13,92,147,0.15);
+  }
+  .product-card__img-wrap {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    position: relative;
+  }
+  .product-card__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  .product-card:hover .product-card__img {
+    transform: scale(1.05);
+  }
+  .product-card__content {
+    padding: 24px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .product-card__title {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--color-primary-deep);
+    margin-bottom: 12px;
+  }
+  .product-card__desc {
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex: 1;
+  }
+  .product-card__link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: color var(--transition-fast);
+  }
+  .product-card__link span {
+    transition: transform var(--transition-fast);
+  }
+  .product-card:hover .product-card__link {
+    color: var(--color-accent);
+  }
+  .product-card:hover .product-card__link span {
+    transform: translateX(4px);
+  }
+
+  @media (max-width: 768px) {
+    .product-grid { gap: 24px; }
+  }
+</style>
+
+<script>
+  import '../../js/app.js';
+</script>
